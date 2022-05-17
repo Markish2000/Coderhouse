@@ -828,6 +828,7 @@
             "soy__un__nav main__section__porqueelegirnos aside"
             "soy__un__nav section__seguridadYConfiabilidad aside"
             "soy__un__nav section__garantiaDeSastifaccion aside"
+            "soy__un__nav prueba aside"
             "footer footer footer";
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
@@ -839,6 +840,16 @@
         justify-content: center;
     }
 
+
+    .prueba {
+        background-color: #2e0968bb;
+        padding: 50px;
+        grid-area: prueba;
+    }
+
+    .prueba__h2 {
+        margin-bottom: 50px;
+    }
 
     /*Sección: Header*/
 
@@ -2340,9 +2351,20 @@
             "soy__un__nav main__section__comandos aside"
             "soy__un__nav section__video__tutorial__reporteDeCaceria aside"
             "soy__un__nav section__video__tutorial__kvk aside"
+            "soy__un__nav prueba aside"
             "footer footer footer";
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+
+    .prueba {
+        background-color: #2e0968bb;
+        padding: 50px;
+        grid-area: prueba;
+    }
+
+    .prueba__h2 {
+        margin-bottom: 50px;
     }
 
     /*Sección: Header*/
@@ -2985,11 +3007,21 @@
             "soy__un__nav header header"
             "soy__un__nav section__terminosycondiciones__h1 aside"
             "soy__un__nav section__terminosycondiciones__h3yp aside"
+            "soy__un__nav prueba aside"
             "soy__un__nav footer aside";
         grid-template-rows: auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
+    .prueba {
+        background-color: #2e0968bb;
+        padding: 50px;
+        grid-area: prueba;
+    }
+
+    .prueba__h2 {
+        margin-bottom: 50px;
+    }
 
     /*Sección: Header*/
 
@@ -3633,9 +3665,20 @@
             "soy__un__nav header header"
             "soy__un__nav main__promociones aside"
             "soy__un__nav section__promociones__abrilDePascua aside"
+            "soy__un__nav prueba aside"
             "soy__un__nav footer footer";
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+
+    .prueba {
+        background-color: #2e0968bb;
+        padding: 50px;
+        grid-area: prueba;
+    }
+
+    .prueba__h2 {
+        margin-bottom: 50px;
     }
 
     /*Sección: Header*/
@@ -4415,9 +4458,20 @@
             "soy__un__nav main__section__gremiodeguerra_h3yh4 aside"
             "soy__un__nav section__gremiodeguerra__rdc aside"
             "soy__un__nav section__gremiosdeguerra__rdc__h3 aside"
+            "soy__un__nav prueba aside"
             "footer footer footer";
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+
+    .prueba {
+        background-color: #2e0968bb;
+        padding: 50px;
+        grid-area: prueba;
+    }
+
+    .prueba__h2 {
+        margin-bottom: 50px;
     }
 
     /*Sección: Header*/
