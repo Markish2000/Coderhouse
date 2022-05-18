@@ -5244,12 +5244,12 @@
         margin-top: 20px;
     }
 
-    /**/
+    /*Se hizo de color negro el ancla*/
     .main__precios__section__p--td {
         color: #000000;
     }
 
-    /**/
+    /*Al poner el mouse arriba del ancla se hace amarillo*/
     .main__precios__section__p--td:hover {
         color: #d1b410;
     }
@@ -5272,7 +5272,7 @@
         justify-content: center;
     }
 
-    /**/
+    /*h3: efecto de neón y se centró*/
     .main__precios__section__div__pagarNuevoBot__h3 {
         text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
         display: flex;
@@ -5281,15 +5281,16 @@
         align-items: center;
     }
 
-    /**/
+    /*img: Ancho y margin top*/
     .main__precios__section__div__pagarNuevoBot__h3__img {
         height: 150px;
         margin-top: 20px;
     }
 
-    /**/
 
-    /**/
+    /*Sección: Pagar renta mensual*/
+
+    /*Color de fondo, color de letras, padding y asignación de area al contenedor*/
     .main__precios__section__pagarRentaMensual {
         background-color: #2c2a30;
         color: #ffffff;
@@ -5297,7 +5298,7 @@
         grid-area: main__precios__section__pagarRentaMensual;
     }
 
-    /**/
+    /*h2: tamaño de letra, margin bottom y se centró*/
     .main__precios__section__div__pagarRentaMensual__h2 {
         font-size: 23px;
         margin-bottom: 30px;
@@ -5305,7 +5306,7 @@
         justify-content: center;
     }
 
-    /**/
+    /*h3: efecto de neón y se centró*/
     .main__precios__section__div__pagarRentaMensual__h3 {
         text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
         display: flex;
@@ -5314,7 +5315,7 @@
         align-items: center;
     }
 
-    /**/
+    /*h3: Se le agregó una animación para que se mueva para abajo y para arriba*/
     .main__precios__section__div__pagarNuevoBot__h3--animation {
         display: inline-block;
         animation: float 3s ease-in infinite;
@@ -5334,7 +5335,7 @@
         }
     }
 
-    /**/
+    /*img: ancho y margin top*/
     .main__precios__section__div__pagarRentaMensual__h3__img {
         height: 150px;
         margin-top: 30px;
@@ -5343,7 +5344,7 @@
 
     /*Sección: Promociones*/
 
-    /**/
+    /*padding, color de fondo, se centro y asignación de area al contenedor*/
     .main__precios__section__promociones__h2h4 {
         padding: 20px;
         background-color: #2e0968bb;
@@ -5354,32 +5355,32 @@
         grid-area: main__precios__section__promociones__h2h4;
     }
 
-    /**/
+    /*color negro y se le sacó el subrayado al ancla del h2*/
     .main__precios__section__promociones__h2--td {
         color: #000000;
         text-decoration: none;
     }
 
-    /**/
+    /*h4: Tamaño de letra y margin top*/
     .main__precios__section__promociones__h4 {
         font-size: 20px;
         margin-top: 25px;
     }
 
-    /**/
+    /*h4 a: Color negro*/
     .main__precios__section__promociones__h4--td {
         color: #000000;
     }
 
-    /**/
+    /*h4 a: Al poner el mouse arriba se hace amarillo*/
     .main__precios__section__promociones__h4--td:hover {
         color: #d1b410;
     }
 
 
-    /**/
+    /*Sección Promociones*/
 
-    /**/
+    /*Color blanco a las letras, color de fondo, padding y asignación de area al contenedor*/
     .main__precios__section__promociones__p__imput {
         color: #ffffff;
         background-color: #2c2a30;
@@ -5387,7 +5388,7 @@
         grid-area: main__precios__section__promociones__p__imput;
     }
 
-    /**/
+    /*div: margin bottom y se centró*/
     .main__precios__section__promociones__div__p__imput {
         margin-bottom: 30px;
         display: flex;
@@ -5396,20 +5397,20 @@
         align-items: center;
     }
 
-    /**/
+    /*P: Tamaño de letras y margin bottom*/
     .main__precios__section__promociones__div__p {
         font-size: 20px;
         margin-bottom: 10px;
     }
 
-    /**/
+    /*P: Ancho del contenedor, tamaño de letras y margin bottom*/
     .main__precios__section__promociones__div__p--wd {
         width: 300px;
         font-size: 20px;
         margin-bottom: 20px;
     }
 
-    /**/
+    /*imput (Botones): Ancho, alto, margin top y margin bottom*/
     .main__precios__section__promociones__div__imput {
         width: 300px;
         height: 30px;
@@ -5417,7 +5418,7 @@
         margin-bottom: 30px;
     }
 
-    /**/
+    /*h3: Color rojo, tamaño de letra y margin bottom*/
     .main__precios__section__promociones__div__h3 {
         color: #ff0000;
         font-size: 30px;
@@ -5425,9 +5426,9 @@
     }
 
 
-    /*Sección: */
+    /*Sección: Más promociones*/
 
-    /**/
+    /*Color de fondo, padding, se centró y se le asignó area al contenedor*/
     .main__precios__section__masPromociones {
         background-color: #2e0968bb;
         padding: 30px;
@@ -5438,13 +5439,23 @@
         grid-area: main__precios__section__masPromociones;
     }
 
-    /**/
+    /*h2: Tamaño de letras y margin bottom*/
     .main__precios__section__masPromociones__h2 {
         font-size: 25px;
         margin-bottom: 20px;
     }
 
-    /**/
+    /*h2 a: Color negro*/
+    .main__precios__section__masPromociones__a--td {
+        color: #000000;
+    }
+
+    /*h2 a: Al poner el mouse arriba de hace amarillo*/
+    .main__precios__section__masPromociones__a--td:hover {
+        color: #d1b410;
+    }
+
+    /*img: Ancho, alto y margin top*/
     .main__precios__section__masPromociones__img {
         width: 300px;
         height: auto;
@@ -5454,7 +5465,7 @@
 
     /*Sección: Otros métodos de pago*/
 
-    /**/
+    /*Color de fondo, color de letras, padding, se centró y asignación de area al contenedor*/
     .main__precios__section__otrosMetodosDePago {
         background-color: #2c2a30;
         color: #ffffff;
@@ -5466,7 +5477,7 @@
         grid-area: main__precios__section__otrosMetodosDePago;
     }
 
-    /**/
+    /*div: Margin top y se centró*/
     .main__precios__section__div__otrosMetodosDePago {
         margin-top: 30px;
         display: flex;
@@ -5475,28 +5486,1005 @@
         flex-direction: column;
     }
 
-    /**/
+    /*img: Ancho*/
     .main__precios__section__div__otrosMetodosDePago__img {
         width: 300px;
     }
 
-    /**/
+    /*P: Tamaño de letras y margin top*/
     .main__precios__section__div__otrosMetodosDePago__p {
         font-size: 20px;
         margin-top: 15px;
     }
 
-    /**/
+    /*h3: Margin top*/
     .main__precios__section__div__otrosMetodosDePago__h3 {
         margin-top: 4em;
     }
 
-    /**/
+    /*h3 a: Color blanco*/
     .main__precios__section__div__otrosMetodosDePago__h3--td {
         color: #ffffff;
     }
 
-    /**/
+    /*h3 a: Al poner el mouse arriba se hace amarillo*/
+    .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
+        color: #d1b410;
+    }
+}
+
+
+/*Tablet*/
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+
+    .body__precios {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__precios__section__h1"
+            "main__precios__section__pyr"
+            "main__precios__section__pagarNuevoBot"
+            "main__precios__section__pagarRentaMensual"
+            "main__precios__section__promociones__h2h4"
+            "main__precios__section__promociones__p__imput"
+            "main__precios__section__masPromociones"
+            "main__precios__section__otrosMetodosDePago"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    }
+
+
+    /*Sección: Header*/
+
+    /*Header: Color, flex y asignación de area..*/
+    header {
+        background-color: #2e0968;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        grid-area: header;
+    }
+
+    /*GIF: Tamaño, margin y flex*/
+    .header__gif {
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    /*Oculto el check*/
+    #btn--menu {
+        display: none;
+    }
+
+    /*Display block, tamaños y margin*/
+    header label {
+        width: 60px;
+        height: 40px;
+        display: block;
+    }
+
+    /*Al poner el mouse arriba cambia el cursor*/
+    header label:hover {
+        cursor: pointer;
+    }
+
+    /*Position absolute, color, tamaño, margin y animación*/
+    .menu {
+        position: absolute;
+        background-color: #2e0968;
+        width: 60%;
+        margin-left: -70%;
+        transition: all 0.6s;
+    }
+
+    /*display flex con dirección de columna*/
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Borde negro*/
+    .menu li {
+        border-top: 1px solid #000000;
+    }
+
+    /*Cambia de color al poner el mouse arriba*/
+    .menu li:hover {
+        background-color: #0000004d;
+    }
+
+    /*Se oculta el sub menú*/
+    .menu li ul {
+        display: none;
+        position: absolute;
+    }
+
+    /*Al poner el cursor arriba del sub menú se desplaza*/
+    .menu li:hover>ul {
+        display: block;
+    }
+
+    /*Position relativo*/
+    .menu li ul li {
+        position: relative;
+    }
+
+    /*Sub menú con color violeta y movido a la derecha*/
+    .menu ul li ul li {
+        width: 168px;
+        background-color: #2e0968;
+        right: -252px;
+        top: -111px;
+    }
+
+    /*Display block, pading, color blanco y sin decoración a las anclas*/
+    .menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /*Display block, padding y color blanco a los parrafos*/
+    .menu li p {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+    }
+
+    /*Al estár checkeado, mueve el nav y se vea*/
+    #btn--menu:checked~.menu {
+        margin-top: 4px;
+        margin-left: -25px;
+    }
+
+    /*Color amarillo al h2, se le quita la decoración y se aumenta el tamaño de las letras*/
+    .header__h2 {
+        color: #d1b410;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    /*Sección: NAV*/
+
+    /*Proximamente un NAV desplegable como en la página de CoderHouse*/
+    .soy__un__nav {
+        display: none;
+    }
+
+
+    /*Sección: Eliminar contenido*/
+
+    /*Eliminación de contenido*/
+    .display--none {
+        display: none;
+    }
+
+
+
+    /*Sección: img + h1*/
+
+    /*Imagen de fondo, tamaño de alto y asignación de area*/
+    .main__precios__section__h1 {
+        background-image: url(../images/precios/precios.jpg);
+        height: 400px;
+        background-size: cover;
+        grid-area: main__precios__section__h1;
+    }
+
+    /*Fondo negrito, tamaño de alto, color de letra, tamaño de letra y centrado de letra*/
+    .main__precios__section__h1--bc {
+        background-color: #2c2a309f;
+        height: 100%;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5em;
+    }
+
+
+    /*Sección: Breve explicación del precio de los bots*/
+
+    /*Color de fondo, padding, tamaño de letras y asignación de area*/
+    .main__precios__section__pyr {
+        background-color: #2e0968bb;
+        padding: 40px;
+        font-size: 26px;
+        grid-area: main__precios__section__pyr;
+    }
+
+    /*P: Margin top*/
+    .main__precios__section__p--margin {
+        margin-top: 20px;
+    }
+
+    /*Se hizo de color negro el ancla*/
+    .main__precios__section__p--td {
+        color: #000000;
+    }
+
+    /*Al poner el mouse arriba del ancla se hace amarillo*/
+    .main__precios__section__p--td:hover {
+        color: #d1b410;
+    }
+
+    /*Sección: Pagar un nuevo bot*/
+
+    /*Color de fondo, color de letras, padding y asignación de area*/
+    .main__precios__section__pagarNuevoBot {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+        grid-area: main__precios__section__pagarNuevoBot;
+    }
+
+    /*h2: tamaño de letra, margin bot y centrado*/
+    .main__precios__section__div__pagarNuevoBot__h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*h3: efecto de neón y se centró*/
+    .main__precios__section__div__pagarNuevoBot__h3 {
+        font-size: 25px;
+        text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*img: Ancho y margin top*/
+    .main__precios__section__div__pagarNuevoBot__h3__img {
+        height: 200px;
+        margin-top: 20px;
+    }
+
+
+    /*Sección: Pagar renta mensual*/
+
+    /*Color de fondo, color de letras, padding y asignación de area al contenedor*/
+    .main__precios__section__pagarRentaMensual {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+        grid-area: main__precios__section__pagarRentaMensual;
+    }
+
+    /*h2: tamaño de letra, margin bottom y se centró*/
+    .main__precios__section__div__pagarRentaMensual__h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*h3: efecto de neón y se centró*/
+    .main__precios__section__div__pagarRentaMensual__h3 {
+        font-size: 25px;
+        text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*h3: Se le agregó una animación para que se mueva para abajo y para arriba*/
+    .main__precios__section__div__pagarNuevoBot__h3--animation {
+        display: inline-block;
+        animation: float 3s ease-in infinite;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(25px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /*img: ancho y margin top*/
+    .main__precios__section__div__pagarRentaMensual__h3__img {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+
+    /*Sección: Promociones*/
+
+    /*padding, color de fondo, se centro y asignación de area al contenedor*/
+    .main__precios__section__promociones__h2h4 {
+        font-size: 30px;
+        padding: 20px;
+        background-color: #2e0968bb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: main__precios__section__promociones__h2h4;
+    }
+
+    /*color negro y se le sacó el subrayado al ancla del h2*/
+    .main__precios__section__promociones__h2--td {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    /*h4: Tamaño de letra y margin top*/
+    .main__precios__section__promociones__h4 {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    /*h4 a: Color negro*/
+    .main__precios__section__promociones__h4--td {
+        color: #000000;
+    }
+
+    /*h4 a: Al poner el mouse arriba se hace amarillo*/
+    .main__precios__section__promociones__h4--td:hover {
+        color: #d1b410;
+    }
+
+
+    /*Sección: Promociones*/
+
+    /*Color blanco a las letras, color de fondo, padding y asignación de area al contenedor*/
+    .main__precios__section__promociones__p__imput {
+        color: #ffffff;
+        background-color: #2c2a30;
+        padding: 30px;
+        grid-area: main__precios__section__promociones__p__imput;
+    }
+
+    /*div: margin bottom y se centró*/
+    .main__precios__section__promociones__div__p__imput {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*P: Tamaño de letras y margin bottom*/
+    .main__precios__section__promociones__div__p {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    /*P: Ancho del contenedor, tamaño de letras y margin bottom*/
+    .main__precios__section__promociones__div__p--wd {
+        width: 400px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    /*imput (Botones): Ancho, alto, margin top y margin bottom*/
+    .main__precios__section__promociones__div__imput {
+        width: 400px;
+        height: 40px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    /*h3: Color rojo, tamaño de letra y margin bottom*/
+    .main__precios__section__promociones__div__h3 {
+        color: #ff0000;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+
+    /*Sección: Más promociones*/
+
+    /*Color de fondo, padding, se centró y se le asignó area al contenedor*/
+    .main__precios__section__masPromociones {
+        background-color: #2e0968bb;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: main__precios__section__masPromociones;
+    }
+
+    /*h2: Tamaño de letras y margin bottom*/
+    .main__precios__section__masPromociones__h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    /*h3: Tamaño de letras*/
+    .main__precios__section__masPromociones__h3 {
+        font-size: 30px;
+    }
+
+    /*h2 a: Color negro*/
+    .main__precios__section__masPromociones__a--td {
+        color: #000000;
+    }
+
+    /*h2 a: Al poner el mouse arriba de hace amarillo*/
+    .main__precios__section__masPromociones__a--td:hover {
+        color: #d1b410;
+    }
+
+    /*img: Ancho, alto y margin top*/
+    .main__precios__section__masPromociones__img {
+        width: 400px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+
+    /*Sección: Otros métodos de pago*/
+
+    /*Color de fondo, color de letras, padding, se centró y asignación de area al contenedor*/
+    .main__precios__section__otrosMetodosDePago {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: main__precios__section__otrosMetodosDePago;
+    }
+
+    /*div: Margin top y se centró*/
+    .main__precios__section__div__otrosMetodosDePago {
+        margin-top: 30px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*img: Ancho*/
+    .main__precios__section__div__otrosMetodosDePago__img {
+        width: 400px;
+    }
+
+    /*P: Tamaño de letras y margin top*/
+    .main__precios__section__div__otrosMetodosDePago__p {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    /*h3: Tamaño de letra y margin top*/
+    .main__precios__section__div__otrosMetodosDePago__h3 {
+        font-size: 30px;
+        margin-top: 4em;
+    }
+
+    /*h3 a: Color blanco*/
+    .main__precios__section__div__otrosMetodosDePago__h3--td {
+        color: #ffffff;
+    }
+
+    /*h3 a: Al poner el mouse arriba se hace amarillo*/
+    .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
+        color: #d1b410;
+    }
+}
+
+
+
+/*Desktop*/
+
+@media only screen and (min-width: 769px) {
+
+    .body__precios {
+        display: grid;
+        grid-template-areas:
+            "soy__un__nav header header"
+            "soy__un__nav main__precios__section__h1 aside"
+            "soy__un__nav main__precios__section__pyr aside"
+            "soy__un__nav main__precios__section__pagarNuevoBot aside"
+            "soy__un__nav main__precios__section__pagarRentaMensual aside"
+            "soy__un__nav main__precios__section__promociones__h2h4 aside"
+            "soy__un__nav main__precios__section__promociones__p__imput aside"
+            "soy__un__nav main__precios__section__masPromociones aside"
+            "soy__un__nav main__precios__section__otrosMetodosDePago aside"
+            "footer footer footer";
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+
+
+    /*Sección: Header*/
+
+    /*Header: Color, flex y asignación de area..*/
+
+    header {
+        background-color: #2e0968;
+        width: 100%;
+        height: 50px;
+        grid-area: header;
+        display: flex;
+        align-items: center;
+    }
+
+    /*Oculto el check*/
+    #btn--menu {
+        display: none;
+    }
+
+    /*Display block, tamaños y margin*/
+    header label {
+        display: block;
+        width: 60px;
+        height: 40px;
+        margin-left: 15px;
+    }
+
+    /*Al poner el mouse arriba cambia el cursor*/
+    header label:hover {
+        cursor: pointer;
+    }
+
+    /*Position absolute, color, tamaño, margin y animación*/
+    .menu {
+        position: absolute;
+        background-color: #2e0968;
+        width: 20%;
+        margin-left: -70%;
+        transition: all 0.6s;
+    }
+
+    /*display flex con dirección de columna*/
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Borde negro*/
+    .menu li {
+        border-top: 1px solid #000000;
+    }
+
+    /*Cambia de color al poner el mouse arriba*/
+    .menu li:hover {
+        background-color: #0000004d;
+    }
+
+    /*Se oculta el sub menú*/
+    .menu li ul {
+        display: none;
+        position: absolute;
+    }
+
+    /*Al poner el cursor arriba del sub menú se desplaza*/
+    .menu li:hover>ul {
+        display: block;
+    }
+
+    /*Position relativo*/
+    .menu li ul li {
+        position: relative;
+    }
+
+    /*Sub menú con color violeta y movido a la derecha*/
+    .menu ul li ul li {
+        background-color: #2e0968;
+        right: -270px;
+        top: -111px;
+    }
+
+    /*Display block, pading, color blanco y sin decoración a las anclas*/
+    .menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /*Display block, padding y color blanco a los parrafos*/
+    .menu li p {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+    }
+
+    /*Al estár checkeado, mueva el nav y se vea*/
+    #btn--menu:checked~.menu {
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    /*Color amarillo al h2, se le quita la decoración y se aumenta el tamaño de las letras*/
+    .header__h2 {
+        color: #d1b410;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    /*Sección: NAV*/
+
+    /*Proximamente un NAV desplegable como en la página de CoderHouse*/
+    .soy__un__nav {
+        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+        grid-area: soy__un__nav;
+    }
+
+    /*Sección: Aside*/
+
+    /*Proximamente publicidad paga*/
+    aside {
+        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+        grid-area: aside;
+    }
+
+
+
+    /*Sección: img + h1*/
+
+    /*Imagen de fondo, tamaño de alto y asignación de area*/
+    .main__precios__section__h1 {
+        background-image: url(../images/precios/precios.jpg);
+        height: 400px;
+        background-size: cover;
+        grid-area: main__precios__section__h1;
+    }
+
+    /*Fondo negrito, tamaño de alto, color de letra, tamaño de letra y centrado de letra*/
+    .main__precios__section__h1--bc {
+        background-color: #2c2a309f;
+        height: 100%;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5em;
+    }
+
+
+    /*Sección: Breve explicación del precio de los bots*/
+
+    /*Color de fondo, padding, tamaño de letras y asignación de area*/
+    .main__precios__section__pyr {
+        background-color: #2e0968bb;
+        padding: 40px;
+        font-size: 26px;
+        grid-area: main__precios__section__pyr;
+    }
+
+    /*P: Margin top*/
+    .main__precios__section__p--margin {
+        margin-top: 20px;
+    }
+
+    /*Se hizo de color negro el ancla*/
+    .main__precios__section__p--td {
+        color: #000000;
+    }
+
+    /*Al poner el mouse arriba del ancla se hace amarillo*/
+    .main__precios__section__p--td:hover {
+        color: #d1b410;
+    }
+
+    /*Sección: Pagar un nuevo bot*/
+
+    /*Color de fondo, color de letras, padding y asignación de area*/
+    .main__precios__section__pagarNuevoBot {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+        grid-area: main__precios__section__pagarNuevoBot;
+    }
+
+    /*display flex al contenedor*/
+    .main__precios__section__pagarNuevoBot--df {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    /*h2: tamaño de letra, margin bot y centrado*/
+    .main__precios__section__div__pagarNuevoBot__h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*h3: efecto de neón y se centró*/
+    .main__precios__section__div__pagarNuevoBot__h3 {
+        font-size: 20px;
+        width: 50%;
+        text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*h3 largo: Tamaño de ancho*/
+    .main__precios__section__div__pagarNuevoBot__h3--animation--wd {
+        width: 350px;
+        margin-left: 40px;
+    }
+
+    /*h3 corto: Margin bottom*/
+    .main__precios__section__div__pagarNuevoBot__h3--animation--margin {
+        margin-bottom: 50px;
+    }
+
+    /*img: Ancho y margin top*/
+    .main__precios__section__div__pagarNuevoBot__h3__img {
+        height: 200px;
+        margin-top: 20px;
+    }
+
+
+    /*Sección: Pagar renta mensual*/
+
+    /*Color de fondo, color de letras, padding y asignación de area al contenedor*/
+    .main__precios__section__pagarRentaMensual {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+        grid-area: main__precios__section__pagarRentaMensual;
+    }
+
+    /*h2: tamaño de letra, margin bottom y se centró*/
+    .main__precios__section__div__pagarRentaMensual__h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*h3: efecto de neón y se centró*/
+    .main__precios__section__div__pagarRentaMensual__h3 {
+        font-size: 20px;
+        width: 50%;
+        text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*h3: Se le agregó una animación para que se mueva para abajo y para arriba*/
+    .main__precios__section__div__pagarNuevoBot__h3--animation {
+        display: inline-block;
+        animation: float 3s ease-in infinite;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(25px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /*img: ancho y margin top*/
+    .main__precios__section__div__pagarRentaMensual__h3__img {
+        height: 180px;
+        margin-top: 30px;
+    }
+
+
+    /*Sección: Promociones*/
+
+    /*padding, color de fondo, se centro y asignación de area al contenedor*/
+    .main__precios__section__promociones__h2h4 {
+        font-size: 30px;
+        padding: 20px;
+        background-color: #2e0968bb;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: main__precios__section__promociones__h2h4;
+    }
+
+    /*color negro y se le sacó el subrayado al ancla del h2*/
+    .main__precios__section__promociones__h2--td {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    /*h4: Tamaño de letra y margin top*/
+    .main__precios__section__promociones__h4 {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    /*h4 a: Color negro*/
+    .main__precios__section__promociones__h4--td {
+        color: #000000;
+    }
+
+    /*h4 a: Al poner el mouse arriba se hace amarillo*/
+    .main__precios__section__promociones__h4--td:hover {
+        color: #d1b410;
+    }
+
+
+    /*Sección: Promociones*/
+
+    /*Color blanco a las letras, color de fondo, padding y asignación de area al contenedor*/
+    .main__precios__section__promociones__p__imput {
+        color: #ffffff;
+        background-color: #2c2a30;
+        padding: 30px;
+        grid-area: main__precios__section__promociones__p__imput;
+    }
+
+    /*Display flex*/
+    .main__precios__section__promociones__p__imput--df {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*div: margin bottom y se centró*/
+    .main__precios__section__promociones__div__p__imput {
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, .4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*P: Tamaño de letras y margin bottom*/
+    .main__precios__section__promociones__div__p {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    /*P: Ancho del contenedor, tamaño de letras y margin bottom*/
+    .main__precios__section__promociones__div__p--wd {
+        width: 300px;
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    /*imput (Botones): Ancho, alto, margin top y margin bottom*/
+    .main__precios__section__promociones__div__imput {
+        width: 300px;
+        height: 30px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    /*h3: Color rojo, tamaño de letra y margin bottom*/
+    .main__precios__section__promociones__div__h3 {
+        color: #ff0000;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+
+    /*Sección: Más promociones*/
+
+    /*Color de fondo, padding, se centró y se le asignó area al contenedor*/
+    .main__precios__section__masPromociones {
+        background-color: #2e0968bb;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: main__precios__section__masPromociones;
+    }
+
+    /*h2: Tamaño de letras y margin bottom*/
+    .main__precios__section__masPromociones__h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    /*h3: Tamaño de letras*/
+    .main__precios__section__masPromociones__h3 {
+        font-size: 30px;
+    }
+
+    /*h2 a: Color negro*/
+    .main__precios__section__masPromociones__a--td {
+        color: #000000;
+    }
+
+    /*h2 a: Al poner el mouse arriba de hace amarillo*/
+    .main__precios__section__masPromociones__a--td:hover {
+        color: #d1b410;
+    }
+
+    /*img: Ancho, alto y margin top*/
+    .main__precios__section__masPromociones__img {
+        width: 400px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+
+    /*Sección: Otros métodos de pago*/
+
+    /*Color de fondo, color de letras, padding, se centró y asignación de area al contenedor*/
+    .main__precios__section__otrosMetodosDePago {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: main__precios__section__otrosMetodosDePago;
+    }
+
+    /*h2: Tamaño de letras*/
+    .main__precios__section__otrosMetodosDePago__h2 {
+        font-size: 50px;
+    }
+
+    /*Display flex al contenedor de los métodos*/
+    .main__precios__section__div__otrosMetodosDePago--df{
+        display: flex;
+    }
+
+    /*div: Margin top y se centró*/
+    .main__precios__section__div__otrosMetodosDePago {
+        margin-top: 30px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*img: Ancho*/
+    .main__precios__section__div__otrosMetodosDePago__img {
+        width: 300px;
+    }
+
+    /*P: Tamaño de letras y margin top*/
+    .main__precios__section__div__otrosMetodosDePago__p {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    /*h3: Tamaño de letra y margin top*/
+    .main__precios__section__div__otrosMetodosDePago__h3 {
+        font-size: 30px;
+        margin-top: 3em;
+    }
+
+    /*h3 a: Color blanco*/
+    .main__precios__section__div__otrosMetodosDePago__h3--td {
+        color: #ffffff;
+    }
+
+    /*h3 a: Al poner el mouse arriba se hace amarillo*/
     .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
         color: #d1b410;
     }
