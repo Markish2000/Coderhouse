@@ -828,9 +828,8 @@
             "soy__un__nav main__section__porqueelegirnos aside"
             "soy__un__nav section__seguridadYConfiabilidad aside"
             "soy__un__nav section__garantiaDeSastifaccion aside"
-            "soy__un__nav prueba aside"
             "footer footer footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
@@ -840,16 +839,6 @@
         justify-content: center;
     }
 
-
-    .prueba {
-        background-color: #2e0968bb;
-        padding: 50px;
-        grid-area: prueba;
-    }
-
-    .prueba__h2 {
-        margin-bottom: 50px;
-    }
 
     /*Sección: Header*/
 
@@ -1997,6 +1986,7 @@
     .main__section__div__h1 {
         background-image: url(../images/guias/guias.jpg);
         background-size: cover;
+        height: 100%;
         width: 100%;
         display: flex;
     }
@@ -2251,6 +2241,7 @@
     .main__section__div__h1 {
         background-image: url(../images/guias/guias.jpg);
         width: 100%;
+        height: 100%;
         background-size: cover;
         display: flex;
     }
@@ -2351,21 +2342,11 @@
             "soy__un__nav main__section__comandos aside"
             "soy__un__nav section__video__tutorial__reporteDeCaceria aside"
             "soy__un__nav section__video__tutorial__kvk aside"
-            "soy__un__nav prueba aside"
             "footer footer footer";
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
-    .prueba {
-        background-color: #2e0968bb;
-        padding: 50px;
-        grid-area: prueba;
-    }
-
-    .prueba__h2 {
-        margin-bottom: 50px;
-    }
 
     /*Sección: Header*/
 
@@ -2516,6 +2497,7 @@
         background-image: url(../images/guias/guias.jpg);
         background-size: cover;
         width: 100%;
+        height: 100%;
     }
 
     /*h1: blanco con aumento de tamaño de letra*/
@@ -3007,21 +2989,11 @@
             "soy__un__nav header header"
             "soy__un__nav section__terminosycondiciones__h1 aside"
             "soy__un__nav section__terminosycondiciones__h3yp aside"
-            "soy__un__nav prueba aside"
             "soy__un__nav footer aside";
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
-    .prueba {
-        background-color: #2e0968bb;
-        padding: 50px;
-        grid-area: prueba;
-    }
-
-    .prueba__h2 {
-        margin-bottom: 50px;
-    }
 
     /*Sección: Header*/
 
@@ -3665,21 +3637,11 @@
             "soy__un__nav header header"
             "soy__un__nav main__promociones aside"
             "soy__un__nav section__promociones__abrilDePascua aside"
-            "soy__un__nav prueba aside"
             "soy__un__nav footer footer";
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
-    .prueba {
-        background-color: #2e0968bb;
-        padding: 50px;
-        grid-area: prueba;
-    }
-
-    .prueba__h2 {
-        margin-bottom: 50px;
-    }
 
     /*Sección: Header*/
 
@@ -4062,9 +4024,9 @@
     }
 
 
-    /**/
+    /*Sección: Explicación de que lo pueden encontrar en la página*/
 
-    /**/
+    /*Color de fondo, flex, column, padding y asignación de area*/
     .main__section__gremiodeguerra_h3yh4 {
         background-color: #2e0968bb;
         display: flex;
@@ -4073,12 +4035,12 @@
         grid-area: main__section__gremiodeguerra_h3yh4;
     }
 
-    /**/
+    /*h3: Tamaño de letra*/
     .main__section__gremiodeguerra_h3 {
         font-size: 25px;
     }
 
-    /**/
+    /*h4: Tamaño de letra y margin top*/
     .main__section__gremiodeguerra_h4 {
         font-size: 20px;
         margin-top: 15px;
@@ -4458,21 +4420,11 @@
             "soy__un__nav main__section__gremiodeguerra_h3yh4 aside"
             "soy__un__nav section__gremiodeguerra__rdc aside"
             "soy__un__nav section__gremiosdeguerra__rdc__h3 aside"
-            "soy__un__nav prueba aside"
             "footer footer footer";
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
-    .prueba {
-        background-color: #2e0968bb;
-        padding: 50px;
-        grid-area: prueba;
-    }
-
-    .prueba__h2 {
-        margin-bottom: 50px;
-    }
 
     /*Sección: Header*/
 
@@ -4754,13 +4706,13 @@
         display: grid;
         grid-template-areas:
             "header"
-            "main__section__gremiodeguerra__h1"
-            "main__section__gremiodeguerra_h3yh4"
-            "section__gremiodeguerra__rdc"
-            "section__gremiosdeguerra__rdc__h3"
+            ""
+            ""
+            ""
+            ""
             "aside"
             "footer";
-        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto;
     }
 
     /*Sección: Header*/
@@ -5391,6 +5343,7 @@
     /*div: margin bottom y se centró*/
     .main__precios__section__promociones__div__p__imput {
         margin-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, .4);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5857,6 +5810,7 @@
     /*div: margin bottom y se centró*/
     .main__precios__section__promociones__div__p__imput {
         margin-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, .4);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -6449,7 +6403,7 @@
     }
 
     /*Display flex al contenedor de los métodos*/
-    .main__precios__section__div__otrosMetodosDePago--df{
+    .main__precios__section__div__otrosMetodosDePago--df {
         display: flex;
     }
 
@@ -6487,5 +6441,395 @@
     /*h3 a: Al poner el mouse arriba se hace amarillo*/
     .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
         color: #d1b410;
+    }
+}
+
+
+
+
+/*Comienza: cuentasrallylead.html*/
+
+
+/*Sección: Header*/
+
+header {
+    background-color: #2e0968;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    grid-area: header;
+}
+
+#btn--menu {
+    display: none;
+}
+
+header label {
+    display: block;
+    width: 60px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    background-color: #2e0968;
+    width: 20%;
+    margin-left: -70%;
+    transition: all 0.6s;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    border-top: 1px solid #000000;
+}
+
+.menu li:hover {
+    background-color: #0000004d;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.menu li ul li {
+    position: relative;
+}
+
+.menu ul li ul li {
+    background-color: #2e0968;
+    right: -270px;
+    top: -111px;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li p {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+}
+
+#btn--menu:checked~.menu {
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.header__h2 {
+    color: #d1b410;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*Sección: NAV*/
+
+.soy__un__nav {
+    background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+    grid-area: soy__un__nav;
+}
+
+
+/*Sección: Aside*/
+
+aside {
+    background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+    grid-area: aside;
+}
+
+
+/*Sección: Imagen + h1*/
+
+.main__section__cuentasrallylead__h1 {
+    background-image: url(../images/cuentasrallylead/cuentasrallylead.png);
+    background-size: cover;
+    height: 350px;
+    grid-area: main__section__cuentasrallylead__h1;
+}
+
+.main__section__cuentasrallylead__h1--bc {
+    background-color: #2c2a309f;
+    height: 100%;
+    color: #ffffff;
+}
+
+.main__section__cuentasrallylead__h1-fs {
+    font-size: 4em;
+}
+
+
+/*Sección: Explicación de que lo pueden encontrar en la página*/
+
+.main__section__cuentasrallylead_h3yh4 {
+    background-color: #2e0968bb;
+    padding: 2em;
+    grid-area: main__section__cuentasrallylead_h3yh4;
+}
+
+.main__section__cuentasrallylead_h3 {
+    font-size: 30px;
+    margin-top: 20px
+}
+
+
+/*Sección: Carrusel*/
+
+.main__section__cuentasrallylead__carousel {
+    background-color: #2c2a30;
+    padding: 30px;
+    grid-area: main__section__cuentasrallylead__carousel;
+}
+
+
+/*Sección: Makoto*/
+
+.section__cuentasrallylead__info__makoto {
+    color: #ffffff;
+    background-color: #2c2a30;
+    grid-area: section__cuentasrallylead__info__makoto;
+}
+
+.section__cuentasrallylead__info__makoto__h2 {
+    color: #ff0000;
+    font-size: 6em;
+}
+
+.section__cuentasrallylead__info__makoto__h3 {
+    font-size: 2em;
+    color: #d1b410;
+}
+
+.section__cuentasrallylead__info__makoto__h3--color {
+    font-size: 3em;
+    color: green;
+}
+
+.section__cuentasrallylead__info__makoto__div {
+    margin-left: 3em;
+    margin-top: 2em;
+}
+
+.section__cuentasrallylead__info__makoto__div__ul {
+    font-size: 25px;
+}
+
+.section__cuentasrallylead__info__makoto__div--wd {
+    width: 50%;
+}
+
+.section__cuentasrallylead__info__makoto__div__h4 {
+    font-size: 32px;
+    margin-top: 2em;
+}
+
+.section__cuentasrallylead__info__makoto__div__imput {
+    margin-top: 3em;
+}
+
+.section__cuentasrallylead__info__makoto__div__imput__h4 {
+    font-size: 2em;
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 769px) {
+    .body__cuentasrallylead {
+        display: grid;
+        grid-template-areas:
+            "soy__un__nav header header"
+            "soy__un__nav main__section__cuentasrallylead__h1 aside"
+            "soy__un__nav main__section__cuentasrallylead_h3yh4 aside"
+            "soy__un__nav main__section__cuentasrallylead__carousel aside"
+            "soy__un__nav section__cuentasrallylead__info__makoto aside"
+            "soy__un__nav footer footer";
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+}
+
+/*Tablet*/
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+
+    .body__cuentasrallylead {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__cuentasrallylead__h1"
+            "main__section__cuentasrallylead_h3yh4"
+            "main__section__cuentasrallylead__carousel"
+            "section__cuentasrallylead__info__makoto"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto auto;
+    }
+
+
+    /*Sección: Header*/
+
+    .header__gif {
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    /*Sección: Menú hamburguesa*/
+
+    .menu {
+        width: 60%;
+    }
+
+    .menu ul li ul li {
+        width: 168px;
+        right: -252px;
+    }
+
+    #btn--menu:checked~.menu {
+        margin-top: 4px;
+        margin-left: -25px;
+    }
+
+
+    /*Sección: NAV*/
+
+    .soy__un__nav {
+        display: none;
+    }
+
+
+    /*Sección: Eliminar contenido*/
+
+    .display--none {
+        display: none;
+    }
+}
+
+
+/*Celulares*/
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+    .body__cuentasrallylead {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__cuentasrallylead__h1"
+            "main__section__cuentasrallylead_h3yh4"
+            "main__section__cuentasrallylead__carousel"
+            "section__cuentasrallylead__info__makoto"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto auto;
+    }
+
+
+    /*Sección: Header*/
+
+    .header__gif {
+        width: 270px;
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        width: 60%;
+    }
+
+    .menu ul li ul li {
+        width: 168px;
+        right: -252px;
+    }
+
+    #btn--menu:checked~.menu {
+        margin-top: 4px;
+        margin-left: -25px;
+    }
+
+    .header__h2 {
+        display: none;
+    }
+
+
+    /*Sección: NAV*/
+
+    .soy__un__nav {
+        display: none;
+    }
+
+
+    /*Sección: Aside*/
+
+    aside {
+        grid-area: aside;
+    }
+
+
+    /*Sección: Imagen + h1*/
+
+    .main__section__cuentasrallylead__h1 {
+        height: 200px;
+    }
+
+
+    .main__section__cuentasrallylead__h1-fs {
+        font-size: 35px;
+    }
+
+
+    /*Sección: Explicación de que lo pueden encontrar en la página*/
+
+    .main__section__cuentasrallylead_h3 {
+        font-size: 25px;
+    }
+
+
+    /*Sección: Makoto*/
+
+    .section__cuentasrallylead__info__makoto__h2 {
+        font-size: 3em;
+    }
+
+    .section__cuentasrallylead__info__makoto__h3 {
+        font-size: 20px;
+    }
+
+    .section__cuentasrallylead__info__makoto__h3--color {
+        font-size: 30px;
+    }
+
+    .section__cuentasrallylead__info__makoto__div {
+        margin-left: 1em;
+    }
+
+    .section__cuentasrallylead__info__makoto__div__ul {
+        font-size: 20px;
+    }
+
+    .section__cuentasrallylead__info__makoto__div__h4 {
+        font-size: 30px;
     }
 }

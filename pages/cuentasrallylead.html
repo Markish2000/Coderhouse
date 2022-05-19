@@ -8,83 +8,90 @@
     <title>Cuentas Rally Lead</title>
     <link rel="icon" href="../images/headeryfooter/favicon.ico">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </head>
 
-<body>
+<body class="body__cuentasrallylead">
+
     <header id="header">
         <div>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="bar-btn">
-                    <!--Logo de menú hamburguesa-->
-                    <img src="../images/headeryfooter/Menu.png" alt="Menú" class="header__nav__menu__png">
-                </label>
-                <!--Menú hamburguesa con despliegue-->
-                <ul class="header__ul">
+            <input type="checkbox" id="btn--menu">
+            <label for="btn--menu">
+                <!--Logo de menú hamburguesa-->
+                <img src="../images/headeryfooter/Menu.png" alt="Menú" width="40px">
+            </label>
+
+            <!--Menú hamburguesa con despliegue-->
+            <nav class="menu">
+                <ul>
+
+                    <!--Logo de la página con ancla a "index.html"-->
                     <li>
-                        <!--Logo de la página con ancla a "index.html"-->
                         <a href="../index.html">
-                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" class="logo"></a>
+                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" width="70px"></a>
                     </li>
 
+                    <!--Logo de buscar con input para buscar-->
                     <li>
-                        <!--Logo de buscar con input para buscar-->
-                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" width="50px">
                         <input type="search" placeholder="Buscar">
                         <input type="submit" name="Buscar">
                     </li>
 
+                    <!--Logo de inicio anclado a "index.html"-->
                     <li>
-                        <!--Logo de inicio anclado a "index.html"-->
                         <a href="../index.html">
-                            <img src="../images/headeryfooter/Home.png" alt="Inicio" class="active"
-                                class="nav_menu_logo" width="50px">Inicio</a>
+                            <img src="../images/headeryfooter/Home.png" alt="Inicio" width="50px">Inicio</a>
                     </li>
 
+                    <!--Logo de precio anclado a "precios.hmtl"-->
                     <li>
-                        <!--Logo de precio anclado a "precios.hmtl"-->
                         <a href="../pages/precios.html">
-                            <img src="../images/headeryfooter/Precios.png" alt="Precios"
-                                class="nav_menu_logo">Precios</a>
+                            <img src="../images/headeryfooter/Precios.png" alt="Precios" width="50px">Precios</a>
                     </li>
 
+                    <!--Logo de gremios con despliegue de submenú-->
                     <li>
-                        <!--Logo de gremios con despliegue de submenú-->
-                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" width="50px">
                         <p>Gremios ></p>
 
+                        <!--Submenú de "Gremios"-->
                         <ul>
-                            <!--Submenú de "Gremios"-->
                             <li><a href="../pages/gremiodecaceria.html">Gremio de cacería</a></li>
                             <li><a href="../pages/gremiodeguerra.html">Gremio de guerra</a></li>
                             <li><a href="../pages/caravanadeayudas.html">Caravana de ayudas</a></li>
                         </ul>
                     </li>
+
+                    <!--Logo de cuentas con despliegue de submenú-->
                     <li>
-                        <!--Logo de cuentas con despliegue de submenú-->
-                        <img src="../images/headeryfooter/LordMobile.jpg" alt="Cuentas" class="nav_menu_logo">
-                        <!--Buscar png para "Cuentas"-->
+                        <img src="../images/headeryfooter/ventadecuentas.png" alt="Cuentas" width="50px">
                         <p>Venta de cuentas ></p>
 
+                        <!--Submenú de "Cuentas"-->
                         <ul>
-                            <!--Submenú de "Cuentas"-->
                             <li><a href="../pages/cuentasrallylead.html">Cuentas Rally Lead</a></li>
                         </ul>
                     </li>
 
+                    <!--Logo de guías con anclaje a "guias.html"-->
                     <li>
-                        <!--Logo de guías con anclaje a "guias.html"-->
                         <a href="../pages/guias.html">
-                            <img src="../images/headeryfooter/Guias.png" alt="Guías" class="nav_menu_logo">Guías</a>
+                            <img src="../images/headeryfooter/Guias.png" alt="Guías" width="50px">Guías</a>
                     </li>
 
+                    <!--Logo de extras con despliegue de submenú-->
                     <li>
-                        <!--Logo de extras con despliegue de submenú-->
-                        <img src="../images/headeryfooter/Extra.png" alt="Extras" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/Extra.png" alt="Extras" width="50px">
                         <p>Extras ></p>
 
+                        <!--Submenú de "Extras"-->
                         <ul>
-                            <!--Submenú de "Extras"-->
                             <li><a href="../pages/consejosparatubot.html">Consejos para tu bot</a></li>
                             <li><a href="../pages/anuncios.html">Anuncios</a></li>
                             <li><a href="../pages/dudasfrecuentes.html">Dudas frecuentes</a></li>
@@ -93,161 +100,253 @@
                         </ul>
                     </li>
 
+                    <!--Logo de contacto con ancla al footer-->
                     <li>
-                        <!--Logo de contacto con ancla al footer-->
                         <a href="#footer">
-                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto"
-                                class="nav_menu_logo">Contacto</a>
+                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto" width="50px">Contacto</a>
                     </li>
 
+                    <!--Logo de ayuda con ancla a "ayuda.html"-->
                     <li>
-                        <!--Logo de ayuda con ancla a "ayuda.html"-->
                         <a href="../pages/ayuda.html">
-                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" class="nav_menu_logo">Ayuda</a>
+                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" width="50px">Ayuda</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="header__merezbots">
-            <a href="../index.html" class="header__merezbots__h2">
-                <!--MerezBots en el header con ancla al inicio-->
+
+        <!--MerezBots en el header con ancla al inicio-->
+        <div>
+            <a href="../index.html" class="header__h2">
                 <h2>MerezBots</h2>
             </a>
         </div>
 
-        <div class="header__gif">
-            <!--GIF en movimiento con promoción del mes con ancla a "Promociones.html"-->
+        <!--GIF en movimiento con promoción del mes con ancla a "Promociones.html"-->
+        <div>
             <a href="../pages/promociones.html" target="_blank">
-                <img GIF src="../images/headeryfooter/PromoDeAbril.gif" alt="Promoción del mes"
-                    class="header__gif__promo">
+                <img GIF src="../images/headeryfooter/PromoDeAbril.gif" alt="Promoción del mes" class="header__gif">
             </a>
         </div>
-
     </header>
-    <main>
-        <section>
-            <h1>Cuentas Rally Lead</h1>
-        </section>
-        <section>
-            <h3>¿Estás en busqueda de una cuenta Rally Lead?</h3>
-            <h4>Estás en el lugar correcto, aquí podrás encontrar cuentas Rally Lead.</h4>
-        </section>
-    </main>
-    <aside>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-    </aside>
-    <section>
-        <img src="../images/cuentasrallylead/makoto//MakotoSDset.jpeg" alt="Makoto set mixto">
-        <img src="../images/cuentasrallylead/makoto/MakotoSetCaballeria.jpeg" alt="Makoto set de caballería">
-        <img src="../images/cuentasrallylead/makoto/MakotoSetCaceria.jpeg" alt="Makoto set de cacería">
-        <img src="../images/cuentasrallylead/makoto/MakotoSetInfanteria.jpeg" alt="Makoto set de infantería">
-        <img src="../images/cuentasrallylead/makoto/MakotoSigilos.jpeg" alt="Makoto sigilos">
-        <img src="../images/cuentasrallylead/makoto/MakotoAparienciaDelCastillo.jpeg"
-            alt="Makoto aparencia de castillos">
-        <img src="../images/cuentasrallylead/makoto/MakotoBatallasPorLaMaravilla.jpeg"
-            alt="Makoto batallas por la maravilla">
-        <img src="../images/cuentasrallylead/makoto/MakotoBatallasPorLasMaravillasAvanzadas.jpeg"
-            alt="Makoto batallas por las maravillas avanzadas">
-        <img src="../images/cuentasrallylead/makoto/MakotoCombatesDeMonstruitos.jpeg"
-            alt="Makoto Combate de monstruitos">
-        <img src="../images/cuentasrallylead/makoto/MakotoDominioDelMonstruo2.jpeg" alt="Makoto dominio del monstruo">
-        <img src="../images/cuentasrallylead/makoto/MakotoDominioDelMounstruo.jpeg" alt="Makoto dominio dle monstruo">
-        <img src="../images/cuentasrallylead/makoto/MakotoLaberinto.jpeg" alt="Makoto laberinto élite">
-        <h3>Poder: 1.4B</h3>
-        <h3>Valor original: $1,285.17 USD <br>
-            Valor mercado: $985 USD <br>
-            Descuento extra: Sin Descuento</h3>
-        <ul>
-            <li>Ataque infantería: 705%</li>
-            <li>Ataque artillería: 733%</li>
-            <li>Ataque caballería: 705%</li>
-            <li>Laberinto: Sí</li>
-            <li>Heroes de paga en dorado: 2</li>
-            <li>Tropas nivel 5: Sí</li>
-            <li>Maravillas: 20/20</li>
-            <li>Espacio de monstruito: 5</li>
-            <li>Vinculación: Facebook</li>
-        </ul>
-        <h4>Refuerzos:</h4>
-        <ul>
-            <li>Infantería: 10</li>
-            <li>Artillería: 6</li>
-            <li>Caballería: 6</li>
-        </ul>
-        <h4>Debuff:</h4>
-        <ul>
-            <li>Sabotaje: 10</li>
-            <li>Plaga: 10</li>
-            <li>Desmoralizar: 10</li>
-        </ul>
-        <h4>Espacio mounstruito:</h4>
-        <ul>
-            <li>3er espacio: Sí</li>
-            <li>4to espacio: Sí</li>
-            <li>5to espacio: Sí</li>
-        </ul>
-        <h4>Sigilos:</h4>
-        <ul>
-            <li>Sigilo yelmo: Sí</li>
-            <li>Sigulo de armadura: Sí</li>
-            <li>Sigilo de piernas: Sí</li>
-        </ul>
-        <h4>Maravillas:</h4>
-        <ul>
-            <li>Agrupación: 100%</li>
-            <li>Avanzadas: 7.27%</li>
-        </ul>
-        <h4>Tropas:</h4>
-        <ul>
-            <li>Tropas nivel 2: 9.996.612</li>
-            <li>Tropas nivel 4: 2.530.817</li>
-            <li>Tropas nivel 5: 357.863</li>
-        </ul>
-        <h4>Ejército:</h4>
-        <ul>
-            <li>Líneas: 8</li>
-            <li>Talento oculto: 10/10</li>
-        </ul>
-        <h4>Recurso:</h4>
-        <ul>
-            <li>Gemas: 7.533</li>
-            <li>Recursos: 4B</li>
-            <li>Papiro: 1</li>
-            <li>Gremiales: 397.200</li>
-        </ul>
-        <h4>Castillo:</h4>
-        <ul>
-            <li>Apariencias: 2</li>
-            <li>Laberinto Élite: Sí</li>
-        </ul>
-        <h4>Heroes:</h4>
-        <ul>
-            <li>Observador: Dorado</li>
-            <li>Dragón del caos: Morado</li>
-            <li>Bombardero: Azul</li>
-        </ul>
-        <h4>Horoes de paga:</h4>
-        <ul>
-            <li>Cantidad: 17</li>
-            <li>En dorado: Cantante marina y Zorro de la tormenta</li>
-        </ul>
-        <input type="submit" value="COMPRAR">
-        <h4>Actualizado 21/04/2022</h4>
+
+    <!--Proximamente un nav desplegable como en CoderHouse-->
+    <section class="soy__un__nav">
+
     </section>
+
+    <main>
+
+        <!--h1 con imagen de fondo-->
+        <section class="main__section__cuentasrallylead__h1">
+            <div class="main__section__cuentasrallylead__h1--bc d-flex justify-content-center align-items-center">
+                <h1 class="main__section__cuentasrallylead__h1-fs">Cuentas Rally Lead</h1>
+            </div>
+        </section>
+
+        <!--Breve texto para indicar que en la página pueden encontrar cuentas en venta-->
+        <section
+            class="main__section__cuentasrallylead_h3yh4 d-md-flex flex-md-column justify-content-md-center align-items-md-center">
+            <h3 class="main__section__cuentasrallylead_h3">¿Estás en busqueda de una cuenta Rally Lead?</h3>
+            <h3 class="main__section__cuentasrallylead_h3">Estás en el lugar correcto, aquí podrás encontrar cuentas
+                Rally Lead.</h3>
+        </section>
+
+    </main>
+
+    <!--Carrusel-->
+    <section id="carouselExampleIndicators" class="carousel slide main__section__cuentasrallylead__carousel"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+                aria-label="Slide 11"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+                aria-label="Slide 12"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/cuentasrallylead/makoto//MakotoSDset.jpeg" class="d-block w-100"
+                    alt="Makoto set mixto">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoSetCaballeria.jpeg" class="d-block w-100"
+                    alt="Makoto set de caballería">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoSetCaceria.jpeg" class="d-block w-100"
+                    alt="Makoto set de cacería">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoSetInfanteria.jpeg" class="d-block w-100"
+                    alt="Makoto set de infantería">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoSigilos.jpeg" class="d-block w-100"
+                    alt="Makoto sigilos">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoAparienciaDelCastillo.jpeg" class="d-block w-100"
+                    alt="Makoto aparencia de castillos">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoBatallasPorLaMaravilla.jpeg" class="d-block w-100"
+                    alt="Makoto batallas por la maravilla">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoBatallasPorLasMaravillasAvanzadas.jpeg"
+                    class="d-block w-100" alt="Makoto batallas por las maravillas avanzadas">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoCombatesDeMonstruitos.jpeg" class="d-block w-100"
+                    alt="Makoto Combate de monstruitos">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoDominioDelMonstruo2.jpeg" class="d-block w-100"
+                    alt="Makoto dominio del monstruo">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoDominioDelMounstruo.jpeg" class="d-block w-100"
+                    alt="Makoto dominio del monstruo">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cuentasrallylead/makoto/MakotoLaberinto.jpeg" class="d-block w-100"
+                    alt="Makoto laberinto élite">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <!--Sección: Makoto-->
+    <section class="section__cuentasrallylead__info__makoto">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h2 class="section__cuentasrallylead__info__makoto__h2">Poder: 1.4B</h2>
+            <h3 class="section__cuentasrallylead__info__makoto__h3">Valor original: $1,285.17 USD</h3>
+            <h3 class="section__cuentasrallylead__info__makoto__h3--color">Valor mercado: $985 USD</h3>
+        </div>
+        <div class="section__cuentasrallylead__info__makoto__div">
+            <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                <li>Ataque infantería: 705%</li>
+                <li>Ataque artillería: 733%</li>
+                <li>Ataque caballería: 705%</li>
+                <li>Laberinto: Sí</li>
+                <li>Heroes de paga en dorado: 2</li>
+                <li>Tropas nivel 5: Sí</li>
+                <li>Maravillas: 20/20</li>
+                <li>Espacio de monstruito: 5</li>
+                <li>Vinculación: Facebook</li>
+            </ul>
+            <div class="d-md-flex">
+                <div class="d-md-flex flex-md-column section__cuentasrallylead__info__makoto__div--wd">
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Refuerzos:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Infantería: 10</li>
+                        <li>Artillería: 6</li>
+                        <li>Caballería: 6</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Debuff:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Sabotaje: 10</li>
+                        <li>Plaga: 10</li>
+                        <li>Desmoralizar: 10</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Espacio mounstruito:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>3er espacio: Sí</li>
+                        <li>4to espacio: Sí</li>
+                        <li>5to espacio: Sí</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Sigilos:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Sigilo yelmo: Sí</li>
+                        <li>Sigulo de armadura: Sí</li>
+                        <li>Sigilo de piernas: Sí</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Maravillas:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Agrupación: 100%</li>
+                        <li>Avanzadas: 7.27%</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Tropas:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Tropas nivel 2: 9.996.612</li>
+                        <li>Tropas nivel 4: 2.530.817</li>
+                        <li>Tropas nivel 5: 357.863</li>
+                    </ul>
+                </div>
+                <div class="d-md-flex flex-md-column section__cuentasrallylead__info__makoto__div--wd">
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Ejército:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Líneas: 8</li>
+                        <li>Talento oculto: 10/10</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Recurso:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Gemas: 7.533</li>
+                        <li>Recursos: 4B</li>
+                        <li>Papiro: 1</li>
+                        <li>Gremiales: 397.200</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Castillo:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Apariencias: 2</li>
+                        <li>Laberinto Élite: Sí</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Heroes:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Observador: Dorado</li>
+                        <li>Dragón del caos: Morado</li>
+                        <li>Bombardero: Azul</li>
+                    </ul>
+                    <h4 class="section__cuentasrallylead__info__makoto__div__h4">Héroes de paga:</h4>
+                    <ul class="section__cuentasrallylead__info__makoto__div__ul">
+                        <li>Cantidad: 17</li>
+                        <li>En dorado: Cantante marina y Zorro de la tormenta</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="d-flex flex-column justify-content-center align-items-center section__cuentasrallylead__info__makoto__div__imput">
+                <a href="https://api.whatsapp.com/send?phone=523324962976&app=facebook&entry_point=page_cta"
+                    target="_blank"><img src="../images/cuentasrallylead/makoto/boton_comprar.png" alt="Comprar"></a>
+                <h4 class="section__cuentasrallylead__info__makoto__div__imput__h4">Actualizado 21/04/2022</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--Publicidad paga-->
+    <aside>
+        <img src="../images/index/MerezBots.png" alt="Publicidad paga" class="aside__img">
+        <img src="../images/index/MerezBots.png" alt="Publicidad paga" class="display--none" width="100%">
+    </aside>
 
     <!--ID de ancla para "Contacto" del menú-->
     <footer id="footer">
@@ -284,6 +383,16 @@
             <a href="mailto:mereszhka@gmail.com" target="_blank" class="footer__ancla">mereszhka@gmail.com</a>
         </div>
 
+        <!--Logo de WhatsApp anclado al número de Markish-->
+        <div class="footer__div">
+            <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
+                target="_blank">
+                <img src="../images/headeryfooter/Whatsapp.png" alt="WhatsApp" class="footer__img">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
+                target="_blank" class="footer__ancla">+5491151649895(Markish)</a>
+        </div>
+
         <!--Logo de WhatsApp anclado al número de Mereszkha-->
         <div class="footer__div">
             <a href="https://api.whatsapp.com/send?phone=523324962976&app=facebook&entry_point=page_cta"
@@ -294,15 +403,6 @@
                 class="footer__ancla">+5213324962976(Mereszkha)</a>
         </div>
 
-        <!--Logo de WhatsApp anclado al número de Markish-->
-        <div class="footer__div">
-            <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
-                target="_blank">
-                <img src="../images/headeryfooter/Whatsapp.png" alt="WhatsApp" class="footer__img">
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
-                target="_blank" class="footer__ancla">+5491151649895(Markish)</a>
-        </div>
     </footer>
 </body>
 
