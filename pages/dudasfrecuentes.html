@@ -10,81 +10,82 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
-<body>
+<body class="body__dudasFrecuentes">
+
     <header id="header">
         <div>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="bar-btn">
-                    <!--Logo de menú hamburguesa-->
-                    <img src="../images/headeryfooter/Menu.png" alt="Menú" class="header__nav__menu__png">
-                </label>
-                <!--Menú hamburguesa con despliegue-->
-                <ul class="header__ul">
+            <input type="checkbox" id="btn--menu">
+            <label for="btn--menu">
+                <!--Logo de menú hamburguesa-->
+                <img src="../images/headeryfooter/Menu.png" alt="Menú" width="40px">
+            </label>
+
+            <!--Menú hamburguesa con despliegue-->
+            <nav class="menu">
+                <ul>
+
+                    <!--Logo de la página con ancla a "index.html"-->
                     <li>
-                        <!--Logo de la página con ancla a "index.html"-->
                         <a href="../index.html">
-                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" class="logo"></a>
+                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" width="70px"></a>
                     </li>
 
+                    <!--Logo de buscar con input para buscar-->
                     <li>
-                        <!--Logo de buscar con input para buscar-->
-                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" width="50px">
                         <input type="search" placeholder="Buscar">
                         <input type="submit" name="Buscar">
                     </li>
 
+                    <!--Logo de inicio anclado a "index.html"-->
                     <li>
-                        <!--Logo de inicio anclado a "index.html"-->
                         <a href="../index.html">
-                            <img src="../images/headeryfooter/Home.png" alt="Inicio" class="active"
-                                class="nav_menu_logo" width="50px">Inicio</a>
+                            <img src="../images/headeryfooter/Home.png" alt="Inicio" width="50px">Inicio</a>
                     </li>
 
+                    <!--Logo de precio anclado a "precios.hmtl"-->
                     <li>
-                        <!--Logo de precio anclado a "precios.hmtl"-->
                         <a href="../pages/precios.html">
-                            <img src="../images/headeryfooter/Precios.png" alt="Precios"
-                                class="nav_menu_logo">Precios</a>
+                            <img src="../images/headeryfooter/Precios.png" alt="Precios" width="50px">Precios</a>
                     </li>
 
+                    <!--Logo de gremios con despliegue de submenú-->
                     <li>
-                        <!--Logo de gremios con despliegue de submenú-->
-                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" width="50px">
                         <p>Gremios ></p>
 
+                        <!--Submenú de "Gremios"-->
                         <ul>
-                            <!--Submenú de "Gremios"-->
                             <li><a href="../pages/gremiodecaceria.html">Gremio de cacería</a></li>
                             <li><a href="../pages/gremiodeguerra.html">Gremio de guerra</a></li>
                             <li><a href="../pages/caravanadeayudas.html">Caravana de ayudas</a></li>
                         </ul>
                     </li>
+
+                    <!--Logo de cuentas con despliegue de submenú-->
                     <li>
-                        <!--Logo de cuentas con despliegue de submenú-->
-                        <img src="../images/headeryfooter/LordMobile.jpg" alt="Cuentas" class="nav_menu_logo">
-                        <!--Buscar png para "Cuentas"-->
+                        <img src="../images/headeryfooter/ventadecuentas.png" alt="Cuentas" width="50px">
                         <p>Venta de cuentas ></p>
 
+                        <!--Submenú de "Cuentas"-->
                         <ul>
-                            <!--Submenú de "Cuentas"-->
                             <li><a href="../pages/cuentasrallylead.html">Cuentas Rally Lead</a></li>
                         </ul>
                     </li>
 
+                    <!--Logo de guías con anclaje a "guias.html"-->
                     <li>
-                        <!--Logo de guías con anclaje a "guias.html"-->
                         <a href="../pages/guias.html">
-                            <img src="../images/headeryfooter/Guias.png" alt="Guías" class="nav_menu_logo">Guías</a>
+                            <img src="../images/headeryfooter/Guias.png" alt="Guías" width="50px">Guías</a>
                     </li>
 
+                    <!--Logo de extras con despliegue de submenú-->
                     <li>
-                        <!--Logo de extras con despliegue de submenú-->
-                        <img src="../images/headeryfooter/Extra.png" alt="Extras" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/Extra.png" alt="Extras" width="50px">
                         <p>Extras ></p>
 
+                        <!--Submenú de "Extras"-->
                         <ul>
-                            <!--Submenú de "Extras"-->
                             <li><a href="../pages/consejosparatubot.html">Consejos para tu bot</a></li>
                             <li><a href="../pages/anuncios.html">Anuncios</a></li>
                             <li><a href="../pages/dudasfrecuentes.html">Dudas frecuentes</a></li>
@@ -93,148 +94,174 @@
                         </ul>
                     </li>
 
+                    <!--Logo de contacto con ancla al footer-->
                     <li>
-                        <!--Logo de contacto con ancla al footer-->
                         <a href="#footer">
-                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto"
-                                class="nav_menu_logo">Contacto</a>
+                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto" width="50px">Contacto</a>
                     </li>
 
+                    <!--Logo de ayuda con ancla a "ayuda.html"-->
                     <li>
-                        <!--Logo de ayuda con ancla a "ayuda.html"-->
                         <a href="../pages/ayuda.html">
-                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" class="nav_menu_logo">Ayuda</a>
+                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" width="50px">Ayuda</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="header__merezbots">
-            <a href="../index.html" class="header__merezbots__h2">
-                <!--MerezBots en el header con ancla al inicio-->
+
+        <!--MerezBots en el header con ancla al inicio-->
+        <div>
+            <a href="../index.html" class="header__h2">
                 <h2>MerezBots</h2>
             </a>
         </div>
 
-        <div class="header__gif">
-            <!--GIF en movimiento con promoción del mes con ancla a "Promociones.html"-->
+        <!--GIF en movimiento con promoción del mes con ancla a "Promociones.html"-->
+        <div>
             <a href="../pages/promociones.html" target="_blank">
-                <img GIF src="../images/headeryfooter/PromoDeAbril.gif" alt="Promoción del mes"
-                    class="header__gif__promo">
+                <img GIF src="../images/headeryfooter/PromoDeAbril.gif" alt="Promoción del mes" class="header__gif">
             </a>
         </div>
-
     </header>
+
+    <!--Proximamente un nav desplegable como en CoderHouse-->
+    <section class="soy__un__nav">
+
+    </section>
+
     <main>
-        <section>
-            <h1>Dudas frecuentes</h1>
+
+        <!--Imagen de fondo + h1-->
+        <section class="main__section__dudasFrecuentes__h1">
+            <div class="main__section__dudasFrecuentes__div__h1">
+                <h1>Dudas frecuentes</h1>
+            </div>
         </section>
+
         <!--Explicación de lo que encontraran en la página-->
-        <section>
+        <section class="main__section__dudasFrecuentes__h3">
             <h3>En esta sección podrás resolver tus dudas más comunes ya seas cliente o no, aquí podrás encontrar una
-                repuesta y de lo contrario igual podrás contactarnos vía <a href="#WhatsApp">WhatsApp</a>.</h3>
+                repuesta y de lo contrario igual podrás contactarnos vía <a href="#footer"
+                    class="main__section__dudasFrecuentes__h3__a">WhatsApp</a>.</h3>
         </section>
     </main>
-    <aside>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-        <section>
-            <p>PUBLICIDAD PAGA</p>
-        </section>
-    </aside>
-    <section>
-        <!--Preguntas y repuestas-->
+
+    <!--Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?-->
+    <section class="section__dudasFrecuentes__usarCuentaBotEncendido">
         <ul>
-            <!--Palabra "Comandos" con ancla a "guias.html"-->
-            <li><b>Pregunta:</b> ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?</li>
+            <li class="section__dudasFrecuentes__li"><b>Pregunta:</b> ¿Puedo acceder a mi cuenta o seguir utilizándola
+                con el bot encendido?</li>
             <li><b>Respuesta:</b> No, no podrás usar la cuenta a la del bot porque está programado para jugar de manera
-                ordinaria, sin embargo puedes usar el <a href="../../Guias/Guias.html#Comandos"
-                    target="_blank">comandos</a> "Stop" para detener el bot y acceder a tu cuenta sin ser
+                ordinaria, sin embargo puedes usar el <a href="guias.html#comandos" target="_blank"
+                    class="anclas__blancas">comandos</a> "Stop"
+                para detener el bot y acceder a tu cuenta sin ser
                 expulsado.</li>
         </ul>
+    </section>
+
+    <!--Sección: ¿Tiene algún costo extra los reportes de cacería?-->
+    <section class="section__dudasFrecuentes__costoExtraReportes">
         <ul>
-            <li><b>Pregunta:</b> ¿Tiene algún costo extra los reportes de cacería?</li>
+            <li class="section__dudasFrecuentes__li"><b>Pregunta:</b> ¿Tiene algún costo extra los reportes de cacería?
+            </li>
             <li><b>Respuesta:</b> No, nosotros no cobramos extra por activarte funciones que el bot ya incluye, puedes
                 solicitar tus reportes de cacería diario o semanal sin problemas. Estos te llegan de manera automática
                 al finalizar el desafío de 24hs.</li>
         </ul>
+    </section>
+
+    <!--Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?-->
+    <section class="section__dudasFrecuentes__vivoEnOtroPais">
         <ul>
-            <!--Palabra "Comandos" con ancla a "guias.html"-->
-            <li><b>Pregunta:</b> Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?</li>
-            <li><b>Respuesta:</b> Puedes <a href="#Contacto">contactarnos</a> por privado y podemos personalizar un
+            <li class="section__dudasFrecuentes__li"><b>Pregunta:</b> Vivo en otro país y sólo puedo pagar con mi moneda
+                ¿Qué puedo hacer?</li>
+            <li><b>Respuesta:</b> Puedes <a href="#footer" class="anclas__blancas">contactarnos</a> por privado y podemos personalizar un
                 cobro en tu moneda para
-                pagar con "Visa" o "MasterCard" y los costos por cambios de divisa van por nuestra cuenta pero de igual
+                pagar con <a href="precios.html#mastercard" target="_blank" class="anclas__blancas">"Visa" o "MasterCard"</a> y los costos por
+                cambios de divisa van por nuestra cuenta pero de igual
                 manera tenemos otros métodos que podrían servirte y también aceptamos criptomonedas.</li>
-            <!--Agregar ancla al HTML de "Precios"-->
         </ul>
+    </section>
+
+    <!--Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?-->
+    <section class="section__dudasFrecuentes__elBotDebeSerPropia">
         <ul>
-            <!--Palabra "MerezBots" con ancla a "index.html"-->
-            <li><b>Pregunta:</b> ¿El bot debe ser una cuenta propia o es una cuenta de <a
-                    href=".././../Index/index.html" target="_blank">MerezBots</a>?</li>
+            <li class="section__dudasFrecuentes__li"><b>Pregunta:</b> ¿El bot debe ser una cuenta propia o es una cuenta
+                de <a href="../index.html" target="_blank" class="anclas__negras">MerezBots</a>?</li>
             <li><b>Respuesta:</b> Ambos casos, podemos mandarte una cuenta de nosotros con un poder promedio de 60M -
                 150M que tiene lo esencial para trabajar con tus necesidades, sin embargo estas cuentas regresan con
                 nosotros al finalizar tu contrato. También está la opción de hacer una cuenta de usted en un bot y
                 nosotros sólo necesitaremos acceso a la misma y de esa forma poder realizar las configuraciones, una vez
                 que nosotros ingresemos a la cuenta puedes cambiar la constraseña sin problemas.</li>
         </ul>
+    </section>
+
+    <!--Sección: ¿Cómo puedo controlar el bot?-->
+    <section class="section__dudasFrecuentes__controlarElBot">
         <ul>
-            <!--Palabra "Comandos" con ancla a "guias.html"-->
-            <li><b>Pregunta:</b> ¿Cómo puedo controlar el bot?</li>
-            <li><b>Respuesta: </b> El bot se controla totalmente por <a href="../../Guias/Guias.html#Comandos"
-                    target="_blank">comandos</a> ya sea por el chat del gremio o por
+            <li class="section__dudasFrecuentes__li"><b>Pregunta:</b> ¿Cómo puedo controlar el bot?</li>
+            <li><b>Respuesta: </b> El bot se controla totalmente por <a href="guias.html#comandos"
+                    target="_blank" class="anclas__blancas">comandos</a> ya sea por el chat del gremio o por
                 mensaje privado. <br>
-                Actualmente tenemos una lista con más de 60 <a href="../../Guias/Guias.html#Comandos"
-                    target="_blank">comandos</a> para hacer que el bot realice diferentes tareas ya
+                Actualmente tenemos una lista con más de 60 <a href="guias.html#comandos" target="_blank" class="anclas__blancas">comandos</a>
+                para hacer que el bot realice diferentes tareas ya
                 sea que el bot sea una cuenta "Banco", "Granja", "T4" o sólo crecimiento. Podrás acceder a toda la gama
-                de <a href="../../Guias/Guias.html#Comandos" target="_blank">comandos</a> y estos <a
-                    href="../../Guias/Guias.html#Comandos" target="_blank">comandos</a> están destinados principalmente
+                de <a href="guias.html#comandos" target="_blank" class="anclas__blancas">comandos</a> y estos <a href="guias.html#comandos"
+                    target="_blank" class="anclas__blancas">comandos</a> están destinados principalmente
                 para el cliente pero se puede autorizar a
-                diferentes rangos del gremios para la utilización de algunos <a href="../../Guias/Guias.html#Comandos"
-                    target="_blank">comandos</a> e incluso se pueden cambiar la
+                diferentes rangos del gremios para la utilización de algunos <a href="guias.html#comandos"
+                    target="_blank" class="anclas__blancas">comandos</a> e incluso se pueden cambiar la
                 forma de activarlos textualmente.</li>
         </ul>
+    </section>
+
+    <!--Sección: ¿Cuántas personas pueden usar mi bot?-->
+    <section class="section__dudasFrecuentes__personasUsarBot">
         <ul>
-            <!--Palabra "Comandos" con ancla a "guias.html" y palabra "MerezBots" con ancla a "index.html"-->
-            <li><b>Pregunta:</b> ¿Cuántas personas pueden usar mi bot?</li>
+            <li class="section__dudasFrecuentes__li"><b>Pregunta:</b> ¿Cuántas personas pueden usar mi bot?</li>
             <li><b>Respuesta:</b> Todas las personas que estén en tu gremio podrán utilizar un cierto nivel de <a
-                    href="../../Guias/Guias.html#Comandos" target="_blank">comandos</a>
-                básicos el cual son configurables y meramente informativos, los <a
-                    href="../../Guias/Guias.html#Comandos" target="_blank">comandos</a> especiales para controlar las
+                    href="guias.html#comandos" target="_blank" class="anclas__negras">comandos</a>
+                básicos el cual son configurables y meramente informativos, los <a href="guias.html#comandos"
+                    target="_blank" class="anclas__negras">comandos</a> especiales para controlar las
                 actividades del bot sólo lo puede utilizar usted pero sin embargo puedes agregar a más personas con
-                estos permisos y aunque no tengamos límite, desde <a href="../../Index/index.html"
-                    target="_blank">MerezBots</a> te recomendamos un máximo de 4 usuarios autorizados.</li>
+                estos permisos y aunque no tengamos límite, desde <a href="../index.html" target="_blank" class="anclas__negras">MerezBots</a>
+                te recomendamos un máximo de 4 usuarios autorizados.</li>
         </ul>
+    </section>
+
+    <!--Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?-->
+    <section class="section__dudasFrecuentes__ponerBotR4R5">
         <ul>
-            <!--Palabra "Comandos" con ancla a "guias.html"-->
-            <li><b>Pregunta:</b> ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?</li>
-            <li><b>Respuesta:</b> Por supuesto que sí, de hecho el bot bot posee <a
-                    href="../../Guias/Guias.html#Comandos" target="_blank">comandos</a> para esos rangos. Ejemplo: Si
+            <li class="section__dudasFrecuentes__li"><b>Pregunta:</b> ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?
+            </li>
+            <li><b>Respuesta:</b> Por supuesto que sí, de hecho el bot bot posee <a href="guias.html#comandos"
+                    target="_blank" class="anclas__blancas">comandos</a> para esos rangos. Ejemplo: Si
                 tu bot posee "Rango 5" todos los de "Rango 4" podrán dar a otros mienbros "Rango 4" mediante <a
-                    href="../../Guias/Guias.html#Comandos" target="_blank">comandos</a> o
-                si tienes la base de tu reino puedes enviarle <a href="../../Guias/Guias.html#Comandos"
-                    target="_blank">comandos</a> al bot para que asigne títulos, también podrá
-                asignar rangos de forma automáticas con el <a href="../../Guias/Guias.html#Comandos"
-                    target="_blank">comandos</a> "whitelist" y si un miembro sale del gremio y vuelve
+                    href="guias.html#comandos" target="_blank" class="anclas__blancas">comandos</a> o
+                si tienes la base de tu reino puedes enviarle <a href="guias.html#comandos" target="_blank" class="anclas__blancas">comandos</a>
+                al bot para que asigne títulos, también podrá
+                asignar rangos de forma automáticas con el <a href="guias.html#comandos" target="_blank" class="anclas__blancas">comandos</a>
+                "whitelist" y si un miembro sale del gremio y vuelve
                 a entrar el bot lo aceptará automaticamente y le asignara el rango que se le asignó.</li>
         </ul>
+    </section>
+
+    <!--Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?-->
+    <section class="section__dudasFrecuentes__noPuedoPagar">
         <ul>
-            <!--Palabra "Contactarnos" con ancla al footer-->
-            <li><b>Pregunta:</b> Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?</li>
+            <li class="section__dudasFrecuentes__li"><b>Pregunta:</b> Ya no puedo pagar el bot pero quiero transferirlo
+                a otra persona ¿Puedo hacer eso?</li>
             <li><b>Respuesta:</b> Sin problemas puedes transferir el bot pero debe ser una decisión unanime, ambas
-                personas deben <a href="#Contacto">contactarnos</a> para analizar los detalles de la transferencia y
+                personas deben <a href="#footer" class="anclas__negras">contactarnos</a> para analizar los detalles de la transferencia y
                 poder asignar un nuevo
                 responsable a la cuenta.</li>
         </ul>
     </section>
+
+    <!--Publicidad paga-->
+    <aside>
+        a
+    </aside>
 
     <!--ID de ancla para "Contacto" del menú-->
     <footer id="footer">
@@ -271,6 +298,16 @@
             <a href="mailto:mereszhka@gmail.com" target="_blank" class="footer__ancla">mereszhka@gmail.com</a>
         </div>
 
+        <!--Logo de WhatsApp anclado al número de Markish-->
+        <div class="footer__div">
+            <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
+                target="_blank">
+                <img src="../images/headeryfooter/Whatsapp.png" alt="WhatsApp" class="footer__img">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
+                target="_blank" class="footer__ancla">+5491151649895(Markish)</a>
+        </div>
+
         <!--Logo de WhatsApp anclado al número de Mereszkha-->
         <div class="footer__div">
             <a href="https://api.whatsapp.com/send?phone=523324962976&app=facebook&entry_point=page_cta"
@@ -281,15 +318,6 @@
                 class="footer__ancla">+5213324962976(Mereszkha)</a>
         </div>
 
-        <!--Logo de WhatsApp anclado al número de Markish-->
-        <div class="footer__div">
-            <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
-                target="_blank">
-                <img src="../images/headeryfooter/Whatsapp.png" alt="WhatsApp" class="footer__img">
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
-                target="_blank" class="footer__ancla">+5491151649895(Markish)</a>
-        </div>
     </footer>
 </body>
 
