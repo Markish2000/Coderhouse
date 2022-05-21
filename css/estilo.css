@@ -731,11 +731,24 @@
             "soy__un__nav main__section__porqueelegirnos aside"
             "soy__un__nav section__seguridadYConfiabilidad aside"
             "soy__un__nav section__garantiaDeSastifaccion aside"
+<<<<<<< HEAD
             "soy__un__nav footer footer";
+=======
+            "footer footer footer";
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
         grid-template-rows: auto auto auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
+<<<<<<< HEAD
+=======
+    /*Centración*/
+    .section__div--center {
+        display: grid;
+        justify-content: center;
+    }
+
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 
     /*Sección: Header*/
 
@@ -1487,11 +1500,151 @@
             "soy__un__nav main__section__comandos aside"
             "soy__un__nav section__video__tutorial__reporteDeCaceria aside"
             "soy__un__nav section__video__tutorial__kvk aside"
+<<<<<<< HEAD
             "soy__un__nav footer footer";
+=======
+            "footer footer footer";
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
+<<<<<<< HEAD
+=======
+
+    /*Sección: Header*/
+
+    /*Header: Color, flex y asignación de area..*/
+    header {
+        background-color: #2e0968;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        grid-area: header;
+    }
+
+    /*GIF: Tamaño, margin y flex*/
+    .header__gif {
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    /*Oculto el check*/
+    #btn--menu {
+        display: none;
+    }
+
+    /*Display block, tamaños y margin*/
+    header label {
+        width: 60px;
+        height: 40px;
+        display: block;
+    }
+
+    /*Al poner el mouse arriba cambia el cursor*/
+    header label:hover {
+        cursor: pointer;
+    }
+
+    /*Position absolute, color, tamaño, margin y animación*/
+    .menu {
+        position: absolute;
+        background-color: #2e0968;
+        width: 60%;
+        margin-left: -70%;
+        transition: all 0.6s;
+    }
+
+    /*display flex con dirección de columna*/
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Borde negro*/
+    .menu li {
+        border-top: 1px solid #000000;
+    }
+
+    /*Cambia de color al poner el mouse arriba*/
+    .menu li:hover {
+        background-color: #0000004d;
+    }
+
+    /*Se oculta el sub menú*/
+    .menu li ul {
+        display: none;
+        position: absolute;
+    }
+
+    /*Al poner el cursor arriba del sub menú se desplaza*/
+    .menu li:hover>ul {
+        display: block;
+    }
+
+    /*Position relativo*/
+    .menu li ul li {
+        position: relative;
+    }
+
+    /*Sub menú con color violeta y movido a la derecha*/
+    .menu ul li ul li {
+        width: 168px;
+        background-color: #2e0968;
+        right: -252px;
+        top: -111px;
+    }
+
+    /*Display block, pading, color blanco y sin decoración a las anclas*/
+    .menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /*Display block, padding y color blanco a los parrafos*/
+    .menu li p {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+    }
+
+    /*Al estár checkeado, mueve el nav y se vea*/
+    #btn--menu:checked~.menu {
+        margin-top: 4px;
+        margin-left: -25px;
+    }
+
+    /*Color amarillo al h2, se le quita la decoración y se aumenta el tamaño de las letras*/
+    .header__h2 {
+        color: #d1b410;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    /*Sección: NAV*/
+
+    /*Proximamente un NAV desplegable como en la página de CoderHouse*/
+    .soy__un__nav {
+        grid-area: soy__un__nav;
+    }
+
+
+    /*Sección: Eliminar contenido*/
+
+    /*Eliminación de contenido*/
+    .display--none {
+        display: none;
+    }
+
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 
     /*Sección: imagen + h1*/
 
@@ -1722,6 +1875,138 @@
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
+<<<<<<< HEAD
+=======
+
+    /*Sección: Header*/
+
+    /*Header: Color, flex y asignación de area..*/
+
+    header {
+        background-color: #2e0968;
+        width: 100%;
+        height: 50px;
+        grid-area: header;
+        display: flex;
+        align-items: center;
+    }
+
+    /*Oculto el check*/
+    #btn--menu {
+        display: none;
+    }
+
+    /*Display block, tamaños y margin*/
+    header label {
+        display: block;
+        width: 60px;
+        height: 40px;
+        margin-left: 15px;
+    }
+
+    /*Al poner el mouse arriba cambia el cursor*/
+    header label:hover {
+        cursor: pointer;
+    }
+
+    /*Position absolute, color, tamaño, margin y animación*/
+    .menu {
+        position: absolute;
+        background-color: #2e0968;
+        width: 20%;
+        margin-left: -70%;
+        transition: all 0.6s;
+    }
+
+    /*display flex con dirección de columna*/
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Borde negro*/
+    .menu li {
+        border-top: 1px solid #000000;
+    }
+
+    /*Cambia de color al poner el mouse arriba*/
+    .menu li:hover {
+        background-color: #0000004d;
+    }
+
+    /*Se oculta el sub menú*/
+    .menu li ul {
+        display: none;
+        position: absolute;
+    }
+
+    /*Al poner el cursor arriba del sub menú se desplaza*/
+    .menu li:hover>ul {
+        display: block;
+    }
+
+    /*Position relativo*/
+    .menu li ul li {
+        position: relative;
+    }
+
+    /*Sub menú con color violeta y movido a la derecha*/
+    .menu ul li ul li {
+        background-color: #2e0968;
+        right: -270px;
+        top: -111px;
+    }
+
+    /*Display block, pading, color blanco y sin decoración a las anclas*/
+    .menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /*Display block, padding y color blanco a los parrafos*/
+    .menu li p {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+    }
+
+    /*Al estár checkeado, mueva el nav y se vea*/
+    #btn--menu:checked~.menu {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    /*Color amarillo al h2, se le quita la decoración y se aumenta el tamaño de las letras*/
+    .header__h2 {
+        color: #d1b410;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    /*Sección: NAV*/
+
+    /*Proximamente un NAV desplegable como en la página de CoderHouse*/
+    .soy__un__nav {
+        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+        grid-area: soy__un__nav;
+    }
+
+
+    /*Sección: Publicidad paga*/
+
+    /*Proximamente una publicidad paga*/
+    aside {
+        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+        grid-area: aside;
+    }
+
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 
     /*Sección: Imagen + h1*/
 
@@ -1948,6 +2233,138 @@
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
+<<<<<<< HEAD
+=======
+
+    /*Sección: Header*/
+
+    /*Header: Color, flex y asignación de area..*/
+
+    header {
+        background-color: #2e0968;
+        width: 100%;
+        height: 50px;
+        grid-area: header;
+        display: flex;
+        align-items: center;
+    }
+
+    /*Oculto el check*/
+    #btn--menu {
+        display: none;
+    }
+
+    /*Display block, tamaños y margin*/
+    header label {
+        display: block;
+        width: 60px;
+        height: 40px;
+        margin-left: 15px;
+    }
+
+    /*Al poner el mouse arriba cambia el cursor*/
+    header label:hover {
+        cursor: pointer;
+    }
+
+    /*Position absolute, color, tamaño, margin y animación*/
+    .menu {
+        position: absolute;
+        background-color: #2e0968;
+        width: 20%;
+        margin-left: -70%;
+        transition: all 0.6s;
+    }
+
+    /*display flex con dirección de columna*/
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Borde negro*/
+    .menu li {
+        border-top: 1px solid #000000;
+    }
+
+    /*Cambia de color al poner el mouse arriba*/
+    .menu li:hover {
+        background-color: #0000004d;
+    }
+
+    /*Se oculta el sub menú*/
+    .menu li ul {
+        display: none;
+        position: absolute;
+    }
+
+    /*Al poner el cursor arriba del sub menú se desplaza*/
+    .menu li:hover>ul {
+        display: block;
+    }
+
+    /*Position relativo*/
+    .menu li ul li {
+        position: relative;
+    }
+
+    /*Sub menú con color violeta y movido a la derecha*/
+    .menu ul li ul li {
+        background-color: #2e0968;
+        right: -270px;
+        top: -111px;
+    }
+
+    /*Display block, pading, color blanco y sin decoración a las anclas*/
+    .menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /*Display block, padding y color blanco a los parrafos*/
+    .menu li p {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+    }
+
+    /*Al estár checkeado, mueva el nav y se vea*/
+    #btn--menu:checked~.menu {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    /*Color amarillo al h2, se le quita la decoración y se aumenta el tamaño de las letras*/
+    .header__h2 {
+        color: #d1b410;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    /*Sección: NAV*/
+
+    /*Proximamente un NAV desplegable como en la página de CoderHouse*/
+    .soy__un__nav {
+        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+        grid-area: soy__un__nav;
+    }
+
+
+    /*Sección: Publicidad paga*/
+
+    /*Proximamente una publicidad paga*/
+    aside {
+        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+        grid-area: aside;
+    }
+
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 
     /*Sección: Imagen + h1*/
 
@@ -2059,6 +2476,10 @@
 
     /*Sección: Explicación de que lo pueden encontrar en la página*/
 
+<<<<<<< HEAD
+=======
+    /*Color de fondo, flex, column, padding y asignación de area*/
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
     .main__section__gremiodeguerra_h3yh4 {
         background-color: #2e0968bb;
         display: flex;
@@ -2067,10 +2488,18 @@
         grid-area: main__section__gremiodeguerra_h3yh4;
     }
 
+<<<<<<< HEAD
+=======
+    /*h3: Tamaño de letra*/
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
     .main__section__gremiodeguerra_h3 {
         font-size: 25px;
     }
 
+<<<<<<< HEAD
+=======
+    /*h4: Tamaño de letra y margin top*/
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
     .main__section__gremiodeguerra_h4 {
         font-size: 20px;
         margin-top: 15px;
@@ -2288,11 +2717,148 @@
             "soy__un__nav main__section__gremiodeguerra_h3yh4 aside"
             "soy__un__nav section__gremiodeguerra__rdc aside"
             "soy__un__nav section__gremiosdeguerra__rdc__h3 aside"
+<<<<<<< HEAD
             "soy__un__nav footer footer";
+=======
+            "footer footer footer";
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: 0.3fr 4fr 1.3fr;
     }
 
+<<<<<<< HEAD
+=======
+
+    /*Sección: Header*/
+
+    /*Header: Color, flex y asignación de area..*/
+
+    header {
+        background-color: #2e0968;
+        width: 100%;
+        height: 50px;
+        grid-area: header;
+        display: flex;
+        align-items: center;
+    }
+
+    /*Oculto el check*/
+    #btn--menu {
+        display: none;
+    }
+
+    /*Display block, tamaños y margin*/
+    header label {
+        display: block;
+        width: 60px;
+        height: 40px;
+        margin-left: 15px;
+    }
+
+    /*Al poner el mouse arriba cambia el cursor*/
+    header label:hover {
+        cursor: pointer;
+    }
+
+    /*Position absolute, color, tamaño, margin y animación*/
+    .menu {
+        position: absolute;
+        background-color: #2e0968;
+        width: 20%;
+        margin-left: -70%;
+        transition: all 0.6s;
+    }
+
+    /*display flex con dirección de columna*/
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Borde negro*/
+    .menu li {
+        border-top: 1px solid #000000;
+    }
+
+    /*Cambia de color al poner el mouse arriba*/
+    .menu li:hover {
+        background-color: #0000004d;
+    }
+
+    /*Se oculta el sub menú*/
+    .menu li ul {
+        display: none;
+        position: absolute;
+    }
+
+    /*Al poner el cursor arriba del sub menú se desplaza*/
+    .menu li:hover>ul {
+        display: block;
+    }
+
+    /*Position relativo*/
+    .menu li ul li {
+        position: relative;
+    }
+
+    /*Sub menú con color violeta y movido a la derecha*/
+    .menu ul li ul li {
+        background-color: #2e0968;
+        right: -270px;
+        top: -111px;
+    }
+
+    /*Display block, pading, color blanco y sin decoración a las anclas*/
+    .menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /*Display block, padding y color blanco a los parrafos*/
+    .menu li p {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+    }
+
+    /*Al estár checkeado, mueva el nav y se vea*/
+    #btn--menu:checked~.menu {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    /*Color amarillo al h2, se le quita la decoración y se aumenta el tamaño de las letras*/
+    .header__h2 {
+        color: #d1b410;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    /*Sección: NAV*/
+
+    /*Proximamente un NAV desplegable como en la página de CoderHouse*/
+    .soy__un__nav {
+        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+        grid-area: soy__un__nav;
+    }
+
+
+    /*Sección: Publicidad paga*/
+
+    /*Proximamente una publicidad paga*/
+    aside {
+        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+        grid-area: aside;
+    }
+
+
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 
     /*Sección: imagen + h1*/
 
@@ -2415,6 +2981,316 @@
 
 
 
+<<<<<<< HEAD
+=======
+/*Comienza: gremiodecaceria.html*/
+
+
+/*Celulares*/
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+    .body__gremioDeCaceria {
+        display: grid;
+        grid-template-areas:
+            "header"
+            ""
+            ""
+            ""
+            ""
+            "aside"
+            "footer";
+        grid-template-rows: auto auto;
+    }
+
+    /*Sección: Header*/
+
+    /*Header: Color, flex y asignación de area..*/
+    header {
+        background-color: #2e0968;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: header;
+    }
+
+    /*GIF: Tamaño, margin y flex*/
+    .header__gif {
+        width: 270px;
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    /*Oculto el check*/
+    #btn--menu {
+        display: none;
+    }
+
+    /*Display block, tamaños y margin*/
+    header label {
+        width: 60px;
+        height: 40px;
+        display: block;
+    }
+
+    /*Al poner el mouse arriba cambia el cursor*/
+    header label:hover {
+        cursor: pointer;
+    }
+
+    /*Position absolute, color, tamaño, margin y animación*/
+    .menu {
+        position: absolute;
+        background-color: #2e0968;
+        width: 60%;
+        margin-left: -70%;
+        transition: all 0.6s;
+    }
+
+    /*display flex con dirección de columna*/
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Borde negro*/
+    .menu li {
+        border-top: 1px solid #000000;
+    }
+
+    /*Cambia de color al poner el mouse arriba*/
+    .menu li:hover {
+        background-color: #0000004d;
+    }
+
+    /*Se oculta el sub menú*/
+    .menu li ul {
+        display: none;
+        position: absolute;
+    }
+
+    /*Al poner el cursor arriba del sub menú se desplaza*/
+    .menu li:hover>ul {
+        display: block;
+    }
+
+    /*Position relativo*/
+    .menu li ul li {
+        position: relative;
+    }
+
+    /*Sub menú con color violeta y movido a la derecha*/
+    .menu ul li ul li {
+        background-color: #2e0968;
+        width: 168px;
+        right: -252px;
+        top: -111px;
+    }
+
+    /*Display block, pading, color blanco y sin decoración a las anclas*/
+    .menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /*Display block, padding y color blanco a los parrafos*/
+    .menu li p {
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+    }
+
+    /*Al estár checkeado, mueva el nav y se vea*/
+    #btn--menu:checked~.menu {
+        margin-top: 4px;
+        margin-left: -25px;
+    }
+
+    /*Color amarillo al h2, se le quita la decoración y se aumenta el tamaño de las letras*/
+    .header__h2 {
+        display: none;
+    }
+
+
+    /*Sección: NAV*/
+
+    /*Proximamente un NAV desplegable como en la página de CoderHouse*/
+    .soy__un__nav {
+        display: none;
+    }
+
+
+    /*Sección: Aside*/
+
+    /*Proximamente publicidad paga*/
+    aside {
+        grid-area: aside;
+    }
+
+
+    /*Sección: imagen + h1*/
+
+    /*Imagen, sin que se repita, altura y asignación de area al contenedor padre*/
+    .main__section__gremiodeguerra__h1 {
+        background-image: url(../images/gremiosdeguerra/gremiosdeguerra.jpg);
+        background-size: cover;
+        height: 200px;
+        grid-area: main__section__gremiodeguerra__h1;
+    }
+
+    /*Fondo de negro, tamaño de alto al 100%, color de letras, flex centrado y tamaño de letra*/
+    .main__section__gremiodeguerra__h1--bc {
+        background-color: #2c2a309f;
+        height: 100%;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+
+    /**/
+
+    /**/
+    .main__section__gremiodeguerra_h3yh4 {
+        background-color: #2e0968bb;
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        grid-area: main__section__gremiodeguerra_h3yh4;
+    }
+
+    /**/
+    .main__section__gremiodeguerra_h3 {
+        font-size: 25px;
+    }
+
+    /**/
+    .main__section__gremiodeguerra_h4 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+
+    /*Sección:*/
+
+    /**/
+    .section__gremiodeguerra__rdc {
+        background-image: url(../images/gremiosdeguerra/RdC--bc.jpg);
+        background-size: cover;
+        height: 380px;
+        grid-area: section__gremiodeguerra__rdc;
+    }
+
+    /**/
+    .section__gremiodeguerra__rdc--bc {
+        background-color: #2c2a309f;
+        height: 100%;
+        padding: 20px;
+    }
+
+    /**/
+    .section__gremiodeguerra__div__img {
+        display: flex;
+        justify-content: center;
+    }
+
+    /**/
+    .section__gremiodeguerra__img {
+        width: 300px;
+    }
+
+    /**/
+    .section__gremiosdeguerra__rdc__h2 {
+        color: #ffffff;
+        font-size: 25px;
+        margin-top: 18px;
+    }
+
+    /**/
+    .section__gremiosdeguerra__rdc__h2ul {
+        color: #ffffff;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    /**/
+    .section__gremiosdeguerra__rdc__h2li {
+        padding: 2px;
+    }
+
+    /**/
+    .section__gremiosdeguerra__rdc__h3ul {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 20px;
+        grid-area: section__gremiosdeguerra__rdc__h3;
+    }
+
+    /**/
+    .section__gremiosdeguerra__rdc__h3 {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    /**/
+    .section__gremiosdeguerra__rdc__div__h2ul {
+        margin-top: 30px;
+    }
+
+    /**/
+    .section__gremiosdeguerra__rdc__div__a {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 /*Comienza: precios.html*/
 
 /*Mobile*/
@@ -3305,6 +4181,10 @@
         font-size: 50px;
     }
 
+<<<<<<< HEAD
+=======
+    /*Display flex al contenedor de los métodos*/
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
     .main__precios__section__div__otrosMetodosDePago--df {
         display: flex;
     }
@@ -3345,7 +4225,291 @@
 
 /*Comienza: cuentasrallylead.html*/
 
+<<<<<<< HEAD
 /*Mobile*/
+=======
+
+/*Sección: Header*/
+
+header {
+    background-color: #2e0968;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    grid-area: header;
+}
+
+#btn--menu {
+    display: none;
+}
+
+header label {
+    display: block;
+    width: 60px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    background-color: #2e0968;
+    width: 20%;
+    margin-left: -70%;
+    transition: all 0.6s;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    border-top: 1px solid #000000;
+}
+
+.menu li:hover {
+    background-color: #0000004d;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.menu li ul li {
+    position: relative;
+}
+
+.menu ul li ul li {
+    background-color: #2e0968;
+    right: -270px;
+    top: -111px;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li p {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+}
+
+#btn--menu:checked~.menu {
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.header__h2 {
+    color: #d1b410;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*Sección: NAV*/
+
+.soy__un__nav {
+    background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+    grid-area: soy__un__nav;
+}
+
+
+/*Sección: Aside*/
+
+aside {
+    background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
+    grid-area: aside;
+}
+
+
+/*Sección: Imagen + h1*/
+
+.main__section__cuentasrallylead__h1 {
+    background-image: url(../images/cuentasrallylead/cuentasrallylead.png);
+    background-size: cover;
+    height: 350px;
+    grid-area: main__section__cuentasrallylead__h1;
+}
+
+.main__section__cuentasrallylead__h1--bc {
+    background-color: #2c2a309f;
+    height: 100%;
+    color: #ffffff;
+}
+
+.main__section__cuentasrallylead__h1-fs {
+    font-size: 4em;
+}
+
+
+/*Sección: Explicación de que lo pueden encontrar en la página*/
+
+.main__section__cuentasrallylead_h3yh4 {
+    background-color: #2e0968bb;
+    padding: 2em;
+    grid-area: main__section__cuentasrallylead_h3yh4;
+}
+
+.main__section__cuentasrallylead_h3 {
+    font-size: 30px;
+    margin-top: 20px
+}
+
+
+/*Sección: Carrusel*/
+
+.main__section__cuentasrallylead__carousel {
+    background-color: #2c2a30;
+    padding: 30px;
+    grid-area: main__section__cuentasrallylead__carousel;
+}
+
+
+/*Sección: Makoto*/
+
+.section__cuentasrallylead__info__makoto {
+    color: #ffffff;
+    background-color: #2c2a30;
+    grid-area: section__cuentasrallylead__info__makoto;
+}
+
+.section__cuentasrallylead__info__makoto__h2 {
+    color: #ff0000;
+    font-size: 6em;
+}
+
+.section__cuentasrallylead__info__makoto__h3 {
+    font-size: 2em;
+    color: #d1b410;
+}
+
+.section__cuentasrallylead__info__makoto__h3--color {
+    font-size: 3em;
+    color: green;
+}
+
+.section__cuentasrallylead__info__makoto__div {
+    margin-left: 3em;
+    margin-top: 2em;
+}
+
+.section__cuentasrallylead__info__makoto__div__ul {
+    font-size: 25px;
+}
+
+.section__cuentasrallylead__info__makoto__div--wd {
+    width: 50%;
+}
+
+.section__cuentasrallylead__info__makoto__div__h4 {
+    font-size: 32px;
+    margin-top: 2em;
+}
+
+.section__cuentasrallylead__info__makoto__div__imput {
+    margin-top: 3em;
+}
+
+.section__cuentasrallylead__info__makoto__div__imput__h4 {
+    font-size: 2em;
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 769px) {
+    .body__cuentasrallylead {
+        display: grid;
+        grid-template-areas:
+            "soy__un__nav header header"
+            "soy__un__nav main__section__cuentasrallylead__h1 aside"
+            "soy__un__nav main__section__cuentasrallylead_h3yh4 aside"
+            "soy__un__nav main__section__cuentasrallylead__carousel aside"
+            "soy__un__nav section__cuentasrallylead__info__makoto aside"
+            "soy__un__nav footer footer";
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+}
+
+/*Tablet*/
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+
+    .body__cuentasrallylead {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__cuentasrallylead__h1"
+            "main__section__cuentasrallylead_h3yh4"
+            "main__section__cuentasrallylead__carousel"
+            "section__cuentasrallylead__info__makoto"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto auto;
+    }
+
+
+    /*Sección: Header*/
+
+    .header__gif {
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    /*Sección: Menú hamburguesa*/
+
+    .menu {
+        width: 60%;
+    }
+
+    .menu ul li ul li {
+        width: 168px;
+        right: -252px;
+    }
+
+    #btn--menu:checked~.menu {
+        margin-top: 4px;
+        margin-left: -25px;
+    }
+
+
+    /*Sección: NAV*/
+
+    .soy__un__nav {
+        display: none;
+    }
+
+
+    /*Sección: Eliminar contenido*/
+
+    .display--none {
+        display: none;
+    }
+}
+
+
+/*Celulares*/
+
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 @media only screen and (min-width: 0px) and (max-width: 420px) {
 
     .body__cuentasrallylead {
@@ -3362,6 +4526,7 @@
     }
 
 
+<<<<<<< HEAD
     /*Sección: Imagen + h1*/
 
     .main__section__cuentasrallylead__h1 {
@@ -3376,6 +4541,56 @@
         height: 100%;
         color: #ffffff;
     }
+=======
+    /*Sección: Header*/
+
+    .header__gif {
+        width: 270px;
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        width: 60%;
+    }
+
+    .menu ul li ul li {
+        width: 168px;
+        right: -252px;
+    }
+
+    #btn--menu:checked~.menu {
+        margin-top: 4px;
+        margin-left: -25px;
+    }
+
+    .header__h2 {
+        display: none;
+    }
+
+
+    /*Sección: NAV*/
+
+    .soy__un__nav {
+        display: none;
+    }
+
+
+    /*Sección: Aside*/
+
+    aside {
+        grid-area: aside;
+    }
+
+
+    /*Sección: Imagen + h1*/
+
+    .main__section__cuentasrallylead__h1 {
+        height: 200px;
+    }
+
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 
     .main__section__cuentasrallylead__h1-fs {
         font-size: 35px;
@@ -3384,6 +4599,7 @@
 
     /*Sección: Explicación de que lo pueden encontrar en la página*/
 
+<<<<<<< HEAD
     .main__section__cuentasrallylead_h3yh4 {
         background-color: #2e0968bb;
         padding: 2em;
@@ -3402,11 +4618,16 @@
         background-color: #2c2a30;
         padding: 30px;
         grid-area: main__section__cuentasrallylead__carousel;
+=======
+    .main__section__cuentasrallylead_h3 {
+        font-size: 25px;
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
     }
 
 
     /*Sección: Makoto*/
 
+<<<<<<< HEAD
     .section__cuentasrallylead__info__makoto {
         color: #ffffff;
         background-color: #2c2a30;
@@ -3415,17 +4636,26 @@
 
     .section__cuentasrallylead__info__makoto__h2 {
         color: #ff0000;
+=======
+    .section__cuentasrallylead__info__makoto__h2 {
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
         font-size: 3em;
     }
 
     .section__cuentasrallylead__info__makoto__h3 {
         font-size: 20px;
+<<<<<<< HEAD
         color: #d1b410;
+=======
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
     }
 
     .section__cuentasrallylead__info__makoto__h3--color {
         font-size: 30px;
+<<<<<<< HEAD
         color: green;
+=======
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
     }
 
     .section__cuentasrallylead__info__makoto__div {
@@ -3439,6 +4669,7 @@
     .section__cuentasrallylead__info__makoto__div__h4 {
         font-size: 30px;
     }
+<<<<<<< HEAD
 
     .section__cuentasrallylead__info__makoto__div__imput {
         margin-top: 3em;
@@ -4634,4 +5865,6 @@
         padding: 30px;
         grid-area: section__dudasFrecuentes__noPuedoPagar;
     }
+=======
+>>>>>>> eec820b240b61ed2177c420b252d6523312ea18e
 }
