@@ -10,81 +10,82 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
-<body>
+<body class="body__caravanadeayudas">
+
     <header id="header">
         <div>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="bar-btn">
-                    <!--Logo de menú hamburguesa-->
-                    <img src="../images/headeryfooter/Menu.png" alt="Menú" class="header__nav__menu__png">
-                </label>
-                <!--Menú hamburguesa con despliegue-->
-                <ul class="header__ul">
+            <input type="checkbox" id="btn--menu">
+            <label for="btn--menu">
+                <!--Logo de menú hamburguesa-->
+                <img src="../images/headeryfooter/Menu.png" alt="Menú" width="40px">
+            </label>
+
+            <!--Menú hamburguesa con despliegue-->
+            <nav class="menu">
+                <ul>
+
+                    <!--Logo de la página con ancla a "index.html"-->
                     <li>
-                        <!--Logo de la página con ancla a "index.html"-->
                         <a href="../index.html">
-                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" class="logo"></a>
+                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" width="70px"></a>
                     </li>
 
+                    <!--Logo de buscar con input para buscar-->
                     <li>
-                        <!--Logo de buscar con input para buscar-->
-                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" width="50px">
                         <input type="search" placeholder="Buscar">
                         <input type="submit" name="Buscar">
                     </li>
 
+                    <!--Logo de inicio anclado a "index.html"-->
                     <li>
-                        <!--Logo de inicio anclado a "index.html"-->
                         <a href="../index.html">
-                            <img src="../images/headeryfooter/Home.png" alt="Inicio" class="active"
-                                class="nav_menu_logo" width="50px">Inicio</a>
+                            <img src="../images/headeryfooter/Home.png" alt="Inicio" width="50px">Inicio</a>
                     </li>
 
+                    <!--Logo de precio anclado a "precios.hmtl"-->
                     <li>
-                        <!--Logo de precio anclado a "precios.hmtl"-->
                         <a href="../pages/precios.html">
-                            <img src="../images/headeryfooter/Precios.png" alt="Precios"
-                                class="nav_menu_logo">Precios</a>
+                            <img src="../images/headeryfooter/Precios.png" alt="Precios" width="50px">Precios</a>
                     </li>
 
+                    <!--Logo de gremios con despliegue de submenú-->
                     <li>
-                        <!--Logo de gremios con despliegue de submenú-->
-                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" width="50px">
                         <p>Gremios ></p>
 
+                        <!--Submenú de "Gremios"-->
                         <ul>
-                            <!--Submenú de "Gremios"-->
                             <li><a href="../pages/gremiodecaceria.html">Gremio de cacería</a></li>
                             <li><a href="../pages/gremiodeguerra.html">Gremio de guerra</a></li>
                             <li><a href="../pages/caravanadeayudas.html">Caravana de ayudas</a></li>
                         </ul>
                     </li>
+
+                    <!--Logo de cuentas con despliegue de submenú-->
                     <li>
-                        <!--Logo de cuentas con despliegue de submenú-->
-                        <img src="../images/headeryfooter/LordMobile.jpg" alt="Cuentas" class="nav_menu_logo">
-                        <!--Buscar png para "Cuentas"-->
+                        <img src="../images/headeryfooter/ventadecuentas.png" alt="Cuentas" width="50px">
                         <p>Venta de cuentas ></p>
 
+                        <!--Submenú de "Cuentas"-->
                         <ul>
-                            <!--Submenú de "Cuentas"-->
                             <li><a href="../pages/cuentasrallylead.html">Cuentas Rally Lead</a></li>
                         </ul>
                     </li>
 
+                    <!--Logo de guías con anclaje a "guias.html"-->
                     <li>
-                        <!--Logo de guías con anclaje a "guias.html"-->
                         <a href="../pages/guias.html">
-                            <img src="../images/headeryfooter/Guias.png" alt="Guías" class="nav_menu_logo">Guías</a>
+                            <img src="../images/headeryfooter/Guias.png" alt="Guías" width="50px">Guías</a>
                     </li>
 
+                    <!--Logo de extras con despliegue de submenú-->
                     <li>
-                        <!--Logo de extras con despliegue de submenú-->
-                        <img src="../images/headeryfooter/Extra.png" alt="Extras" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/Extra.png" alt="Extras" width="50px">
                         <p>Extras ></p>
 
+                        <!--Submenú de "Extras"-->
                         <ul>
-                            <!--Submenú de "Extras"-->
                             <li><a href="../pages/consejosparatubot.html">Consejos para tu bot</a></li>
                             <li><a href="../pages/anuncios.html">Anuncios</a></li>
                             <li><a href="../pages/dudasfrecuentes.html">Dudas frecuentes</a></li>
@@ -93,113 +94,109 @@
                         </ul>
                     </li>
 
+                    <!--Logo de contacto con ancla al footer-->
                     <li>
-                        <!--Logo de contacto con ancla al footer-->
                         <a href="#footer">
-                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto"
-                                class="nav_menu_logo">Contacto</a>
+                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto" width="50px">Contacto</a>
                     </li>
 
+                    <!--Logo de ayuda con ancla a "ayuda.html"-->
                     <li>
-                        <!--Logo de ayuda con ancla a "ayuda.html"-->
                         <a href="../pages/ayuda.html">
-                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" class="nav_menu_logo">Ayuda</a>
+                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" width="50px">Ayuda</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="header__merezbots">
-            <a href="../index.html" class="header__merezbots__h2">
-                <!--MerezBots en el header con ancla al inicio-->
+
+        <!--MerezBots en el header con ancla al inicio-->
+        <div>
+            <a href="../index.html" class="header__h2">
                 <h2>MerezBots</h2>
             </a>
         </div>
 
-        <div class="header__gif">
-            <!--GIF en movimiento con promoción del mes con ancla a "Promociones.html"-->
+        <!--GIF en movimiento con promoción del mes con ancla a "Promociones.html"-->
+        <div>
             <a href="../pages/promociones.html" target="_blank">
-                <img GIF src="../images/headeryfooter/PromoDeAbril.gif" alt="Promoción del mes"
-                    class="header__gif__promo">
+                <img GIF src="../images/headeryfooter/PromoDeAbril.gif" alt="Promoción del mes" class="header__gif">
             </a>
         </div>
-
     </header>
-    <div class="div">
-        <div class="todo">
-            <main>
-                <!--Palabra "Caravana de ayudas" con imagén puesto con CSS-->
-                <section class="section__caravanaDeAyudas">
-                    <div class="section__gremio--bc">
-                        <h1 class="section__caravanaDeAyudas__h1">Caravana de ayudas</h1>
-                    </div>
-                </section>
-                <section class="section__caravanaDeAyudas__QueEsUnaCaravanaDeAyudas">
-                    <!--Explicación de que es una carava de ayudas-->
-                    <h2 class="section__caravanaDeAyudas__QueEsUnaCaravanaDeAyudas__h2">¿Qué es una caravana de ayudas?
-                    </h2>
-                    <div class="section__caravanaDeAyudas__QueEsUnaCaravanaDeAyudas__p--wh">
-                        <p class="section__caravanaDeAyudas__QueEsUnaCaravanaDeAyudas__p">Una caravana de ayudas consta
-                            de un gremio conformado por bots de <a href="../index.html" target="_blank"
-                                class="anclas__negras">MerezBots</a> en
-                            varios reinos. </p>
-                        <p class="section__caravanaDeAyudas__QueEsUnaCaravanaDeAyudas__p">
-                            Estos bots son cuentas pequeñas que se reparten por el reino y se la pasan migrando y su
-                            función es tener un gremio abierto y disponible para
-                            que los jugadores puedan ingresar y recibir las 30 ayudas necesarias para finalizar sus
-                            eventos como
-                            "Infierno", "Desafió 24hs", "Solitario", etc...
-                        </p>
-                        <p class="section__caravanaDeAyudas__QueEsUnaCaravanaDeAyudas__p">
-                            Los bots migran entre reinos diferentes cada 20 días y principalmente a los reinos donde se
-                            encuentran
-                            nuestros clientes.
-                        </p>
-                    </div>
-                </section>
-            </main>
-            <!--Caravana 22/12/2021-->
-            <section class="section__caravanaDorlem">
-                <div class="section__caravanaDorlem--bc">
-                    <div class="div__caravanaDorlem__h2">
-                        <h2>Caravana Dorlem</h2>
-                    </div>
-                    <div>
-                        <ul class="section__caravanaDorlem__ul">
-                            <li>Reino: 686</li>
-                            <li>Miembros: 32</li>
-                            <li>Castillos en colmena: 9</li>
-                            <li>Castillos dispersos: 23</li>
-                            <li>¿Eres un cliente de <a href="../index.html" target="_blank"
-                                    class="anclas__blancas">MerezBots</a>?
-                                Preguntanos
-                                por <a href="#footer" class="anclas__blancas">WhatsApp</a> el nombre del gremio</li>
-                            <li>Si no eres un cliente, búscanos en el reino en una colmena de 9 castillos, el castillo
-                                central
-                                tiene la
-                                skin de "Sagitario"</li>
-                            <li>Ingreso: Siempre abierto</li>
-                        </ul>
-                    </div>
-                    <div class="section__caravanaDorlem__h3">
-                        <h3>FECHA: 22/12/2021</h3>
-                    </div>
-                </div>
-            </section>
-            <section class="proximamenteMasCaravanas">
-                <img src="../images/caravanadeayudas/Proximamente.png" alt="Próximamente más caravanas" height="300px">
-                <div class="proximamenteMasCaravanas--jc">
-                    <h2 class="proximamenteMasCaravanas__h2">PRÓXIMAMENTE MÁS CARAVANAS</h2>
-                    <h4 class="proximamenteMasCaravanas__h4">¡Espérala en tu reino muy pronto!</h4>
-                </div>
-            </section>
+
+    <!--Proximamente un nav desplegable como en CoderHouse-->
+    <section class="soy__un__nav">
+
+    </section>
+
+    <main>
+
+        <!--Palabra "Caravana de ayudas" con imagén puesto con CSS-->
+        <section class="main__section__caravanadeayudas__h1">
+            <div class="main__section__caravanadeayudas__div__h1">
+                <h1>Caravana de ayudas</h1>
+            </div>
+        </section>
+
+        <!--Explicación de que es una carava de ayudas-->
+        <section class="main__section__caravanadeayudas__h2p">
+            <h2>¿Qué es una caravana de ayudas?</h2>
+            <p>Una caravana de ayudas consta
+                de un gremio conformado por bots de <a href="../index.html" target="_blank"
+                    class="anclas__negras">MerezBots</a> en varios reinos. </p>
+            <p>
+                Estos bots son cuentas pequeñas que se reparten por el reino y se la pasan migrando y su
+                función es tener un gremio abierto y disponible para
+                que los jugadores puedan ingresar y recibir las 30 ayudas necesarias para finalizar sus
+                eventos como
+                "Infierno", "Desafió 24hs", "Solitario", etc...
+            </p>
+            <p>
+                Los bots migran entre reinos diferentes cada 20 días y principalmente a los reinos donde se
+                encuentran
+                nuestros clientes.
+            </p>
+        </section>
+    </main>
+
+    <!--Sección: Caravana 22/12/2021-->
+    <section class="section__caravanadeayudas__22122021">
+        <div class="section__caravanadeayudas__div__22122021">
+            <h2>Caravana Dorlem</h2>
         </div>
-        <!--Publicidad paga-->
-        <div class="aside">
-            <aside>
-                a
-            </aside>
+        <ul class="section__caravanadeayudas__div__22122021__ul">
+            <li>Reino: 686</li>
+            <li>Miembros: 32</li>
+            <li>Castillos en colmena: 9</li>
+            <li>Castillos dispersos: 23</li>
+            <li>¿Eres un cliente de <a href="../index.html" target="_blank" class="anclas__blancas">MerezBots</a>?
+                Preguntanos
+                por <a href="#footer" class="anclas__blancas">WhatsApp</a> el nombre del gremio</li>
+            <li>Si no eres un cliente, búscanos en el reino en una colmena de 9 castillos, el castillo
+                central
+                tiene la
+                skin de "Sagitario"</li>
+            <li>Ingreso: Siempre abierto</li>
+        </ul>
+        <div class="section__caravanadeayudas__div__22122021__h3">
+            <h3>FECHA: 22/12/2021</h3>
         </div>
-    </div>
+    </section>
+
+    <!--Sección: Próximamente más caravanas de ayudas-->
+    <section class="section__caravanadeayudas__proximamenteMasCaravanas">
+        <img src="../images/caravanadeayudas/Proximamente.png" alt="Próximamente más caravanas" height="300px">
+        <div class="section__caravanadeayudas__proximamenteMasCaravanas__h2h4">
+            <h2 class="section__caravanadeayudas__proximamenteMasCaravanas__h2">PRÓXIMAMENTE MÁS CARAVANAS</h2>
+            <h4>¡Espérala en tu reino muy pronto!</h4>
+        </div>
+    </section>
+
+    <!--Publicidad paga-->
+    <aside>
+        a
+    </aside>
+
     <!--ID de ancla para "Contacto" del menú-->
     <footer id="footer">
 
@@ -235,16 +232,6 @@
             <a href="mailto:mereszhka@gmail.com" target="_blank" class="footer__ancla">mereszhka@gmail.com</a>
         </div>
 
-        <!--Logo de WhatsApp anclado al número de Mereszkha-->
-        <div class="footer__div">
-            <a href="https://api.whatsapp.com/send?phone=523324962976&app=facebook&entry_point=page_cta"
-                target="_blank">
-                <img src="../images/headeryfooter/Whatsapp.png" alt="WhatsApp" class="footer__img">
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=523324962976&app=facebook&entry_point=page_cta" target="_blank"
-                class="footer__ancla">+5213324962976(Mereszkha)</a>
-        </div>
-
         <!--Logo de WhatsApp anclado al número de Markish-->
         <div class="footer__div">
             <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
@@ -254,7 +241,18 @@
             <a href="https://api.whatsapp.com/send?phone=5491151649895&app=facebook&entry_point=page_cta"
                 target="_blank" class="footer__ancla">+5491151649895(Markish)</a>
         </div>
+
+        <!--Logo de WhatsApp anclado al número de Mereszkha-->
+        <div class="footer__div">
+            <a href="https://api.whatsapp.com/send?phone=523324962976&app=facebook&entry_point=page_cta"
+                target="_blank">
+                <img src="../images/headeryfooter/Whatsapp.png" alt="WhatsApp" class="footer__img">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=523324962976&app=facebook&entry_point=page_cta" target="_blank"
+                class="footer__ancla">+5213324962976(Mereszkha)</a>
+        </div>
     </footer>
+
 </body>
 
 </html>

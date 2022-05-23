@@ -10,81 +10,82 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
-<body>
+<body class="body__consejosparatubot">
+
     <header id="header">
         <div>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="bar-btn">
-                    <!--Logo de menú hamburguesa-->
-                    <img src="../images/headeryfooter/Menu.png" alt="Menú" class="header__nav__menu__png">
-                </label>
-                <!--Menú hamburguesa con despliegue-->
-                <ul class="header__ul">
+            <input type="checkbox" id="btn--menu">
+            <label for="btn--menu">
+                <!--Logo de menú hamburguesa-->
+                <img src="../images/headeryfooter/Menu.png" alt="Menú" width="40px">
+            </label>
+
+            <!--Menú hamburguesa con despliegue-->
+            <nav class="menu">
+                <ul>
+
+                    <!--Logo de la página con ancla a "index.html"-->
                     <li>
-                        <!--Logo de la página con ancla a "index.html"-->
                         <a href="../index.html">
-                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" class="logo"></a>
+                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" width="70px"></a>
                     </li>
 
+                    <!--Logo de buscar con input para buscar-->
                     <li>
-                        <!--Logo de buscar con input para buscar-->
-                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" width="50px">
                         <input type="search" placeholder="Buscar">
                         <input type="submit" name="Buscar">
                     </li>
 
+                    <!--Logo de inicio anclado a "index.html"-->
                     <li>
-                        <!--Logo de inicio anclado a "index.html"-->
                         <a href="../index.html">
-                            <img src="../images/headeryfooter/Home.png" alt="Inicio" class="active"
-                                class="nav_menu_logo" width="50px">Inicio</a>
+                            <img src="../images/headeryfooter/Home.png" alt="Inicio" width="50px">Inicio</a>
                     </li>
 
+                    <!--Logo de precio anclado a "precios.hmtl"-->
                     <li>
-                        <!--Logo de precio anclado a "precios.hmtl"-->
                         <a href="../pages/precios.html">
-                            <img src="../images/headeryfooter/Precios.png" alt="Precios"
-                                class="nav_menu_logo">Precios</a>
+                            <img src="../images/headeryfooter/Precios.png" alt="Precios" width="50px">Precios</a>
                     </li>
 
+                    <!--Logo de gremios con despliegue de submenú-->
                     <li>
-                        <!--Logo de gremios con despliegue de submenú-->
-                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" width="50px">
                         <p>Gremios ></p>
 
+                        <!--Submenú de "Gremios"-->
                         <ul>
-                            <!--Submenú de "Gremios"-->
                             <li><a href="../pages/gremiodecaceria.html">Gremio de cacería</a></li>
                             <li><a href="../pages/gremiodeguerra.html">Gremio de guerra</a></li>
                             <li><a href="../pages/caravanadeayudas.html">Caravana de ayudas</a></li>
                         </ul>
                     </li>
+
+                    <!--Logo de cuentas con despliegue de submenú-->
                     <li>
-                        <!--Logo de cuentas con despliegue de submenú-->
-                        <img src="../images/headeryfooter/LordMobile.jpg" alt="Cuentas" class="nav_menu_logo">
-                        <!--Buscar png para "Cuentas"-->
+                        <img src="../images/headeryfooter/ventadecuentas.png" alt="Cuentas" width="50px">
                         <p>Venta de cuentas ></p>
 
+                        <!--Submenú de "Cuentas"-->
                         <ul>
-                            <!--Submenú de "Cuentas"-->
                             <li><a href="../pages/cuentasrallylead.html">Cuentas Rally Lead</a></li>
                         </ul>
                     </li>
 
+                    <!--Logo de guías con anclaje a "guias.html"-->
                     <li>
-                        <!--Logo de guías con anclaje a "guias.html"-->
                         <a href="../pages/guias.html">
-                            <img src="../images/headeryfooter/Guias.png" alt="Guías" class="nav_menu_logo">Guías</a>
+                            <img src="../images/headeryfooter/Guias.png" alt="Guías" width="50px">Guías</a>
                     </li>
 
+                    <!--Logo de extras con despliegue de submenú-->
                     <li>
-                        <!--Logo de extras con despliegue de submenú-->
-                        <img src="../images/headeryfooter/Extra.png" alt="Extras" class="nav_menu_logo">
+                        <img src="../images/headeryfooter/Extra.png" alt="Extras" width="50px">
                         <p>Extras ></p>
 
+                        <!--Submenú de "Extras"-->
                         <ul>
-                            <!--Submenú de "Extras"-->
                             <li><a href="../pages/consejosparatubot.html">Consejos para tu bot</a></li>
                             <li><a href="../pages/anuncios.html">Anuncios</a></li>
                             <li><a href="../pages/dudasfrecuentes.html">Dudas frecuentes</a></li>
@@ -93,62 +94,82 @@
                         </ul>
                     </li>
 
+                    <!--Logo de contacto con ancla al footer-->
                     <li>
-                        <!--Logo de contacto con ancla al footer-->
                         <a href="#footer">
-                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto"
-                                class="nav_menu_logo">Contacto</a>
+                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto" width="50px">Contacto</a>
                     </li>
 
+                    <!--Logo de ayuda con ancla a "ayuda.html"-->
                     <li>
-                        <!--Logo de ayuda con ancla a "ayuda.html"-->
                         <a href="../pages/ayuda.html">
-                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" class="nav_menu_logo">Ayuda</a>
+                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" width="50px">Ayuda</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="header__merezbots">
-            <a href="../index.html" class="header__merezbots__h2">
-                <!--MerezBots en el header con ancla al inicio-->
+
+        <!--MerezBots en el header con ancla al inicio-->
+        <div>
+            <a href="../index.html" class="header__h2">
                 <h2>MerezBots</h2>
             </a>
         </div>
 
-        <div class="header__gif">
-            <!--GIF en movimiento con promoción del mes con ancla a "Promociones.html"-->
+        <!--GIF en movimiento con promoción del mes con ancla a "Promociones.html"-->
+        <div>
             <a href="../pages/promociones.html" target="_blank">
-                <img GIF src="../images/headeryfooter/PromoDeAbril.gif" alt="Promoción del mes"
-                    class="header__gif__promo">
+                <img GIF src="../images/headeryfooter/PromoDeAbril.gif" alt="Promoción del mes" class="header__gif">
             </a>
         </div>
-
     </header>
+
+    <!--Proximamente un nav desplegable como en CoderHouse-->
+    <section class="soy__un__nav">
+
+    </section>
+
     <main>
-        <h2>¡Gracias por rentar tu primer bot con MerezBots</h2>
-        <h3>A continuación te dejamos una guía con consejos para un mayor cuidado de tu bot.</h3>
-        <ol>
-            <li>Evitar ponerle nombres relacionado a un bot a las cuentas. Ejemplo: MrBot, Robot, AutoMachine, RoboCop,
-                Etc.</li>
-            <li>Evitar usar marcadores de gremio con la palabra "Bot" o alguna otra palabra relacionado.</li>
-            <li>Recomendamos la utilización de comandos por mensajes privado.</li>
-            <li>Controlar el uso de comandos ya que si varías personas lo activan al mismo tiempo pueden trabajar el
-                bot. Ejemplo: Spam.</li>
-            <li>Evitar usar la palabra "Bot" en el chat del gremio y general, recomendamos llamarlo de otro modo y que
-                todos los miembros del gremio puedan identificar la palabra clave.</li>
-            <li>Tratar de no cederle acceso a cualquier jugador ya algunos jugadores suelen reportar a las cuentas.</li>
-            <li>Recomendamos no usar el comando "Findtile" y "Findmonster" de manera frecuente, al menos 3 o 4 veces por
-                día o sólo durante la Fiesta de gremio.</li>
-            <li>Evitar hacerse pasar por el administrador por medio del comando "yell".</li>
-            <li>Altamente recomendable no poner los Bots en tierra de maravillas.</li>
-            <li>Si tu bot está en los reinos 750 en adelante, avisanos ya que requieren ajustes adicionales de seguridad
-                para evitar baneos.</li>
-        </ol>
-        <img src="../images/consejosparatubot/Spam.jpeg" alt="Spam" id="spam">
-        <h4>Recuerda regular el spam y revisar continuamente el nivel de tu construcción para el spam, nosotros siempre
-            escogemos una granja de nivel 8 debido a que es la construcción que menos recursos consume pero si el
-            edificio seleccionado como objetivo de spam es de mayor nivel consumirá más recursos y puede llegar a agotar
-            los recursos de tu banco o cuenta sin que te des cuenta.</h4>
+        <section class="main__section__consejosparatubot__h1">
+            <div class="main__section__consejosparatubot__div__h1">
+                <h1>Consejos para tu bot</h1>
+            </div>
+        </section>
+        <section class="main__section__consejosparatubot__h2h3">
+            <h2>¡Gracias por rentar tu primer bot con MerezBots!</h2>
+            <h3>A continuación te dejamos una guía con consejos para un mayor cuidado de tu bot.</h3>
+        </section>
+        <section class="main__section__consejosparatubot__olimgh4">
+            <ol>
+                <li>Evitar ponerle nombres relacionado a un bot a las cuentas. Ejemplo: MrBot, Robot, AutoMachine,
+                    RoboCop,
+                    Etc.</li>
+                <li>Evitar usar marcadores de gremio con la palabra "Bot" o alguna otra palabra relacionado.</li>
+                <li>Recomendamos la utilización de comandos por mensajes privado.</li>
+                <li>Controlar el uso de comandos ya que si varías personas lo activan al mismo tiempo pueden trabajar el
+                    bot. Ejemplo: Spam.</li>
+                <li>Evitar usar la palabra "Bot" en el chat del gremio y general, recomendamos llamarlo de otro modo y
+                    que
+                    todos los miembros del gremio puedan identificar la palabra clave.</li>
+                <li>Tratar de no cederle acceso a cualquier jugador ya algunos jugadores suelen reportar a las cuentas.
+                </li>
+                <li>Recomendamos no usar el comando "Findtile" y "Findmonster" de manera frecuente, al menos 3 o 4 veces
+                    por
+                    día o sólo durante la Fiesta de gremio.</li>
+                <li>Evitar hacerse pasar por el administrador por medio del comando "yell".</li>
+                <li>Altamente recomendable no poner los Bots en tierra de maravillas.</li>
+                <li>Si tu bot está en los reinos 750 en adelante, avisanos ya que requieren ajustes adicionales de
+                    seguridad
+                    para evitar baneos.</li>
+            </ol>
+            <img src="../images/consejosparatubot/Spam.jpeg" alt="Spam" id="spam">
+            <h4>Recuerda regular el spam y revisar continuamente el nivel de tu construcción para el spam, nosotros
+                siempre
+                escogemos una granja de nivel 8 debido a que es la construcción que menos recursos consume pero si el
+                edificio seleccionado como objetivo de spam es de mayor nivel consumirá más recursos y puede llegar a
+                agotar
+                los recursos de tu banco o cuenta sin que te des cuenta.</h4>
+        </section>
     </main>
     <aside>
         a
