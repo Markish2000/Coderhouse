@@ -1,0 +1,207 @@
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+    .body__consejosparatubot {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__consejosparatubot__h1"
+            "main__section__consejosparatubot__h2h3"
+            "main__section__consejosparatubot__olimgh4"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+
+    /*Sección: Imagen de fondo + h1*/
+
+    .main__section__consejosparatubot__h1 {
+        background-image: url(../images/consejosparatubot/consejosparatubot.png);
+        background-size: cover;
+        height: 200px;
+        grid-area: main__section__consejosparatubot__h1;
+
+        .main__section__consejosparatubot__div__h1 {
+            background-color: #2c2a309f;
+            color: #ffffff;
+            font-size: 22px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    /*Sección: Explicación de lo que encontrarán en la página*/
+
+    .main__section__consejosparatubot__h2h3 {
+        background-color: #2e0968bb;
+        padding: 2em;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        grid-area: main__section__consejosparatubot__h2h3;
+    }
+
+
+    /*Sección: Consejos*/
+
+    .main__section__consejosparatubot__olimgh4 {
+        background-color: #2c2a30;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 2em;
+        grid-area: main__section__consejosparatubot__olimgh4;
+
+        .main__section__consejosparatubot__olimgh4 li {
+            margin-bottom: 15px;
+        }
+
+        .main__section__consejosparatubot__olimgh4 img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+
+    .body__consejosparatubot {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__consejosparatubot__h1"
+            "main__section__consejosparatubot__h2h3"
+            "main__section__consejosparatubot__olimgh4"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+
+    /*Sección: Imagen de fondo + h1*/
+
+    .main__section__consejosparatubot__h1 {
+        background-image: url(../images/consejosparatubot/consejosparatubot.png);
+        background-size: cover;
+        height: 300px;
+        grid-area: main__section__consejosparatubot__h1;
+
+        .main__section__consejosparatubot__div__h1 {
+            background-color: #2c2a309f;
+            color: #ffffff;
+            font-size: 22px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    /*Sección: Explicación de lo que encontrarán en la página*/
+
+    .main__section__consejosparatubot__h2h3 {
+        background-color: #2e0968bb;
+        padding: 2em;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: main__section__consejosparatubot__h2h3;
+    }
+
+
+    /*Sección: Consejos*/
+
+    .main__section__consejosparatubot__olimgh4 {
+        background-color: #2c2a30;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 2em;
+        grid-area: main__section__consejosparatubot__olimgh4;
+
+        .main__section__consejosparatubot__olimgh4 li {
+            margin-bottom: 15px;
+        }
+
+        .main__section__consejosparatubot__olimgh4 img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+
+    .body__consejosparatubot {
+        display: grid;
+        grid-template-areas:
+            "soy__un__nav header header"
+            "soy__un__nav main__section__consejosparatubot__h1 aside"
+            "soy__un__nav main__section__consejosparatubot__h2h3 aside"
+            "soy__un__nav main__section__consejosparatubot__olimgh4 aside"
+            "soy__un__nav footer footer";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+
+
+    /*Sección: Imagen de fondo + h1*/
+
+    .main__section__consejosparatubot__h1 {
+        background-image: url(../images/consejosparatubot/consejosparatubot.png);
+        background-size: cover;
+        height: 300px;
+        grid-area: main__section__consejosparatubot__h1;
+
+        .main__section__consejosparatubot__div__h1 {
+            background-color: #2c2a309f;
+            color: #ffffff;
+            font-size: 40px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    /*Sección: Explicación de lo que encontrarán en la página*/
+
+    .main__section__consejosparatubot__h2h3 {
+        background-color: #2e0968bb;
+        padding: 2em;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: main__section__consejosparatubot__h2h3;
+    }
+
+
+    /*Sección: Consejos*/
+
+    .main__section__consejosparatubot__olimgh4 {
+        background-color: #2c2a30;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 2em;
+        grid-area: main__section__consejosparatubot__olimgh4;
+
+        .main__section__consejosparatubot__olimgh4 li {
+            margin-bottom: 15px;
+        }
+
+        .main__section__consejosparatubot__olimgh4 img {
+            width: 100%;
+        }
+    }
+}

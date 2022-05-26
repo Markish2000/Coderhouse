@@ -1,0 +1,163 @@
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+    .body__terminosycondiciones {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "section__terminosycondiciones__h1"
+            "section__terminosycondiciones__h3yp"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+
+    /*Sección: Imagen + h1*/
+
+    .section__terminosycondiciones__h1 {
+        background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
+        background-size: cover;
+        height: 200px;
+        grid-area: section__terminosycondiciones__h1;
+
+        .section__terminosycondiciones__h1--bi {
+            background-color: #2c2a309f;
+            color: #ffffff;
+            font-size: 22px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+    /*Términos y condiciones*/
+
+    .section__terminosycondiciones__h3yp {
+        grid-area: section__terminosycondiciones__h3yp;
+
+        .section__terminosycondiciones__h3 {
+            font-size: 26px;
+            margin: 20px;
+        }
+
+        .section__terminosycondiciones__p {
+            font-size: 20px;
+            width: 350px;
+            margin-left: 46px;
+            padding: 15px;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+
+    .body__terminosycondiciones {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "section__terminosycondiciones__h1"
+            "section__terminosycondiciones__h3yp"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+
+    /*Sección: Imagen + h1*/
+
+    .section__terminosycondiciones__h1 {
+        background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
+        background-size: cover;
+        height: 300px;
+        grid-area: section__terminosycondiciones__h1;
+    }
+
+    .section__terminosycondiciones__h1--bi {
+        background-color: #2c2a309f;
+        color: #ffffff;
+        font-size: 35px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*Términos y condiciones*/
+
+    .section__terminosycondiciones__h3yp {
+        grid-area: section__terminosycondiciones__h3yp;
+
+        .section__terminosycondiciones__h3 {
+            font-size: 40px;
+            margin: 40px;
+        }
+
+        .section__terminosycondiciones__p {
+            font-size: 25px;
+            width: 690px;
+            margin-left: 46px;
+            padding: 15px;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+
+    .body__terminosycondiciones {
+        display: grid;
+        grid-template-areas:
+            "soy__un__nav header header"
+            "soy__un__nav section__terminosycondiciones__h1 aside"
+            "soy__un__nav section__terminosycondiciones__h3yp aside"
+            "soy__un__nav footer aside";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+
+
+    /*Sección: Imagen + h1*/
+
+    .section__terminosycondiciones__h1 {
+        background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
+        background-size: cover;
+        height: 300px;
+        grid-area: section__terminosycondiciones__h1;
+    }
+
+    .section__terminosycondiciones__h1--bi {
+        background-color: #2c2a309f;
+        color: #ffffff;
+        font-size: 35px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*Términos y condiciones*/
+
+    .section__terminosycondiciones__h3yp {
+        grid-area: section__terminosycondiciones__h3yp;
+
+        .section__terminosycondiciones__h3 {
+            font-size: 40px;
+            margin: 40px;
+        }
+
+        .section__terminosycondiciones__p {
+            font-size: 25px;
+            margin-left: 46px;
+            padding: 15px;
+        }
+    }
+}
