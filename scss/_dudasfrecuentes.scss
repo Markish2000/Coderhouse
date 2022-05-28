@@ -1,4 +1,28 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
+<<<<<<< HEAD
+=======
+
+    .body__dudasFrecuentes {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__dudasFrecuentes__h1"
+            "main__section__dudasFrecuentes__h3"
+            "section__dudasFrecuentes__usarCuentaBotEncendido"
+            "section__dudasFrecuentes__costoExtraReportes"
+            "section__dudasFrecuentes__vivoEnOtroPais"
+            "section__dudasFrecuentes__elBotDebeSerPropia"
+            "section__dudasFrecuentes__controlarElBot"
+            "section__dudasFrecuentes__personasUsarBot"
+            "section__dudasFrecuentes__ponerBotR4R5"
+            "section__dudasFrecuentes__noPuedoPagar"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+
+
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__dudasFrecuentes__h1 {
@@ -6,6 +30,10 @@
         background-size: cover;
         height: 200px;
         display: flex;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__dudasFrecuentes__h1;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__dudasFrecuentes__div__h1 {
             background-color: #2c2a309f;
@@ -25,6 +53,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__dudasFrecuentes__h3;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -35,6 +67,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__dudasFrecuentes__li {
             margin-bottom: 20px;
@@ -48,6 +84,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__costoExtraReportes;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -58,6 +98,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__vivoEnOtroPais;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -67,6 +111,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -77,6 +125,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__controlarElBot;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -86,6 +138,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__personasUsarBot;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -96,6 +152,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__ponerBotR4R5;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -105,6 +165,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__noPuedoPagar;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 }
 
@@ -112,6 +176,30 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
+<<<<<<< HEAD
+=======
+
+    .body__dudasFrecuentes {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__dudasFrecuentes__h1"
+            "main__section__dudasFrecuentes__h3"
+            "section__dudasFrecuentes__usarCuentaBotEncendido"
+            "section__dudasFrecuentes__costoExtraReportes"
+            "section__dudasFrecuentes__vivoEnOtroPais"
+            "section__dudasFrecuentes__elBotDebeSerPropia"
+            "section__dudasFrecuentes__controlarElBot"
+            "section__dudasFrecuentes__personasUsarBot"
+            "section__dudasFrecuentes__ponerBotR4R5"
+            "section__dudasFrecuentes__noPuedoPagar"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+
+
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__dudasFrecuentes__h1 {
@@ -119,6 +207,10 @@
         background-size: cover;
         height: 300px;
         display: flex;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__dudasFrecuentes__h1;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__dudasFrecuentes__div__h1 {
             background-color: #2c2a309f;
@@ -137,6 +229,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__dudasFrecuentes__h3;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -147,6 +243,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__dudasFrecuentes__li {
             margin-bottom: 20px;
@@ -160,6 +260,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__costoExtraReportes;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -170,6 +274,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__vivoEnOtroPais;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -179,6 +287,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -189,6 +301,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__controlarElBot;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -198,6 +314,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__personasUsarBot;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -208,6 +328,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__ponerBotR4R5;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -217,6 +341,10 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__noPuedoPagar;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 }
 
@@ -224,13 +352,43 @@
 
 
 @media only screen and (min-width: 769px) {
+<<<<<<< HEAD
+=======
+
+    .body__dudasFrecuentes {
+        display: grid;
+        grid-template-areas:
+            "soy__un__nav header header"
+            "soy__un__nav main__section__dudasFrecuentes__h1 aside"
+            "soy__un__nav main__section__dudasFrecuentes__h3 aside"
+            "soy__un__nav section__dudasFrecuentes__usarCuentaBotEncendido aside"
+            "soy__un__nav section__dudasFrecuentes__costoExtraReportes aside"
+            "soy__un__nav section__dudasFrecuentes__vivoEnOtroPais aside"
+            "soy__un__nav section__dudasFrecuentes__elBotDebeSerPropia aside"
+            "soy__un__nav section__dudasFrecuentes__controlarElBot aside"
+            "soy__un__nav section__dudasFrecuentes__personasUsarBot aside"
+            "soy__un__nav section__dudasFrecuentes__ponerBotR4R5 aside"
+            "soy__un__nav section__dudasFrecuentes__noPuedoPagar aside"
+            "soy__un__nav footer footer";
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+
+
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__dudasFrecuentes__h1 {
         background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
         background-size: cover;
+<<<<<<< HEAD
         height: 350px;
         display: flex;
+=======
+        height: 300px;
+        display: flex;
+        grid-area: main__section__dudasFrecuentes__h1;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__dudasFrecuentes__div__h1 {
             background-color: #2c2a309f;
@@ -250,6 +408,10 @@
         background-color: #2e0968bb;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__dudasFrecuentes__h3;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -260,6 +422,10 @@
         color: #ffffff;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__dudasFrecuentes__li {
             margin-bottom: 20px;
@@ -273,6 +439,10 @@
         background-color: #2e0968bb;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__costoExtraReportes;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -283,6 +453,10 @@
         color: #ffffff;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__vivoEnOtroPais;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -292,6 +466,10 @@
         background-color: #2e0968bb;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -302,6 +480,10 @@
         color: #ffffff;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__controlarElBot;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -311,6 +493,10 @@
         background-color: #2e0968bb;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__personasUsarBot;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -321,6 +507,10 @@
         color: #ffffff;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__ponerBotR4R5;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -330,5 +520,9 @@
         background-color: #2e0968bb;
         font-size: 25px;
         padding: 30px;
+<<<<<<< HEAD
+=======
+        grid-area: section__dudasFrecuentes__noPuedoPagar;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 }

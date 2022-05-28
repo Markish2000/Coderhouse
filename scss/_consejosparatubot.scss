@@ -1,10 +1,31 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
+<<<<<<< HEAD
+=======
+
+    .body__consejosparatubot {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__consejosparatubot__h1"
+            "main__section__consejosparatubot__h2h3"
+            "main__section__consejosparatubot__olimgh4"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__consejosparatubot__h1 {
         background-image: url(../images/consejosparatubot/consejosparatubot.png);
         background-size: cover;
         height: 200px;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__consejosparatubot__h1;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__consejosparatubot__div__h1 {
             background-color: #2c2a309f;
@@ -26,6 +47,10 @@
         gap: 10px;
         display: flex;
         flex-direction: column;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__consejosparatubot__h2h3;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -36,6 +61,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 2em;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__consejosparatubot__olimgh4;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__consejosparatubot__olimgh4 li {
             margin-bottom: 15px;
@@ -51,12 +80,33 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
+<<<<<<< HEAD
+=======
+
+    .body__consejosparatubot {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main__section__consejosparatubot__h1"
+            "main__section__consejosparatubot__h2h3"
+            "main__section__consejosparatubot__olimgh4"
+            "aside"
+            "footer";
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__consejosparatubot__h1 {
         background-image: url(../images/consejosparatubot/consejosparatubot.png);
         background-size: cover;
         height: 300px;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__consejosparatubot__h1;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__consejosparatubot__div__h1 {
             background-color: #2c2a309f;
@@ -80,6 +130,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__consejosparatubot__h2h3;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -90,6 +144,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 2em;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__consejosparatubot__olimgh4;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__consejosparatubot__olimgh4 li {
             margin-bottom: 15px;
@@ -105,12 +163,34 @@
 
 
 @media only screen and (min-width: 769px) {
+<<<<<<< HEAD
+=======
+
+    .body__consejosparatubot {
+        display: grid;
+        grid-template-areas:
+            "soy__un__nav header header"
+            "soy__un__nav main__section__consejosparatubot__h1 aside"
+            "soy__un__nav main__section__consejosparatubot__h2h3 aside"
+            "soy__un__nav main__section__consejosparatubot__olimgh4 aside"
+            "soy__un__nav footer footer";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 0.3fr 4fr 1.3fr;
+    }
+
+
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__consejosparatubot__h1 {
         background-image: url(../images/consejosparatubot/consejosparatubot.png);
         background-size: cover;
+<<<<<<< HEAD
         height: 350px;
+=======
+        height: 300px;
+        grid-area: main__section__consejosparatubot__h1;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__consejosparatubot__div__h1 {
             background-color: #2c2a309f;
@@ -134,6 +214,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__consejosparatubot__h2h3;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -144,6 +228,10 @@
         color: #ffffff;
         font-size: 20px;
         padding: 2em;
+<<<<<<< HEAD
+=======
+        grid-area: main__section__consejosparatubot__olimgh4;
+>>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__consejosparatubot__olimgh4 li {
             margin-bottom: 15px;
