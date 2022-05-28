@@ -16,116 +16,311 @@
   color: #000000;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__index {
-    display: grid;
-    grid-template-areas: "header" "main__section__inicio" "main__section__funciones" "main__section__hacerbots" "main__section__porqueelegirnos" "section__seguridadYConfiabilidad" "section__garantiaDeSastifaccion" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
-  /*Sección: Header*/
-  header {
-    background-color: #2e0968;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: header;
-  }
-  header div #btn--menu {
+body {
+  margin-left: 80px;
+  margin-top: 80px;
+  transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+header {
+  background-color: #2e0968;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+.icon__menu {
+  width: 50px;
+  height: 100%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(10px);
+}
+
+.icon__menu img {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.menu__side {
+  background: #2e0968;
+  color: #ffffff;
+  font-size: 18px;
+  width: 80px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 300;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-right: 20px solid #2e0968;
+  transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  grid-area: menu__side;
+}
+
+.menu__side::-webkit-scrollbar {
+  display: none;
+}
+
+.menu__side {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.name__page {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.name__page img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.options__menu {
+  padding: 20px 30px;
+  position: absolute;
+  top: 80px;
+}
+
+.options__menu a {
+  color: rgba(255, 255, 255, 0.6980392157);
+  cursor: default;
+  display: block;
+  position: relative;
+  transition: color 300ms;
+}
+
+.options__menu a:hover {
+  color: #ffffff;
+}
+
+.options__menu .option {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.options__menu .option img {
+  width: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.options__menu .option h4 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+a.selected {
+  color: #ffffff;
+}
+
+.selected:before {
+  content: "";
+  width: 3px;
+  height: 80%;
+  background: #ffffff;
+  position: absolute;
+  top: 10%;
+  left: -30px;
+}
+
+.body_move {
+  margin-left: 250px;
+}
+
+.menu__side_move {
+  width: 250px;
+}
+
+.header__h2 {
+  color: #d1b410;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.header__gif {
+  width: 600px;
+  margin-left: 100px;
+}
+
+.nav__acordeon__color {
+  background-color: #2e0968;
+}
+
+.Bg__menu {
+  background-color: #2e0968;
+  margin-right: 10px;
+  border: none;
+}
+
+.accordion-button {
+  background-color: #2e0968;
+  padding: 0;
+}
+
+.accordion-button::after {
+  background-image: url(../images/headeryfooter/flecha-hacia-abajo-para-navegar.png);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #2e0968;
+}
+
+a {
+  text-decoration: none;
+}
+
+.accordion-body a {
+  cursor: pointer;
+}
+
+.options__menu a {
+  color: rgba(255, 255, 255, 0.6980392157);
+  cursor: default;
+  display: block;
+  position: relative;
+  transition: color 300ms;
+}
+
+.options__menu a:hover {
+  color: #ffffff;
+}
+
+.options__menu h4 {
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.options__menu h4:hover {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .header__h2 {
     display: none;
   }
-  header div header label {
-    width: 60px;
-    height: 40px;
-    display: block;
+
+  .header__gif {
+    width: 300px;
   }
-  header div header label:hover {
-    cursor: pointer;
+
+  .icon__menu {
+    margin-left: 30px;
   }
-  header div .menu {
+}
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  .header__gif {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body_move {
+    margin-left: 0px;
+  }
+
+  .menu__side_move {
+    width: 80px;
+    left: -80px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  footer {
     background-color: #2e0968;
-    width: 60%;
-    margin-left: -70%;
-    position: absolute;
-    transition: all 0.6s;
-  }
-  header div .menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    grid-area: footer;
   }
-  header div .menu li {
-    border-top: 1px solid #000000;
-  }
-  header div .menu li:hover {
-    background-color: rgba(0, 0, 0, 0.3019607843);
-  }
-  header div .menu li ul {
-    display: none;
-    position: absolute;
-  }
-  header div .menu li:hover > ul {
-    display: block;
-  }
-  header div .menu li ul li {
-    position: relative;
-  }
-  header div .menu ul li ul li {
-    background-color: #2e0968;
-    width: 168px;
-    right: -252px;
-    top: -111px;
-  }
-  header div .menu li a {
-    color: #ffffff;
-    padding: 15px 20px;
-    display: block;
-    text-decoration: none;
-  }
-  header div .menu li p {
-    color: #ffffff;
-    padding: 15px 20px;
-    display: block;
-  }
-  header div #btn--menu:checked ~ .menu {
-    margin-top: 4px;
-    margin-left: -25px;
-  }
-  header .header__h2 {
-    display: none;
-  }
-  header .header__gif {
-    width: 270px;
-    margin-right: 40px;
+  footer .footer__div {
+    gap: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
-
-  /*Sección: NAV*/
-  .soy__un__nav {
-    display: none;
+  footer .footer__img {
+    width: 35px;
   }
-
-  /*Sección: Aside*/
-  aside {
-    grid-area: aside;
+  footer .footer__ancla {
+    color: #ffffff;
+    text-decoration: none;
   }
-
-  /*Sección: INICIO*/
-  .main__section__inicio {
-    grid-area: main__section__inicio;
+}
+@media only screen and (min-width: 421px) and (max-width: 1001px) {
+  footer {
+    background-color: #2e0968;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
   }
-
+  footer .footer__div {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer__img {
+    width: 40px;
+  }
+  footer .footer__ancla {
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 1002px) {
+  footer {
+    background-color: #2e0968;
+    font-size: 1.2rem;
+    height: 100px;
+    padding-left: 9%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: baseline;
+    justify-content: center;
+    grid-area: footer;
+  }
+  footer .footer__div {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer__img {
+    width: 40px;
+  }
+  footer .footer__ancla {
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
   /*Sección: Explicación de las funciones del bot*/
   .main__section__funciones {
     background-color: #2c2a30;
     padding-bottom: 25px;
     display: grid;
-    grid-area: main__section__funciones;
   }
   .main__section__funciones .main__section__div__img {
     margin-top: 20px;
@@ -155,7 +350,6 @@
   .main__section__hacerbots {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 10px;
-    grid-area: main__section__hacerbots;
   }
   .main__section__hacerbots .main__section__hacerbots__div__h2 {
     margin-top: 10px;
@@ -171,7 +365,6 @@
     background-color: #2c2a30;
     padding-top: 30px;
     display: grid;
-    grid-area: main__section__porqueelegirnos;
   }
   .main__section__porqueelegirnos .main__section__porqueelegirnos--center {
     display: grid;
@@ -199,7 +392,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding-top: 30px;
     display: grid;
-    grid-area: section__seguridadYConfiabilidad;
   }
   .section__seguridadYConfiabilidad .section__seguridadYConfiabilidad__img--center {
     display: grid;
@@ -225,7 +417,6 @@
     background-color: #2c2a30;
     padding-top: 30px;
     display: grid;
-    grid-area: section__garantiaDeSastifaccion;
   }
   .section__garantiaDeSastifaccion .section__garantiaDeSastifaccion__img {
     width: 350px;
@@ -249,139 +440,11 @@
     font-size: 20px;
     margin: 30px;
   }
-
-  /*Sección: Aside*/
-  aside {
-    grid-area: aside;
-  }
-
-  /*Sección: Footer*/
-  footer {
-    background-color: #2e0968;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    grid-area: footer;
-  }
-  footer .footer__div {
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .footer__img {
-    width: 35px;
-  }
-  footer .footer__ancla {
-    color: #ffffff;
-    text-decoration: none;
-  }
 }
 @media only screen and (min-width: 421px) and (max-width: 1001px) {
-  .body__index {
-    display: grid;
-    grid-template-areas: "header" "main__section__inicio" "main__section__funciones" "main__section__hacerbots" "main__section__porqueelegirnos" "section__seguridadYConfiabilidad" "section__garantiaDeSastifaccion" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  }
-
-  /*Sección: Header*/
-  header {
-    background-color: #2e0968;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    grid-area: header;
-  }
-
-  div #btn--menu {
-    display: none;
-  }
-  div header label {
-    width: 60px;
-    height: 40px;
-    display: block;
-  }
-  div header label:hover {
-    cursor: pointer;
-  }
-  div .menu {
-    background-color: #2e0968;
-    width: 60%;
-    margin-left: -70%;
-    position: absolute;
-    transition: all 0.6s;
-  }
-  div .menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
-  div .menu li {
-    border-top: 1px solid #000000;
-  }
-  div .menu li:hover {
-    background-color: rgba(0, 0, 0, 0.3019607843);
-  }
-  div .menu li ul {
-    display: none;
-    position: absolute;
-  }
-  div .menu li:hover > ul {
-    display: block;
-  }
-  div .menu li ul li {
-    position: relative;
-  }
-  div .menu ul li ul li {
-    background-color: #2e0968;
-    width: 168px;
-    right: -252px;
-    top: -111px;
-  }
-  div .menu li a {
-    color: #ffffff;
-    padding: 15px 20px;
-    text-decoration: none;
-    display: block;
-  }
-  div .menu li p {
-    color: #ffffff;
-    padding: 15px 20px;
-    display: block;
-  }
-  div #btn--menu:checked ~ .menu {
-    margin-top: 4px;
-    margin-left: -25px;
-  }
-
-  .header__h2 {
-    color: #d1b410;
-    font-size: 20px;
-    text-decoration: none;
-  }
-
-  .header__gif {
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-  }
-
-  /*Sección: NAV*/
-  .soy__un__nav {
-    display: none;
-  }
-
   /*Sección: Eliminar contenido*/
   .display--none {
     display: none;
-  }
-
-  /*Sección: INICIO*/
-  .main__section__inicio {
-    grid-area: main__section__inicio;
   }
 
   /*Sección: Explicación de las funciones del bot*/
@@ -391,18 +454,19 @@
     display: grid;
     grid-template-areas: "main__section__div__img main__section__div__h2__p";
     grid-template-columns: auto auto;
-    grid-area: main__section__funciones;
   }
   .main__section__funciones .main__section__div__img {
     margin-right: 10px;
     display: grid;
     align-items: center;
+    grid-area: main__section__div__img;
   }
   .main__section__funciones .main__section__div__img .main__section__funciones__img {
     width: 350px;
   }
   .main__section__funciones .main__section__div__h2__p {
     margin-top: 10px;
+    grid-area: main__section__div__h2__p;
   }
   .main__section__funciones .main__section__div__h2__p .main__section__funciones__h2 {
     color: #ffffff;
@@ -420,7 +484,6 @@
   .main__section__hacerbots {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 10px;
-    grid-area: main__section__hacerbots;
   }
   .main__section__hacerbots .main__section__hacerbots__div__h2 {
     font-size: 30px;
@@ -438,7 +501,6 @@
     background-color: #2c2a30;
     display: flex;
     align-items: center;
-    grid-area: main__section__porqueelegirnos;
   }
   .main__section__porqueelegirnos .main__section__porqueelegirnos__img {
     width: 350px;
@@ -462,7 +524,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding-top: 30px;
     display: flex;
-    grid-area: section__seguridadYConfiabilidad;
   }
   .section__seguridadYConfiabilidad .section__seguridadYConfiabilidad__img--center {
     display: flex;
@@ -487,7 +548,6 @@
     background-color: #2c2a30;
     padding-top: 30px;
     display: flex;
-    grid-area: section__garantiaDeSastifaccion;
   }
   .section__garantiaDeSastifaccion .section__garantiaDeSastifaccion__div__img {
     display: flex;
@@ -511,139 +571,8 @@
     font-size: 20px;
     margin: 30px;
   }
-
-  /*Sección: Aside*/
-  aside {
-    grid-area: aside;
-  }
-
-  /*Sección: Footer*/
-  footer {
-    background-color: #2e0968;
-    padding: 20px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    grid-area: footer;
-  }
-  footer .footer__div {
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .footer__img {
-    width: 40px;
-  }
-  footer .footer__ancla {
-    color: #ffffff;
-    font-size: 25px;
-    text-decoration: none;
-  }
 }
 @media only screen and (min-width: 1002px) {
-  .body__index {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__inicio aside" "soy__un__nav main__section__funciones aside" "soy__un__nav main__section__hacerbots aside" "soy__un__nav main__section__porqueelegirnos aside" "soy__un__nav section__seguridadYConfiabilidad aside" "soy__un__nav section__garantiaDeSastifaccion aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
-  /*Sección: Header*/
-  header {
-    background-color: #2e0968;
-    width: 100%;
-    height: 50px;
-    grid-area: header;
-    display: flex;
-    align-items: center;
-  }
-  header #btn--menu {
-    display: none;
-  }
-  header header label {
-    display: block;
-    width: 60px;
-    height: 40px;
-    margin-left: 15px;
-  }
-  header header label:hover {
-    cursor: pointer;
-  }
-  header .menu {
-    position: absolute;
-    background-color: #2e0968;
-    width: 20%;
-    margin-left: -70%;
-    transition: all 0.6s;
-  }
-  header .menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
-  header .menu li {
-    border-top: 1px solid #000000;
-  }
-  header .menu li:hover {
-    background-color: rgba(0, 0, 0, 0.3019607843);
-  }
-  header .menu li ul {
-    display: none;
-    position: absolute;
-  }
-  header .menu li:hover > ul {
-    display: block;
-  }
-  header .menu li ul li {
-    position: relative;
-  }
-  header .menu ul li ul li {
-    background-color: #2e0968;
-    right: -270px;
-    top: -111px;
-  }
-  header .menu li a {
-    display: block;
-    padding: 15px 20px;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  header .menu li p {
-    display: block;
-    padding: 15px 20px;
-    color: #ffffff;
-  }
-  header #btn--menu:checked ~ .menu {
-    margin-top: 5px;
-    margin-left: 0px;
-  }
-
-  .header__h2 {
-    color: #d1b410;
-    text-decoration: none;
-    font-size: 20px;
-  }
-
-  /*Sección: NAV*/
-  .soy__un__nav {
-    background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
-    grid-area: soy__un__nav;
-  }
-
-  /*Sección: Aside*/
-  aside {
-    background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
-    grid-area: aside;
-  }
-
-  /*Sección: INICIO*/
-  .main__section__inicio {
-    grid-area: main__section__inicio;
-  }
-
   /*Sección: Explicación de las funciones del bot*/
   .main__section__funciones {
     background-color: #2c2a30;
@@ -657,9 +586,13 @@
     margin-right: 15px;
     display: grid;
     align-items: center;
+    grid-area: main__section__div__img;
   }
   .main__section__funciones .main__section__div__img .main__section__funciones__img {
     width: 350px;
+  }
+  .main__section__funciones .main__section__div__h2__p {
+    grid-area: main__section__div__h2__p;
   }
   .main__section__funciones .main__section__div__h2__p .main__section__funciones__h2 {
     color: #ffffff;
@@ -677,7 +610,6 @@
   .main__section__hacerbots {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 10px;
-    grid-area: main__section__hacerbots;
   }
   .main__section__hacerbots .main__section__hacerbots__div__h2 {
     font-size: 30px;
@@ -694,7 +626,6 @@
   .main__section__porqueelegirnos {
     background-color: #2c2a30;
     display: flex;
-    grid-area: main__section__porqueelegirnos;
   }
   .main__section__porqueelegirnos .main__section__porqueelegirnos__img {
     margin: 20px;
@@ -718,7 +649,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding-top: 30px;
     display: flex;
-    grid-area: section__seguridadYConfiabilidad;
   }
   .section__seguridadYConfiabilidad .section__seguridadYConfiabilidad__img--center {
     display: flex;
@@ -746,7 +676,6 @@
     padding-top: 30px;
     display: flex;
     align-items: center;
-    grid-area: section__garantiaDeSastifaccion;
   }
   .section__garantiaDeSastifaccion .section__garantiaDeSastifaccion__img {
     width: 350px;
@@ -765,38 +694,6 @@
     color: #ffffff;
     font-size: 20px;
     margin: 30px;
-  }
-
-  /*Sección: Aside*/
-  aside {
-    grid-area: aside;
-  }
-
-  /*Sección: Footer*/
-  footer {
-    background-color: #2e0968;
-    font-size: 1.2rem;
-    height: 100px;
-    padding-left: 9%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: baseline;
-    justify-content: center;
-    grid-area: footer;
-  }
-  footer .footer__div {
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .footer__img {
-    width: 40px;
-  }
-  footer .footer__ancla {
-    color: #ffffff;
-    font-size: 17px;
-    text-decoration: none;
   }
 }
 .main__precios__section__div__pagarNuevoBot__h3--animation {
@@ -822,18 +719,11 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__precios {
-    display: grid;
-    grid-template-areas: "header" "main__precios__section__h1" "main__precios__section__pyr" "main__precios__section__pagarNuevoBot" "main__precios__section__pagarRentaMensual" "main__precios__section__promociones__h2h4" "main__precios__section__promociones__p__imput" "main__precios__section__masPromociones" "main__precios__section__otrosMetodosDePago" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-  }
-
   /*Sección: img + h1*/
   .main__precios__section__h1 {
     background-image: url(../images/precios/precios.jpg);
     background-size: cover;
     height: 200px;
-    grid-area: main__precios__section__h1;
   }
   .main__precios__section__h1 .main__precios__section__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -850,7 +740,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 18px;
     padding: 40px;
-    grid-area: main__precios__section__pyr;
   }
   .main__precios__section__pyr .main__precios__section__p--margin {
     margin-top: 20px;
@@ -867,7 +756,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 40px;
-    grid-area: main__precios__section__pagarNuevoBot;
   }
   .main__precios__section__pagarNuevoBot .main__precios__section__div__pagarNuevoBot__h2 {
     font-size: 23px;
@@ -892,7 +780,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 40px;
-    grid-area: main__precios__section__pagarRentaMensual;
   }
   .main__precios__section__pagarRentaMensual .main__precios__section__div__pagarRentaMensual__h2 {
     font-size: 23px;
@@ -935,7 +822,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__promociones__h2h4;
   }
   .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h2--td {
     color: #000000;
@@ -957,7 +843,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 30px;
-    grid-area: main__precios__section__promociones__p__imput;
   }
   .main__precios__section__promociones__p__imput .main__precios__section__promociones__div__p__imput {
     margin-bottom: 30px;
@@ -996,7 +881,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__masPromociones;
   }
   .main__precios__section__masPromociones .main__precios__section__masPromociones__h2 {
     font-size: 25px;
@@ -1023,7 +907,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__otrosMetodosDePago;
   }
   .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago {
     margin-top: 30px;
@@ -1050,18 +933,11 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__precios {
-    display: grid;
-    grid-template-areas: "header" "main__precios__section__h1" "main__precios__section__pyr" "main__precios__section__pagarNuevoBot" "main__precios__section__pagarRentaMensual" "main__precios__section__promociones__h2h4" "main__precios__section__promociones__p__imput" "main__precios__section__masPromociones" "main__precios__section__otrosMetodosDePago" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-  }
-
   /*Sección: img + h1*/
   .main__precios__section__h1 {
     background-image: url(../images/precios/precios.jpg);
     background-size: cover;
     height: 300px;
-    grid-area: main__precios__section__h1;
   }
   .main__precios__section__h1 .main__precios__section__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1078,7 +954,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 26px;
     padding: 40px;
-    grid-area: main__precios__section__pyr;
   }
   .main__precios__section__pyr .main__precios__section__p--margin {
     margin-top: 20px;
@@ -1095,7 +970,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 40px;
-    grid-area: main__precios__section__pagarNuevoBot;
   }
   .main__precios__section__pagarNuevoBot .main__precios__section__div__pagarNuevoBot__h2 {
     font-size: 35px;
@@ -1121,7 +995,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 40px;
-    grid-area: main__precios__section__pagarRentaMensual;
   }
   .main__precios__section__pagarRentaMensual .main__precios__section__div__pagarRentaMensual__h2 {
     font-size: 30px;
@@ -1166,7 +1039,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__promociones__h2h4;
   }
   .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h2--td {
     color: #000000;
@@ -1188,7 +1060,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 30px;
-    grid-area: main__precios__section__promociones__p__imput;
   }
   .main__precios__section__promociones__p__imput .main__precios__section__promociones__div__p__imput {
     margin-bottom: 30px;
@@ -1227,7 +1098,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__masPromociones;
   }
   .main__precios__section__masPromociones .main__precios__section__masPromociones__h2 {
     font-size: 45px;
@@ -1257,7 +1127,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__otrosMetodosDePago;
   }
   .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago {
     margin-top: 30px;
@@ -1285,19 +1154,11 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__precios {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__precios__section__h1 aside" "soy__un__nav main__precios__section__pyr aside" "soy__un__nav main__precios__section__pagarNuevoBot aside" "soy__un__nav main__precios__section__pagarRentaMensual aside" "soy__un__nav main__precios__section__promociones__h2h4 aside" "soy__un__nav main__precios__section__promociones__p__imput aside" "soy__un__nav main__precios__section__masPromociones aside" "soy__un__nav main__precios__section__otrosMetodosDePago aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: img + h1*/
   .main__precios__section__h1 {
     background-image: url(../images/precios/precios.jpg);
     background-size: cover;
-    height: 300px;
-    grid-area: main__precios__section__h1;
+    height: 350px;
   }
   .main__precios__section__h1 .main__precios__section__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1314,7 +1175,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 26px;
     padding: 40px;
-    grid-area: main__precios__section__pyr;
   }
   .main__precios__section__pyr .main__precios__section__p--margin {
     margin-top: 20px;
@@ -1331,7 +1191,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 40px;
-    grid-area: main__precios__section__pagarNuevoBot;
   }
   .main__precios__section__pagarNuevoBot .main__precios__section__div__pagarNuevoBot__h2 {
     font-size: 40px;
@@ -1365,7 +1224,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 40px;
-    grid-area: main__precios__section__pagarRentaMensual;
   }
 
   .main__precios__section__div__pagarRentaMensual__h2 {
@@ -1399,7 +1257,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__promociones__h2h4;
   }
   .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h2--td {
     color: #000000;
@@ -1421,7 +1278,6 @@
     color: #ffffff;
     background-color: #2c2a30;
     padding: 30px;
-    grid-area: main__precios__section__promociones__p__imput;
   }
   .main__precios__section__promociones__p__imput .main__precios__section__promociones__p__imput--df {
     display: flex;
@@ -1464,7 +1320,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__masPromociones;
   }
   .main__precios__section__masPromociones .main__precios__section__masPromociones__h2 {
     font-size: 45px;
@@ -1494,7 +1349,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__precios__section__otrosMetodosDePago;
   }
   .main__precios__section__otrosMetodosDePago .main__precios__section__otrosMetodosDePago__h2 {
     font-size: 50px;
@@ -1528,18 +1382,11 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__gremioDeCaceria {
-    display: grid;
-    grid-template-areas: "header" "main__section__gremioDeCaceria__h1" "main__section__gremioDeCaceria__h3yh4" "section__gremioDeCaceria__OD" "section__gremioDeCaceria__OD__info" "section__gremioDeCaceria__ITS" "section__gremioDeCaceria__ITS__info" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__gremioDeCaceria__h1 {
     background-image: url(../images/gremiosdecaceria/gremiosdecaceria.jpg);
     background-size: cover;
     height: 200px;
-    grid-area: main__section__gremioDeCaceria__h1;
   }
   .main__section__gremioDeCaceria__h1 .main__section__gremioDeCaceria__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1558,7 +1405,6 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
-    grid-area: main__section__gremioDeCaceria__h3yh4;
   }
 
   .main__section__gremioDeCaceria__h3 {
@@ -1575,7 +1421,6 @@
     background-size: cover;
     color: #ffffff;
     padding: 30px;
-    grid-area: section__gremioDeCaceria__OD;
   }
 
   .gremiodecaceria__img {
@@ -1601,7 +1446,6 @@
     color: #ffffff;
     font-size: 25px;
     padding: 30px;
-    grid-area: section__gremioDeCaceria__OD__info;
   }
 
   .section__gremioDeCaceria__OD__info__ul {
@@ -1632,7 +1476,6 @@
     background-size: cover;
     color: #ffffff;
     padding: 30px;
-    grid-area: section__gremioDeCaceria__ITS;
   }
 
   /*Sección: [ITS] XVII Inmortales, información*/
@@ -1641,22 +1484,14 @@
     color: #ffffff;
     font-size: 25px;
     padding: 30px;
-    grid-area: section__gremioDeCaceria__ITS__info;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__gremioDeCaceria {
-    display: grid;
-    grid-template-areas: "header" "main__section__gremioDeCaceria__h1" "main__section__gremioDeCaceria__h3yh4" "section__gremioDeCaceria__OD" "section__gremioDeCaceria__OD__info" "section__gremioDeCaceria__ITS" "section__gremioDeCaceria__ITS__info" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__gremioDeCaceria__h1 {
     background-image: url(../images/gremiosdecaceria/gremiosdecaceria.jpg);
     background-size: cover;
     height: 250px;
-    grid-area: main__section__gremioDeCaceria__h1;
   }
   .main__section__gremioDeCaceria__h1 .main__section__gremioDeCaceria__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1677,7 +1512,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__gremioDeCaceria__h3yh4;
   }
 
   .main__section__gremioDeCaceria__h3 {
@@ -1693,7 +1527,6 @@
     background-image: url(../images/gremiosdecaceria/OD--bc.png);
     background-size: cover;
     color: #ffffff;
-    grid-area: section__gremioDeCaceria__OD;
   }
 
   .section__gremioDeCaceria__div__OD--bc {
@@ -1724,7 +1557,6 @@
     font-size: 25px;
     padding: 30px;
     display: flex;
-    grid-area: section__gremioDeCaceria__OD__info;
   }
 
   .section__gremioDeCaceria__OD__info__ul {
@@ -1755,7 +1587,6 @@
     background-image: url(../images/gremiosdecaceria/ITS--bc.png);
     background-size: cover;
     color: #ffffff;
-    grid-area: section__gremioDeCaceria__ITS;
   }
 
   /*Sección: [ITS] XVII Inmortales, información*/
@@ -1765,23 +1596,14 @@
     font-size: 25px;
     padding: 30px;
     display: flex;
-    grid-area: section__gremioDeCaceria__ITS__info;
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__gremioDeCaceria {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__gremioDeCaceria__h1 aside" "soy__un__nav main__section__gremioDeCaceria__h3yh4 aside" "soy__un__nav section__gremioDeCaceria__OD aside" "soy__un__nav section__gremioDeCaceria__OD__info aside" "soy__un__nav section__gremioDeCaceria__ITS aside" "soy__un__nav section__gremioDeCaceria__ITS__info aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__gremioDeCaceria__h1 {
     background-image: url(../images/gremiosdecaceria/gremiosdecaceria.jpg);
     background-size: cover;
-    height: 250px;
-    grid-area: main__section__gremioDeCaceria__h1;
+    height: 300px;
   }
   .main__section__gremioDeCaceria__h1 .main__section__gremioDeCaceria__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1802,7 +1624,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__gremioDeCaceria__h3yh4;
   }
 
   .main__section__gremioDeCaceria__h3 {
@@ -1818,7 +1639,6 @@
     background-image: url(../images/gremiosdecaceria/OD--bc.png);
     background-size: cover;
     color: #ffffff;
-    grid-area: section__gremioDeCaceria__OD;
   }
 
   .section__gremioDeCaceria__div__OD--bc {
@@ -1849,7 +1669,6 @@
     font-size: 25px;
     padding: 30px;
     display: flex;
-    grid-area: section__gremioDeCaceria__OD__info;
   }
 
   .section__gremioDeCaceria__OD__info__ul {
@@ -1879,7 +1698,6 @@
     background-image: url(../images/gremiosdecaceria/ITS--bc.png);
     background-size: cover;
     color: #ffffff;
-    grid-area: section__gremioDeCaceria__ITS;
   }
 
   /*Sección: [ITS] XVII Inmortales, información*/
@@ -1889,22 +1707,14 @@
     font-size: 25px;
     padding: 30px;
     display: flex;
-    grid-area: section__gremioDeCaceria__ITS__info;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__gremioDeGuerra {
-    display: grid;
-    grid-template-areas: "header" "main__section__gremiodeguerra__h1" "main__section__gremiodeguerra_h3yh4" "section__gremiodeguerra__rdc" "section__gremiosdeguerra__rdc__h3" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto;
-  }
-
   /*Sección: imagen + h1*/
   .main__section__gremiodeguerra__h1 {
     background-image: url(../images/gremiosdeguerra/gremiosdeguerra.jpg);
     background-size: cover;
     height: 200px;
-    grid-area: main__section__gremiodeguerra__h1;
   }
   .main__section__gremiodeguerra__h1 .main__section__gremiodeguerra__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1922,7 +1732,6 @@
     padding: 2em;
     display: flex;
     flex-direction: column;
-    grid-area: main__section__gremiodeguerra_h3yh4;
   }
   .main__section__gremiodeguerra_h3yh4 .main__section__gremiodeguerra_h3 {
     font-size: 25px;
@@ -1937,7 +1746,6 @@
     background-image: url(../images/gremiosdeguerra/RdC--bc.jpg);
     background-size: cover;
     height: 380px;
-    grid-area: section__gremiodeguerra__rdc;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1974,7 +1782,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 20px;
-    grid-area: section__gremiosdeguerra__rdc__h3;
   }
   .section__gremiosdeguerra__rdc__h3ul div .section__gremiosdeguerra__rdc__h3 {
     font-size: 25px;
@@ -1989,18 +1796,11 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__gremioDeGuerra {
-    display: grid;
-    grid-template-areas: "header" "main__section__gremiodeguerra__h1" "main__section__gremiodeguerra_h3yh4" "section__gremiodeguerra__rdc" "section__gremiosdeguerra__rdc__h3" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto;
-  }
-
   /*Sección: imagen + h1*/
   .main__section__gremiodeguerra__h1 {
     background-image: url(../images/gremiosdeguerra/gremiosdeguerra.jpg);
     background-size: cover;
     height: 300px;
-    grid-area: main__section__gremiodeguerra__h1;
   }
   .main__section__gremiodeguerra__h1 .main__section__gremiodeguerra__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2020,7 +1820,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__gremiodeguerra_h3yh4;
   }
   .main__section__gremiodeguerra_h3yh4 .main__section__gremiodeguerra_h3 {
     font-size: 30px;
@@ -2035,7 +1834,6 @@
     background-image: url(../images/gremiosdeguerra/RdC--bc.jpg);
     background-size: cover;
     height: 660px;
-    grid-area: section__gremiodeguerra__rdc;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2073,7 +1871,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 20px;
-    grid-area: section__gremiosdeguerra__rdc__h3;
   }
   .section__gremiosdeguerra__rdc__h3ul div .section__gremiosdeguerra__rdc__h3 {
     font-size: 35px;
@@ -2092,19 +1889,11 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__gremioDeGuerra {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__gremiodeguerra__h1 aside" "soy__un__nav main__section__gremiodeguerra_h3yh4 aside" "soy__un__nav section__gremiodeguerra__rdc aside" "soy__un__nav section__gremiosdeguerra__rdc__h3 aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: imagen + h1*/
   .main__section__gremiodeguerra__h1 {
     background-image: url(../images/gremiosdeguerra/gremiosdeguerra.jpg);
     background-size: cover;
     height: 300px;
-    grid-area: main__section__gremiodeguerra__h1;
   }
   .main__section__gremiodeguerra__h1 .main__section__gremiodeguerra__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2124,7 +1913,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__gremiodeguerra_h3yh4;
   }
   .main__section__gremiodeguerra_h3yh4 .main__section__gremiodeguerra_h3 {
     font-size: 30px;
@@ -2139,7 +1927,6 @@
     background-image: url(../images/gremiosdeguerra/RdC--bc.jpg);
     background-size: cover;
     height: 300px;
-    grid-area: section__gremiodeguerra__rdc;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2177,7 +1964,6 @@
     color: #ffffff;
     padding: 20px;
     display: flex;
-    grid-area: section__gremiosdeguerra__rdc__h3;
   }
   .section__gremiosdeguerra__rdc__h3ul .section__gremiosdeguerra__rdc__h3 {
     font-size: 35px;
@@ -2199,18 +1985,11 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__caravanadeayudas {
-    display: grid;
-    grid-template-areas: "header" "main__section__caravanadeayudas__h1" "main__section__caravanadeayudas__h2p" "section__caravanadeayudas__22122021" "section__caravanadeayudas__proximamenteMasCaravanas" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__caravanadeayudas__h1 {
     background-image: url(../images/caravanadeayudas/caravanadeayudas.png);
     background-size: cover;
     height: 200px;
-    grid-area: main__section__caravanadeayudas__h1;
   }
   .main__section__caravanadeayudas__h1 .main__section__caravanadeayudas__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2230,7 +2009,6 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
-    grid-area: main__section__caravanadeayudas__h2p;
   }
   .main__section__caravanadeayudas__h2p .main__section__caravanadeayudas__h2p p {
     font-size: 20px;
@@ -2242,7 +2020,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 20px;
-    grid-area: section__caravanadeayudas__22122021;
   }
   .section__caravanadeayudas__22122021 .section__caravanadeayudas__div__22122021 {
     font-size: 30px;
@@ -2271,7 +2048,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: section__caravanadeayudas__proximamenteMasCaravanas;
   }
   .section__caravanadeayudas__proximamenteMasCaravanas .section__caravanadeayudas__proximamenteMasCaravanas__h2 {
     font-size: 30px;
@@ -2280,18 +2056,11 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__caravanadeayudas {
-    display: grid;
-    grid-template-areas: "header" "main__section__caravanadeayudas__h1" "main__section__caravanadeayudas__h2p" "section__caravanadeayudas__22122021" "section__caravanadeayudas__proximamenteMasCaravanas" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__caravanadeayudas__h1 {
     background-image: url(../images/caravanadeayudas/caravanadeayudas.png);
     background-size: cover;
     height: 300px;
-    grid-area: main__section__caravanadeayudas__h1;
   }
   .main__section__caravanadeayudas__h1 .main__section__caravanadeayudas__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2311,7 +2080,6 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
-    grid-area: main__section__caravanadeayudas__h2p;
   }
   .main__section__caravanadeayudas__h2p .main__section__caravanadeayudas__h2p p {
     font-size: 20px;
@@ -2323,7 +2091,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 20px;
-    grid-area: section__caravanadeayudas__22122021;
   }
   .section__caravanadeayudas__22122021 .section__caravanadeayudas__div__22122021 {
     font-size: 30px;
@@ -2351,7 +2118,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: section__caravanadeayudas__proximamenteMasCaravanas;
   }
   .section__caravanadeayudas__proximamenteMasCaravanas .section__caravanadeayudas__proximamenteMasCaravanas__h2 {
     font-size: 30px;
@@ -2360,19 +2126,11 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__caravanadeayudas {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__caravanadeayudas__h1 aside" "soy__un__nav main__section__caravanadeayudas__h2p aside" "soy__un__nav section__caravanadeayudas__22122021 aside" "soy__un__nav section__caravanadeayudas__proximamenteMasCaravanas aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__caravanadeayudas__h1 {
     background-image: url(../images/caravanadeayudas/caravanadeayudas.png);
     background-size: cover;
-    height: 300px;
-    grid-area: main__section__caravanadeayudas__h1;
+    height: 350px;
   }
   .main__section__caravanadeayudas__h1 .main__section__caravanadeayudas__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2394,7 +2152,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__caravanadeayudas__h2p;
   }
   .main__section__caravanadeayudas__h2p .main__section__caravanadeayudas__h2p p {
     font-size: 20px;
@@ -2406,7 +2163,6 @@
     color: #ffffff;
     font-size: 25px;
     padding: 20px;
-    grid-area: section__caravanadeayudas__22122021;
   }
   .section__caravanadeayudas__22122021 .section__caravanadeayudas__div__22122021 {
     font-size: 30px;
@@ -2434,7 +2190,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: section__caravanadeayudas__proximamenteMasCaravanas;
   }
   .section__caravanadeayudas__proximamenteMasCaravanas .section__caravanadeayudas__proximamenteMasCaravanas__h2h4 {
     margin-left: 7em;
@@ -2445,18 +2200,11 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__cuentasrallylead {
-    display: grid;
-    grid-template-areas: "header" "main__section__cuentasrallylead__h1" "main__section__cuentasrallylead_h3yh4" "main__section__cuentasrallylead__carousel" "section__cuentasrallylead__info__makoto" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .main__section__cuentasrallylead__h1 {
     background-image: url(../images/cuentasrallylead/cuentasrallylead.png);
     background-size: cover;
     height: 200px;
-    grid-area: main__section__cuentasrallylead__h1;
   }
   .main__section__cuentasrallylead__h1 .main__section__cuentasrallylead__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2469,7 +2217,6 @@
   .main__section__cuentasrallylead_h3yh4 {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 2em;
-    grid-area: main__section__cuentasrallylead_h3yh4;
   }
   .main__section__cuentasrallylead_h3yh4 .main__section__cuentasrallylead_h3 {
     font-size: 25px;
@@ -2480,14 +2227,12 @@
   .main__section__cuentasrallylead__carousel {
     background-color: #2c2a30;
     padding: 30px;
-    grid-area: main__section__cuentasrallylead__carousel;
   }
 
   /*Sección: Makoto*/
   .section__cuentasrallylead__info__makoto {
     background-color: #2c2a30;
     color: #ffffff;
-    grid-area: section__cuentasrallylead__info__makoto;
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__h2 {
     color: #ff0000;
@@ -2519,18 +2264,11 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__cuentasrallylead {
-    display: grid;
-    grid-template-areas: "header" "main__section__cuentasrallylead__h1" "main__section__cuentasrallylead_h3yh4" "main__section__cuentasrallylead__carousel" "section__cuentasrallylead__info__makoto" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .main__section__cuentasrallylead__h1 {
     background-image: url(../images/cuentasrallylead/cuentasrallylead.png);
     background-size: cover;
     height: 300px;
-    grid-area: main__section__cuentasrallylead__h1;
   }
   .main__section__cuentasrallylead__h1 .main__section__cuentasrallylead__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2543,7 +2281,6 @@
   .main__section__cuentasrallylead_h3yh4 {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 2em;
-    grid-area: main__section__cuentasrallylead_h3yh4;
   }
   .main__section__cuentasrallylead_h3yh4 .main__section__cuentasrallylead_h3 {
     font-size: 30px;
@@ -2554,14 +2291,12 @@
   .main__section__cuentasrallylead__carousel {
     background-color: #2c2a30;
     padding: 30px;
-    grid-area: main__section__cuentasrallylead__carousel;
   }
 
   /*Sección: Makoto*/
   .section__cuentasrallylead__info__makoto {
     color: #ffffff;
     background-color: #2c2a30;
-    grid-area: section__cuentasrallylead__info__makoto;
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__h2 {
     color: #ff0000;
@@ -2597,19 +2332,11 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__cuentasrallylead {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__cuentasrallylead__h1 aside" "soy__un__nav main__section__cuentasrallylead_h3yh4 aside" "soy__un__nav main__section__cuentasrallylead__carousel aside" "soy__un__nav section__cuentasrallylead__info__makoto aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen + h1*/
   .main__section__cuentasrallylead__h1 {
     background-image: url(../images/cuentasrallylead/cuentasrallylead.png);
     background-size: cover;
-    height: 300px;
-    grid-area: main__section__cuentasrallylead__h1;
+    height: 350px;
   }
   .main__section__cuentasrallylead__h1 .main__section__cuentasrallylead__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2622,7 +2349,6 @@
   .main__section__cuentasrallylead_h3yh4 {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 2em;
-    grid-area: main__section__cuentasrallylead_h3yh4;
   }
   .main__section__cuentasrallylead_h3yh4 .main__section__cuentasrallylead_h3 {
     font-size: 30px;
@@ -2633,14 +2359,12 @@
   .main__section__cuentasrallylead__carousel {
     background-color: #2c2a30;
     padding: 30px;
-    grid-area: main__section__cuentasrallylead__carousel;
   }
 
   /*Sección: Makoto*/
   .section__cuentasrallylead__info__makoto {
     color: #ffffff;
     background-color: #2c2a30;
-    grid-area: section__cuentasrallylead__info__makoto;
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__h2 {
     color: #ff0000;
@@ -2676,19 +2400,12 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__guias {
-    display: grid;
-    grid-template-areas: "header" "main__section__h1" "main__section__comandos" "section__video__tutorial__reporteDeCaceria" "section__video__tutorial__kvk" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-
   /*Sección: imagen + h1*/
   .main__section__h1 {
     background-image: url(../images/guias/guias.jpg);
     background-size: cover;
     height: 200px;
     display: flex;
-    grid-area: main__section__h1;
   }
   .main__section__h1 .main__section__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2709,7 +2426,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__comandos;
   }
   .main__section__comandos .main__section__comandos__h3 {
     font-size: 25px;
@@ -2733,7 +2449,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: section__video__tutorial__reporteDeCaceria;
   }
   .section__video__tutorial__reporteDeCaceria .section__video__tutorial__reporteDeCaceria__h3 {
     color: #ffffff;
@@ -2749,7 +2464,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: section__video__tutorial__kvk;
   }
 
   .section__video__tutorial__kvk__h3 {
@@ -2758,12 +2472,6 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__guias {
-    display: grid;
-    grid-template-areas: "header" "main__section__h1" "main__section__comandos" "section__video__tutorial__reporteDeCaceria" "section__video__tutorial__kvk" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-
   /*Sección: imagen + h1*/
   .main__section__h1 {
     background-image: url(../images/guias/guias.jpg);
@@ -2771,7 +2479,6 @@
     width: 100%;
     height: 300px;
     display: flex;
-    grid-area: main__section__h1;
   }
   .main__section__h1 .main__section__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2793,7 +2500,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__comandos;
   }
   .main__section__comandos .main__section__comandos__h3 {
     font-size: 40px;
@@ -2817,7 +2523,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: section__video__tutorial__reporteDeCaceria;
   }
   .section__video__tutorial__reporteDeCaceria .section__video__tutorial__reporteDeCaceria__h3 {
     color: #ffffff;
@@ -2833,7 +2538,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: section__video__tutorial__kvk;
   }
   .section__video__tutorial__kvk .section__video__tutorial__kvk__h3 {
     font-size: 60px;
@@ -2841,21 +2545,13 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__guias {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__h1 aside" "soy__un__nav main__section__comandos aside" "soy__un__nav section__video__tutorial__reporteDeCaceria aside" "soy__un__nav section__video__tutorial__kvk aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: imagen + h1*/
   .main__section__h1 {
     background-image: url(../images/guias/guias.jpg);
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 350px;
     display: flex;
-    grid-area: main__section__h1;
   }
   .main__section__h1 .main__section__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2876,7 +2572,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__comandos;
   }
   .main__section__comandos .main__section__comandos__h3 {
     font-size: 40px;
@@ -2900,7 +2595,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: section__video__tutorial__reporteDeCaceria;
   }
   .section__video__tutorial__reporteDeCaceria .section__video__tutorial__reporteDeCaceria__h3 {
     color: #ffffff;
@@ -2916,7 +2610,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: section__video__tutorial__kvk;
   }
   .section__video__tutorial__kvk .section__video__tutorial__kvk__h3 {
     font-size: 60px;
@@ -2924,18 +2617,11 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__consejosparatubot {
-    display: grid;
-    grid-template-areas: "header" "main__section__consejosparatubot__h1" "main__section__consejosparatubot__h2h3" "main__section__consejosparatubot__olimgh4" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__consejosparatubot__h1 {
     background-image: url(../images/consejosparatubot/consejosparatubot.png);
     background-size: cover;
     height: 200px;
-    grid-area: main__section__consejosparatubot__h1;
   }
   .main__section__consejosparatubot__h1 .main__section__consejosparatubot__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -2954,7 +2640,6 @@
     gap: 10px;
     display: flex;
     flex-direction: column;
-    grid-area: main__section__consejosparatubot__h2h3;
   }
 
   /*Sección: Consejos*/
@@ -2963,7 +2648,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 2em;
-    grid-area: main__section__consejosparatubot__olimgh4;
   }
   .main__section__consejosparatubot__olimgh4 .main__section__consejosparatubot__olimgh4 li {
     margin-bottom: 15px;
@@ -2973,18 +2657,11 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__consejosparatubot {
-    display: grid;
-    grid-template-areas: "header" "main__section__consejosparatubot__h1" "main__section__consejosparatubot__h2h3" "main__section__consejosparatubot__olimgh4" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__consejosparatubot__h1 {
     background-image: url(../images/consejosparatubot/consejosparatubot.png);
     background-size: cover;
     height: 300px;
-    grid-area: main__section__consejosparatubot__h1;
   }
   .main__section__consejosparatubot__h1 .main__section__consejosparatubot__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3005,7 +2682,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__consejosparatubot__h2h3;
   }
 
   /*Sección: Consejos*/
@@ -3014,7 +2690,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 2em;
-    grid-area: main__section__consejosparatubot__olimgh4;
   }
   .main__section__consejosparatubot__olimgh4 .main__section__consejosparatubot__olimgh4 li {
     margin-bottom: 15px;
@@ -3024,19 +2699,11 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__consejosparatubot {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__consejosparatubot__h1 aside" "soy__un__nav main__section__consejosparatubot__h2h3 aside" "soy__un__nav main__section__consejosparatubot__olimgh4 aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__consejosparatubot__h1 {
     background-image: url(../images/consejosparatubot/consejosparatubot.png);
     background-size: cover;
-    height: 300px;
-    grid-area: main__section__consejosparatubot__h1;
+    height: 350px;
   }
   .main__section__consejosparatubot__h1 .main__section__consejosparatubot__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3057,7 +2724,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__consejosparatubot__h2h3;
   }
 
   /*Sección: Consejos*/
@@ -3066,7 +2732,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 2em;
-    grid-area: main__section__consejosparatubot__olimgh4;
   }
   .main__section__consejosparatubot__olimgh4 .main__section__consejosparatubot__olimgh4 li {
     margin-bottom: 15px;
@@ -3076,19 +2741,12 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__anuncios {
-    display: grid;
-    grid-template-areas: "header" "section__anuncios__h1" "section__anuncios__h2" "section__anuncios__23122021" "section__anuncios__19122021" "section__anuncios__10122021" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .section__anuncios__h1 {
     background-image: url(../images/anuncios/anuncios.png);
     width: 100%;
     height: 200px;
     display: flex;
-    grid-area: section__anuncios__h1;
   }
   .section__anuncios__h1 .section__anuncios__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3104,7 +2762,6 @@
   .section__anuncios__h2 {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 30px;
-    grid-area: section__anuncios__h2;
   }
 
   /*Sección: 23/12/2021*/
@@ -3112,7 +2769,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 30px;
-    grid-area: section__anuncios__23122021;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h3 {
     color: #d1b410;
@@ -3141,7 +2797,6 @@
   .section__anuncios__19122021 {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 30px;
-    grid-area: section__anuncios__19122021;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h3 {
     color: #00ccff;
@@ -3174,7 +2829,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 30px;
-    grid-area: section__anuncios__10122021;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h3 {
     color: #00ccff;
@@ -3203,19 +2857,12 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__anuncios {
-    display: grid;
-    grid-template-areas: "header" "section__anuncios__h1" "section__anuncios__h2" "section__anuncios__23122021" "section__anuncios__19122021" "section__anuncios__10122021" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .section__anuncios__h1 {
     background-image: url(../images/anuncios/anuncios.png);
     width: 100%;
     height: 300px;
     display: flex;
-    grid-area: section__anuncios__h1;
   }
   .section__anuncios__h1 .section__anuncios__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3231,7 +2878,6 @@
   .section__anuncios__h2 {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 30px;
-    grid-area: section__anuncios__h2;
   }
 
   /*Sección: 23/12/2021*/
@@ -3239,7 +2885,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 30px;
-    grid-area: section__anuncios__23122021;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h3 {
     color: #d1b410;
@@ -3268,7 +2913,6 @@
   .section__anuncios__19122021 {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 30px;
-    grid-area: section__anuncios__19122021;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h3 {
     color: #00ccff;
@@ -3301,7 +2945,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 30px;
-    grid-area: section__anuncios__10122021;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h3 {
     color: #00ccff;
@@ -3330,20 +2973,12 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__anuncios {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav section__anuncios__h1 aside" "soy__un__nav section__anuncios__h2 aside" "soy__un__nav section__anuncios__23122021 aside" "soy__un__nav section__anuncios__19122021 aside" "soy__un__nav section__anuncios__10122021 aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen + h1*/
   .section__anuncios__h1 {
     background-image: url(../images/anuncios/anuncios.png);
     width: 100%;
     height: 300px;
     display: flex;
-    grid-area: section__anuncios__h1;
   }
   .section__anuncios__h1 .section__anuncios__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3360,7 +2995,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__anuncios__h2;
   }
 
   /*Sección: 23/12/2021*/
@@ -3368,7 +3002,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 30px;
-    grid-area: section__anuncios__23122021;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h3 {
     color: #d1b410;
@@ -3399,7 +3032,6 @@
   .section__anuncios__19122021 {
     background-color: rgba(46, 9, 104, 0.7333333333);
     padding: 30px;
-    grid-area: section__anuncios__19122021;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h3 {
     color: #00ccff;
@@ -3434,7 +3066,6 @@
     background-color: #2c2a30;
     color: #ffffff;
     padding: 30px;
-    grid-area: section__anuncios__10122021;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h3 {
     color: #00ccff;
@@ -3465,19 +3096,12 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__dudasFrecuentes {
-    display: grid;
-    grid-template-areas: "header" "main__section__dudasFrecuentes__h1" "main__section__dudasFrecuentes__h3" "section__dudasFrecuentes__usarCuentaBotEncendido" "section__dudasFrecuentes__costoExtraReportes" "section__dudasFrecuentes__vivoEnOtroPais" "section__dudasFrecuentes__elBotDebeSerPropia" "section__dudasFrecuentes__controlarElBot" "section__dudasFrecuentes__personasUsarBot" "section__dudasFrecuentes__ponerBotR4R5" "section__dudasFrecuentes__noPuedoPagar" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__dudasFrecuentes__h1 {
     background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
     background-size: cover;
     height: 200px;
     display: flex;
-    grid-area: main__section__dudasFrecuentes__h1;
   }
   .main__section__dudasFrecuentes__h1 .main__section__dudasFrecuentes__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3494,7 +3118,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: main__section__dudasFrecuentes__h3;
   }
 
   /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
@@ -3503,7 +3126,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
   }
   .section__dudasFrecuentes__usarCuentaBotEncendido .section__dudasFrecuentes__li {
     margin-bottom: 20px;
@@ -3514,7 +3136,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__costoExtraReportes;
   }
 
   /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
@@ -3523,7 +3144,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__vivoEnOtroPais;
   }
 
   /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
@@ -3531,7 +3151,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
   }
 
   /*Sección: ¿Cómo puedo controlar el bot?*/
@@ -3540,7 +3159,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__controlarElBot;
   }
 
   /*Sección: ¿Cuántas personas pueden usar mi bot?*/
@@ -3548,7 +3166,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__personasUsarBot;
   }
 
   /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
@@ -3557,7 +3174,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__ponerBotR4R5;
   }
 
   /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
@@ -3565,23 +3181,15 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__noPuedoPagar;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__dudasFrecuentes {
-    display: grid;
-    grid-template-areas: "header" "main__section__dudasFrecuentes__h1" "main__section__dudasFrecuentes__h3" "section__dudasFrecuentes__usarCuentaBotEncendido" "section__dudasFrecuentes__costoExtraReportes" "section__dudasFrecuentes__vivoEnOtroPais" "section__dudasFrecuentes__elBotDebeSerPropia" "section__dudasFrecuentes__controlarElBot" "section__dudasFrecuentes__personasUsarBot" "section__dudasFrecuentes__ponerBotR4R5" "section__dudasFrecuentes__noPuedoPagar" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__dudasFrecuentes__h1 {
     background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
     background-size: cover;
     height: 300px;
     display: flex;
-    grid-area: main__section__dudasFrecuentes__h1;
   }
   .main__section__dudasFrecuentes__h1 .main__section__dudasFrecuentes__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3598,7 +3206,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: main__section__dudasFrecuentes__h3;
   }
 
   /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
@@ -3607,7 +3214,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
   }
   .section__dudasFrecuentes__usarCuentaBotEncendido .section__dudasFrecuentes__li {
     margin-bottom: 20px;
@@ -3618,7 +3224,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__costoExtraReportes;
   }
 
   /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
@@ -3627,7 +3232,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__vivoEnOtroPais;
   }
 
   /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
@@ -3635,7 +3239,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
   }
 
   /*Sección: ¿Cómo puedo controlar el bot?*/
@@ -3644,7 +3247,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__controlarElBot;
   }
 
   /*Sección: ¿Cuántas personas pueden usar mi bot?*/
@@ -3652,7 +3254,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__personasUsarBot;
   }
 
   /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
@@ -3661,7 +3262,6 @@
     color: #ffffff;
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__ponerBotR4R5;
   }
 
   /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
@@ -3669,24 +3269,15 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 20px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__noPuedoPagar;
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__dudasFrecuentes {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__dudasFrecuentes__h1 aside" "soy__un__nav main__section__dudasFrecuentes__h3 aside" "soy__un__nav section__dudasFrecuentes__usarCuentaBotEncendido aside" "soy__un__nav section__dudasFrecuentes__costoExtraReportes aside" "soy__un__nav section__dudasFrecuentes__vivoEnOtroPais aside" "soy__un__nav section__dudasFrecuentes__elBotDebeSerPropia aside" "soy__un__nav section__dudasFrecuentes__controlarElBot aside" "soy__un__nav section__dudasFrecuentes__personasUsarBot aside" "soy__un__nav section__dudasFrecuentes__ponerBotR4R5 aside" "soy__un__nav section__dudasFrecuentes__noPuedoPagar aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen de fondo + h1*/
   .main__section__dudasFrecuentes__h1 {
     background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
     background-size: cover;
-    height: 300px;
+    height: 350px;
     display: flex;
-    grid-area: main__section__dudasFrecuentes__h1;
   }
   .main__section__dudasFrecuentes__h1 .main__section__dudasFrecuentes__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3703,7 +3294,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 25px;
     padding: 30px;
-    grid-area: main__section__dudasFrecuentes__h3;
   }
 
   /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
@@ -3712,7 +3302,6 @@
     color: #ffffff;
     font-size: 25px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
   }
   .section__dudasFrecuentes__usarCuentaBotEncendido .section__dudasFrecuentes__li {
     margin-bottom: 20px;
@@ -3723,7 +3312,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 25px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__costoExtraReportes;
   }
 
   /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
@@ -3732,7 +3320,6 @@
     color: #ffffff;
     font-size: 25px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__vivoEnOtroPais;
   }
 
   /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
@@ -3740,7 +3327,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 25px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
   }
 
   /*Sección: ¿Cómo puedo controlar el bot?*/
@@ -3749,7 +3335,6 @@
     color: #ffffff;
     font-size: 25px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__controlarElBot;
   }
 
   /*Sección: ¿Cuántas personas pueden usar mi bot?*/
@@ -3757,7 +3342,6 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 25px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__personasUsarBot;
   }
 
   /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
@@ -3766,7 +3350,6 @@
     color: #ffffff;
     font-size: 25px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__ponerBotR4R5;
   }
 
   /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
@@ -3774,22 +3357,14 @@
     background-color: rgba(46, 9, 104, 0.7333333333);
     font-size: 25px;
     padding: 30px;
-    grid-area: section__dudasFrecuentes__noPuedoPagar;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body_promociones {
-    display: grid;
-    grid-template-areas: "header" "main__promociones" "section__promociones__abrilDePascua" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .main__promociones {
     background-image: url(../images/promociones/promociones.jpg);
     background-size: cover;
     height: 200px;
-    grid-area: main__promociones;
   }
   .main__promociones .main__section__promociones {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3835,18 +3410,11 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body_promociones {
-    display: grid;
-    grid-template-areas: "header" "main__promociones" "section__promociones__abrilDePascua" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .main__promociones {
     background-image: url(../images/promociones/promociones.jpg);
     background-size: cover;
     height: 300px;
-    grid-area: main__promociones;
   }
 
   .main__section__promociones {
@@ -3895,26 +3463,18 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body_promociones {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__promociones aside" "soy__un__nav section__promociones__abrilDePascua aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen + h1*/
   .main__promociones {
     background-image: url(../images/promociones/promociones.jpg);
     background-size: cover;
-    height: 300px;
-    grid-area: main__promociones;
+    height: 350px;
   }
   .main__promociones .main__section__promociones {
     background-color: rgba(44, 42, 48, 0.6235294118);
     color: white;
     font-size: 30px;
     height: 100%;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
   }
@@ -3926,6 +3486,7 @@
     display: grid;
     grid-template-areas: "section__promociones__abrilDePascua__img section__promociones__abrilDePascua__h2" "section__promociones__abrilDePascua__img section__promociones__abrilDePascua__ul" "section__promociones__abrilDePascua__img section__promociones__abrilDePascua__h3" "section__promociones__abrilDePascua__img section__promociones__abrilDePascua__h5";
     grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto;
   }
   .section__promociones__abrilDePascua .section__promociones__abrilDePascua__img {
     width: 360px;
@@ -3956,18 +3517,11 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__terminosycondiciones {
-    display: grid;
-    grid-template-areas: "header" "section__terminosycondiciones__h1" "section__terminosycondiciones__h3yp" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .section__terminosycondiciones__h1 {
     background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
     background-size: cover;
     height: 200px;
-    grid-area: section__terminosycondiciones__h1;
   }
   .section__terminosycondiciones__h1 .section__terminosycondiciones__h1--bi {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -3980,9 +3534,6 @@
   }
 
   /*Términos y condiciones*/
-  .section__terminosycondiciones__h3yp {
-    grid-area: section__terminosycondiciones__h3yp;
-  }
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__h3 {
     font-size: 26px;
     margin: 20px;
@@ -3995,18 +3546,11 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__terminosycondiciones {
-    display: grid;
-    grid-template-areas: "header" "section__terminosycondiciones__h1" "section__terminosycondiciones__h3yp" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .section__terminosycondiciones__h1 {
     background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
     background-size: cover;
     height: 300px;
-    grid-area: section__terminosycondiciones__h1;
   }
 
   .section__terminosycondiciones__h1--bi {
@@ -4020,9 +3564,6 @@
   }
 
   /*Términos y condiciones*/
-  .section__terminosycondiciones__h3yp {
-    grid-area: section__terminosycondiciones__h3yp;
-  }
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__h3 {
     font-size: 40px;
     margin: 40px;
@@ -4035,19 +3576,11 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__terminosycondiciones {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav section__terminosycondiciones__h1 aside" "soy__un__nav section__terminosycondiciones__h3yp aside" "soy__un__nav footer aside";
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen + h1*/
   .section__terminosycondiciones__h1 {
     background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
     background-size: cover;
-    height: 300px;
-    grid-area: section__terminosycondiciones__h1;
+    height: 350px;
   }
 
   .section__terminosycondiciones__h1--bi {
@@ -4061,9 +3594,6 @@
   }
 
   /*Términos y condiciones*/
-  .section__terminosycondiciones__h3yp {
-    grid-area: section__terminosycondiciones__h3yp;
-  }
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__h3 {
     font-size: 40px;
     margin: 40px;
@@ -4075,12 +3605,6 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .body__ayuda {
-    display: grid;
-    grid-template-areas: "header" "main__section__ayuda__h1" "main__section__ayuda__h4" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .main__section__ayuda__h1 {
     background-image: url(../images/ayuda/ayuda.jpg);
@@ -4088,7 +3612,6 @@
     width: 100%;
     height: 300px;
     display: flex;
-    grid-area: main__section__ayuda__h1;
   }
   .main__section__ayuda__h1 .main__section__ayuda__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -4108,7 +3631,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__ayuda__h4;
   }
   .main__section__ayuda__h4 .main__section__ayuda__h4--fs {
     font-size: 15px;
@@ -4121,12 +3643,6 @@
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .body__ayuda {
-    display: grid;
-    grid-template-areas: "header" "main__section__ayuda__h1" "main__section__ayuda__h4" "aside" "footer";
-    grid-template-rows: auto auto auto auto auto;
-  }
-
   /*Sección: Imagen + h1*/
   .main__section__ayuda__h1 {
     background-image: url(../images/ayuda/ayuda.jpg);
@@ -4134,7 +3650,6 @@
     height: 300px;
     background-size: cover;
     display: flex;
-    grid-area: main__section__ayuda__h1;
   }
   .main__section__ayuda__h1 .main__section__ayuda__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -4154,7 +3669,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__ayuda__h4;
   }
   .main__section__ayuda__h4 .main__section__ayuda__h4--fs {
     font-size: 15px;
@@ -4167,21 +3681,13 @@
   }
 }
 @media only screen and (min-width: 769px) {
-  .body__ayuda {
-    display: grid;
-    grid-template-areas: "soy__un__nav header header" "soy__un__nav main__section__ayuda__h1 aside" "soy__un__nav main__section__ayuda__h4 aside" "soy__un__nav footer footer";
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 0.3fr 4fr 1.3fr;
-  }
-
   /*Sección: Imagen + h1*/
   .main__section__ayuda__h1 {
     background-image: url(../images/ayuda/ayuda.jpg);
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-size: cover;
     display: flex;
-    grid-area: main__section__ayuda__h1;
   }
   .main__section__ayuda__h1 .main__section__ayuda__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -4200,7 +3706,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: main__section__ayuda__h4;
   }
   .main__section__ayuda__h4 .main__section__ayuda__h4--fs {
     font-size: 25px;

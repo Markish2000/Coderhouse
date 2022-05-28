@@ -1,0 +1,32 @@
+/*Reseteo de valores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Anclas blancas*/
+.anclas__blancas {
+    color: white;
+}
+
+/*Anclas negras*/
+.anclas__negras {
+    color: #000000;
+}
+
+@import "headernav";
+@import "footer";
+@import "index";
+@import "precios";
+@import "gremiodecaceria";
+@import "gremiodeguerra";
+@import "caravanadeayudas";
+@import "cuentasrallylead";
+@import "guias";
+@import "consejosparatubot";
+@import "anuncios";
+@import "dudasfrecuentes";
+@import "promociones";
+@import "terminosycondiciones";
+@import "ayuda";

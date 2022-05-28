@@ -7,112 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuentas Rally Lead</title>
     <link rel="icon" href="../images/headeryfooter/favicon.ico">
-    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="body__cuentasrallylead">
+<body id="body">
 
-    <header id="header">
-        <div>
-            <input type="checkbox" id="btn--menu">
-            <label for="btn--menu">
-                <!--Logo de menú hamburguesa-->
-                <img src="../images/headeryfooter/Menu.png" alt="Menú" width="40px">
-            </label>
-
-            <!--Menú hamburguesa con despliegue-->
-            <nav class="menu">
-                <ul>
-
-                    <!--Logo de la página con ancla a "index.html"-->
-                    <li>
-                        <a href="../index.html">
-                            <img src="../images/headeryfooter/MerezBots.png" alt="Inicio" width="70px"></a>
-                    </li>
-
-                    <!--Logo de buscar con input para buscar-->
-                    <li>
-                        <img src="../images/headeryfooter/Lupa.png" alt="Buscar" width="50px">
-                        <input type="search" placeholder="Buscar">
-                        <input type="submit" name="Buscar">
-                    </li>
-
-                    <!--Logo de inicio anclado a "index.html"-->
-                    <li>
-                        <a href="../index.html">
-                            <img src="../images/headeryfooter/Home.png" alt="Inicio" width="50px">Inicio</a>
-                    </li>
-
-                    <!--Logo de precio anclado a "precios.hmtl"-->
-                    <li>
-                        <a href="../pages/precios.html">
-                            <img src="../images/headeryfooter/Precios.png" alt="Precios" width="50px">Precios</a>
-                    </li>
-
-                    <!--Logo de gremios con despliegue de submenú-->
-                    <li>
-                        <img src="../images/headeryfooter/MerezBots.png" alt="Gremio" width="50px">
-                        <p>Gremios ></p>
-
-                        <!--Submenú de "Gremios"-->
-                        <ul>
-                            <li><a href="../pages/gremiodecaceria.html">Gremio de cacería</a></li>
-                            <li><a href="../pages/gremiodeguerra.html">Gremio de guerra</a></li>
-                            <li><a href="../pages/caravanadeayudas.html">Caravana de ayudas</a></li>
-                        </ul>
-                    </li>
-
-                    <!--Logo de cuentas con despliegue de submenú-->
-                    <li>
-                        <img src="../images/headeryfooter/ventadecuentas.png" alt="Cuentas" width="50px">
-                        <p>Venta de cuentas ></p>
-
-                        <!--Submenú de "Cuentas"-->
-                        <ul>
-                            <li><a href="../pages/cuentasrallylead.html">Cuentas Rally Lead</a></li>
-                        </ul>
-                    </li>
-
-                    <!--Logo de guías con anclaje a "guias.html"-->
-                    <li>
-                        <a href="../pages/guias.html">
-                            <img src="../images/headeryfooter/Guias.png" alt="Guías" width="50px">Guías</a>
-                    </li>
-
-                    <!--Logo de extras con despliegue de submenú-->
-                    <li>
-                        <img src="../images/headeryfooter/Extra.png" alt="Extras" width="50px">
-                        <p>Extras ></p>
-
-                        <!--Submenú de "Extras"-->
-                        <ul>
-                            <li><a href="../pages/consejosparatubot.html">Consejos para tu bot</a></li>
-                            <li><a href="../pages/anuncios.html">Anuncios</a></li>
-                            <li><a href="../pages/dudasfrecuentes.html">Dudas frecuentes</a></li>
-                            <li><a href="../pages/promociones.html">Promociones</a></li>
-                            <li><a href="../pages/terminosycondiciones.html">Términos y condiciones</a></li>
-                        </ul>
-                    </li>
-
-                    <!--Logo de contacto con ancla al footer-->
-                    <li>
-                        <a href="#footer">
-                            <img src="../images/headeryfooter/Contacto.png" alt="Contacto" width="50px">Contacto</a>
-                    </li>
-
-                    <!--Logo de ayuda con ancla a "ayuda.html"-->
-                    <li>
-                        <a href="../pages/ayuda.html">
-                            <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" width="50px">Ayuda</a>
-                    </li>
-                </ul>
-            </nav>
+    <header>
+        <div class="icon__menu">
+            <img src="../images/headeryfooter/Menu.png" alt="Menú" width="20px" id="btn_open">
         </div>
 
         <!--MerezBots en el header con ancla al inicio-->
@@ -130,10 +34,107 @@
         </div>
     </header>
 
-    <!--Proximamente un nav desplegable como en CoderHouse-->
-    <section class="soy__un__nav">
+    <div id="menu_side" class="menu__side">
 
-    </section>
+        <div class="name__page">
+            <img src="../images/headeryfooter/MerezBots.png" alt="MerezBots">
+            <h4>MerezBots</h4>
+        </div>
+
+        <div class="options__menu">
+
+            <a href="../index.html">
+                <div class="option">
+                    <img src="../images/headeryfooter/Home.png" alt="Inicio" title="Inicio">
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="precios.html">
+                <div class="option">
+                    <img src="../images/headeryfooter/Precios.png" alt="Precios" title="Precios">
+                    <h4>Precios</h4>
+                </div>
+            </a>
+
+            <a href="guias.html">
+                <div class="option">
+                    <img src="../images/headeryfooter/Guias.png" alt="Guías" title="Guías">
+                    <h4>Guías</h4>
+                </div>
+            </a>
+
+            <div class="accordion-item Bg__menu">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed Bg__menu" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="option">
+                            <img src="../images/headeryfooter/gremios.png" alt="Gremios" title="Gremios">
+                            <h4>Gremios</h4>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="gremiodecaceria.html">Gremios de cacería</a> <br>
+                        <a href="gremiodeguerra.html">Gremios de guerra</a> <br>
+                        <a href="caravanadeayudas.html">Caravana de ayudas</a> <br>
+                    </div>
+                </div>
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed Bg__menu" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="option">
+                            <img src="../images/headeryfooter/ventadecuentas.png" alt="Gremios" title="Gremios">
+                            <h4 class="selected">Venta de cuentas</h4>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="#" class="selected">Cuentas Rally Lead</a> <br>
+                    </div>
+                </div>
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed Bg__menu" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="option">
+                            <img src="../images/headeryfooter/Extra.png" alt="Gremios" title="Gremios">
+                            <h4>Extras</h4>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="consejosparatubot.html">Consejos para tu bot</a> <br>
+                        <a href="anuncios.html">Anuncios</a> <br>
+                        <a href="dudasfrecuentes.html">Dudas frecuentes</a> <br>
+                        <a href="promociones.html">Promociones</a> <br>
+                        <a href="terminosycondiciones.html">Términos y condiciones</a> <br>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#footer">
+                <div class="option">
+                    <img src="../images/headeryfooter/Contacto.png" alt="Contacto" title="Contacto">
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="ayuda.html">
+                <div class="option">
+                    <img src="../images/headeryfooter/Ayuda.png" alt="Ayuda" title="Ayuda">
+                    <h4>Ayuda</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
 
     <main>
 
@@ -342,11 +343,6 @@
         </div>
     </section>
 
-    <!--Publicidad paga-->
-    <aside>
-        a
-    </aside>
-
     <!--ID de ancla para "Contacto" del menú-->
     <footer id="footer">
 
@@ -403,6 +399,10 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="../script/scripts.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,847 @@
+.main__precios__section__div__pagarNuevoBot__h3--animation {
+    display: inline-block;
+    animation: float 3s ease-in infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.main__precios__section__pagarNuevoBot--df {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    /*Sección: img + h1*/
+
+    .main__precios__section__h1 {
+        background-image: url(../images/precios/precios.jpg);
+        background-size: cover;
+        height: 200px;
+
+        .main__precios__section__h1--bc {
+            background-color: #2c2a309f;
+            color: #ffffff;
+            font-size: 3em;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    /*Sección: Breve explicación del precio de los bots*/
+
+    .main__precios__section__pyr {
+        background-color: #2e0968bb;
+        font-size: 18px;
+        padding: 40px;
+
+        .main__precios__section__p--margin {
+            margin-top: 20px;
+        }
+
+        .main__precios__section__p--td {
+            color: #000000;
+        }
+
+        .main__precios__section__p--td:hover {
+            color: #d1b410;
+        }
+    }
+
+
+    /*Sección: Pagar un nuevo bot*/
+
+    .main__precios__section__pagarNuevoBot {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+
+        .main__precios__section__div__pagarNuevoBot__h2 {
+            font-size: 23px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main__precios__section__div__pagarNuevoBot__h3 {
+            text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main__precios__section__div__pagarNuevoBot__h3__img {
+                height: 150px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+    /*Sección: Pagar renta mensual*/
+
+    .main__precios__section__pagarRentaMensual {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+
+        .main__precios__section__div__pagarRentaMensual__h2 {
+            font-size: 23px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main__precios__section__div__pagarRentaMensual__h3 {
+            text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main__precios__section__div__pagarNuevoBot__h3--animation {
+                display: inline-block;
+                animation: float 3s ease-in infinite;
+
+                @keyframes float {
+                    0% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(25px);
+                    }
+
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .main__precios__section__div__pagarRentaMensual__h3__img {
+                height: 150px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    /*Sección: Promociones*/
+
+    .main__precios__section__promociones__h2h4 {
+        background-color: #2e0968bb;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__promociones__h2--td {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .main__precios__section__promociones__h4 {
+            font-size: 20px;
+            margin-top: 25px;
+        }
+
+        .main__precios__section__promociones__h4--td {
+            color: #000000;
+        }
+
+        .main__precios__section__promociones__h4--td:hover {
+            color: #d1b410;
+        }
+    }
+
+
+    /*Sección Promociones*/
+
+    .main__precios__section__promociones__p__imput {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 30px;
+
+        .main__precios__section__promociones__div__p__imput {
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, .4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main__precios__section__promociones__div__p {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .main__precios__section__promociones__div__imput {
+                width: 300px;
+                height: 30px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+
+            .main__precios__section__promociones__div__p--wd {
+                font-size: 20px;
+                width: 300px;
+                margin-bottom: 20px;
+            }
+
+            .main__precios__section__promociones__div__h3 {
+                color: #ff0000;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+    /*Sección: Más promociones*/
+
+    .main__precios__section__masPromociones {
+        background-color: #2e0968bb;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__masPromociones__h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .main__precios__section__masPromociones__a--td {
+            color: #000000;
+        }
+
+        .main__precios__section__masPromociones__a--td:hover {
+            color: #d1b410;
+        }
+
+        .main__precios__section__masPromociones__img {
+            width: 300px;
+            height: auto;
+            margin-top: 30px;
+        }
+    }
+
+
+    /*Sección: Otros métodos de pago*/
+
+    .main__precios__section__otrosMetodosDePago {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__div__otrosMetodosDePago {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago--df {
+
+            .main__precios__section__div__otrosMetodosDePago__img {
+                width: 300px;
+            }
+
+            .main__precios__section__div__otrosMetodosDePago__p {
+                font-size: 20px;
+                margin-top: 15px;
+            }
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3 {
+            margin-top: 4em;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3--td {
+            color: #ffffff;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
+            color: #d1b410;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+    /*Sección: img + h1*/
+
+    .main__precios__section__h1 {
+        background-image: url(../images/precios/precios.jpg);
+        background-size: cover;
+        height: 300px;
+
+        .main__precios__section__h1--bc {
+            background-color: #2c2a309f;
+            color: #ffffff;
+            font-size: 5em;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    /*Sección: Breve explicación del precio de los bots*/
+
+    .main__precios__section__pyr {
+        background-color: #2e0968bb;
+        font-size: 26px;
+        padding: 40px;
+
+        .main__precios__section__p--margin {
+            margin-top: 20px;
+        }
+
+        .main__precios__section__p--td {
+            color: #000000;
+        }
+
+        .main__precios__section__p--td:hover {
+            color: #d1b410;
+        }
+    }
+
+
+    /*Sección: Pagar un nuevo bot*/
+
+    .main__precios__section__pagarNuevoBot {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+
+        .main__precios__section__div__pagarNuevoBot__h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main__precios__section__div__pagarNuevoBot__h3 {
+            font-size: 25px;
+            text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main__precios__section__div__pagarNuevoBot__h3__img {
+                height: 200px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+    /*Sección: Pagar renta mensual*/
+
+    .main__precios__section__pagarRentaMensual {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+
+        .main__precios__section__div__pagarRentaMensual__h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main__precios__section__div__pagarRentaMensual__h3 {
+            font-size: 25px;
+            text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main__precios__section__div__pagarNuevoBot__h3--animation {
+                display: inline-block;
+                animation: float 3s ease-in infinite;
+
+                @keyframes float {
+                    0% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(25px);
+                    }
+
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .main__precios__section__div__pagarRentaMensual__h3__img {
+                height: 200px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    /*Sección: Promociones*/
+
+    .main__precios__section__promociones__h2h4 {
+        background-color: #2e0968bb;
+        font-size: 30px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__promociones__h2--td {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .main__precios__section__promociones__h4 {
+            font-size: 25px;
+            margin-top: 25px;
+        }
+
+        .main__precios__section__promociones__h4--td {
+            color: #000000;
+        }
+
+        .main__precios__section__promociones__h4--td:hover {
+            color: #d1b410;
+        }
+    }
+
+
+    /*Sección: Promociones*/
+
+    .main__precios__section__promociones__p__imput {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 30px;
+
+        .main__precios__section__promociones__div__p__imput {
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, .4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main__precios__section__promociones__div__p {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            .main__precios__section__promociones__div__imput {
+                width: 400px;
+                height: 40px;
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+
+            .main__precios__section__promociones__div__p--wd {
+                font-size: 30px;
+                width: 400px;
+                margin-bottom: 20px;
+            }
+
+            .main__precios__section__promociones__div__h3 {
+                color: #ff0000;
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+    /*Sección: Más promociones*/
+
+    .main__precios__section__masPromociones {
+        background-color: #2e0968bb;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__masPromociones__h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .main__precios__section__masPromociones__h3 {
+            font-size: 30px;
+        }
+
+        .main__precios__section__masPromociones__a--td {
+            color: #000000;
+        }
+
+        .main__precios__section__masPromociones__a--td:hover {
+            color: #d1b410;
+        }
+
+        .main__precios__section__masPromociones__img {
+            width: 400px;
+            height: auto;
+            margin-top: 30px;
+        }
+    }
+
+
+    /*Sección: Otros métodos de pago*/
+
+    .main__precios__section__otrosMetodosDePago {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__div__otrosMetodosDePago {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago--df {
+
+            .main__precios__section__div__otrosMetodosDePago__img {
+                width: 400px;
+            }
+
+            .main__precios__section__div__otrosMetodosDePago__p {
+                font-size: 30px;
+                margin-top: 15px;
+            }
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3 {
+            font-size: 30px;
+            margin-top: 4em;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3--td {
+            color: #ffffff;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
+            color: #d1b410;
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+    /*Sección: img + h1*/
+
+    .main__precios__section__h1 {
+        background-image: url(../images/precios/precios.jpg);
+        background-size: cover;
+        height: 350px;
+
+        .main__precios__section__h1--bc {
+            background-color: #2c2a309f;
+            color: #ffffff;
+            font-size: 5em;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    /*Sección: Breve explicación del precio de los bots*/
+
+    .main__precios__section__pyr {
+        background-color: #2e0968bb;
+        font-size: 26px;
+        padding: 40px;
+
+        .main__precios__section__p--margin {
+            margin-top: 20px;
+        }
+
+        .main__precios__section__p--td {
+            color: #000000;
+        }
+
+        .main__precios__section__p--td:hover {
+            color: #d1b410;
+        }
+    }
+
+
+    /*Sección: Pagar un nuevo bot*/
+
+    .main__precios__section__pagarNuevoBot {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+
+        .main__precios__section__div__pagarNuevoBot__h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .main__precios__section__div__pagarNuevoBot__h3 {
+            font-size: 20px;
+            width: 50%;
+            text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main__precios__section__div__pagarNuevoBot__h3--animation--wd {
+                width: 350px;
+                margin-left: 40px;
+
+            }
+
+            .main__precios__section__div__pagarNuevoBot__h3__img {
+                height: 200px;
+                margin-top: 20px;
+            }
+
+            .main__precios__section__div__pagarNuevoBot__h3--animation--margin {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+
+    /*Sección: Pagar renta mensual*/
+
+    .main__precios__section__pagarRentaMensual {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 40px;
+    }
+
+    .main__precios__section__div__pagarRentaMensual__h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__precios__section__div__pagarRentaMensual__h3 {
+        text-shadow: 0 0 5px #d1b410, 0 0 15px #ff0000;
+        font-size: 20px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__precios__section__div__pagarRentaMensual__h3__img {
+        height: 180px;
+        margin-top: 30px;
+    }
+
+    /*Sección: Promociones*/
+
+    .main__precios__section__promociones__h2h4 {
+        background-color: #2e0968bb;
+        font-size: 30px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__promociones__h2--td {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .main__precios__section__promociones__h4 {
+            font-size: 25px;
+            margin-top: 25px;
+        }
+
+        .main__precios__section__promociones__h4--td {
+            color: #000000;
+        }
+
+        .main__precios__section__promociones__h4--td:hover {
+            color: #d1b410;
+        }
+    }
+
+
+    /*Sección: Promociones*/
+
+    .main__precios__section__promociones__p__imput {
+        color: #ffffff;
+        background-color: #2c2a30;
+        padding: 30px;
+
+        .main__precios__section__promociones__p__imput--df {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .main__precios__section__promociones__div__p__imput {
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, .4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main__precios__section__promociones__div__p {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .main__precios__section__promociones__div__p--wd {
+            width: 300px;
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        .main__precios__section__promociones__div__imput {
+            width: 300px;
+            height: 30px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        .main__precios__section__promociones__div__h3 {
+            color: #ff0000;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    /*Sección: Más promociones*/
+
+    .main__precios__section__masPromociones {
+        background-color: #2e0968bb;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__masPromociones__h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .main__precios__section__masPromociones__h3 {
+            font-size: 30px;
+        }
+
+        .main__precios__section__masPromociones__a--td {
+            color: #000000;
+        }
+
+        .main__precios__section__masPromociones__a--td:hover {
+            color: #d1b410;
+        }
+
+        .main__precios__section__masPromociones__img {
+            width: 400px;
+            height: auto;
+            margin-top: 30px;
+        }
+    }
+
+
+    /*Sección: Otros métodos de pago*/
+
+    .main__precios__section__otrosMetodosDePago {
+        background-color: #2c2a30;
+        color: #ffffff;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .main__precios__section__otrosMetodosDePago__h2 {
+            font-size: 50px;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago--df {
+            display: flex;
+
+            .main__precios__section__div__otrosMetodosDePago {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+
+                .main__precios__section__div__otrosMetodosDePago__img {
+                    width: 300px;
+                }
+
+                .main__precios__section__div__otrosMetodosDePago__p {
+                    font-size: 25px;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3 {
+            font-size: 30px;
+            margin-top: 3em;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3--td {
+            color: #ffffff;
+        }
+
+        .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
+            color: #d1b410;
+        }
+    }
+}
