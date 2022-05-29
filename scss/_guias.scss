@@ -1,22 +1,4 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-<<<<<<< HEAD
-=======
-
-    .body__guias {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__h1"
-            "main__section__comandos"
-            "section__video__tutorial__reporteDeCaceria"
-            "section__video__tutorial__kvk"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: imagen + h1*/
 
     .main__section__h1 {
@@ -24,10 +6,6 @@
         background-size: cover;
         height: 200px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__div__h1 {
             background-color: #2c2a309f;
@@ -51,10 +29,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__comandos;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__comandos__h3 {
             font-size: 25px;
@@ -83,10 +57,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__video__tutorial__reporteDeCaceria;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__video__tutorial__reporteDeCaceria__h3 {
             color: #ffffff;
@@ -105,10 +75,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__video__tutorial__kvk;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .section__video__tutorial__kvk__h3 {
@@ -121,24 +87,6 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-
-    .body__guias {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__h1"
-            "main__section__comandos"
-            "section__video__tutorial__reporteDeCaceria"
-            "section__video__tutorial__kvk"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: imagen + h1*/
 
     .main__section__h1 {
@@ -147,10 +95,6 @@
         width: 100%;
         height: 300px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__div__h1 {
             background-color: #2c2a309f;
@@ -175,10 +119,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__comandos;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__comandos__h3 {
             font-size: 40px;
@@ -206,10 +146,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__video__tutorial__reporteDeCaceria;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__video__tutorial__reporteDeCaceria__h3 {
             color: #ffffff;
@@ -228,10 +164,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__video__tutorial__kvk;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__video__tutorial__kvk__h3 {
             font-size: 60px;
@@ -244,38 +176,14 @@
 
 
 @media only screen and (min-width: 769px) {
-<<<<<<< HEAD
-=======
-
-    .body__guias {
-        display: grid;
-        grid-template-areas:
-            "soy__un__nav header header"
-            "soy__un__nav main__section__h1 aside"
-            "soy__un__nav main__section__comandos aside"
-            "soy__un__nav section__video__tutorial__reporteDeCaceria aside"
-            "soy__un__nav section__video__tutorial__kvk aside"
-            "soy__un__nav footer footer";
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-columns: 0.3fr 4fr 1.3fr;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: imagen + h1*/
 
     .main__section__h1 {
         background-image: url(../images/guias/guias.jpg);
         background-size: cover;
         width: 100%;
-<<<<<<< HEAD
         height: 350px;
         display: flex;
-=======
-        height: 300px;
-        display: flex;
-        grid-area: main__section__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__div__h1 {
             background-color: #2c2a309f;
@@ -299,10 +207,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__comandos;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__comandos__h3 {
             font-size: 40px;
@@ -331,10 +235,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__video__tutorial__reporteDeCaceria;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__video__tutorial__reporteDeCaceria__h3 {
             color: #ffffff;
@@ -353,10 +253,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__video__tutorial__kvk;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__video__tutorial__kvk__h3 {
             font-size: 60px;

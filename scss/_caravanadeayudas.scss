@@ -1,32 +1,10 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-<<<<<<< HEAD
-=======
-
-    .body__caravanadeayudas {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__caravanadeayudas__h1"
-            "main__section__caravanadeayudas__h2p"
-            "section__caravanadeayudas__22122021"
-            "section__caravanadeayudas__proximamenteMasCaravanas"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__caravanadeayudas__h1 {
         background-image: url(../images/caravanadeayudas/caravanadeayudas.png);
         background-size: cover;
         height: 200px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__caravanadeayudas__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__caravanadeayudas__div__h1 {
             background-color: #2c2a309f;
@@ -49,10 +27,6 @@
         gap: 20px;
         display: flex;
         flex-direction: column;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__caravanadeayudas__h2p;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__caravanadeayudas__h2p p {
             font-size: 20px;
@@ -67,10 +41,6 @@
         color: #ffffff;
         font-size: 20px;
         padding: 20px;
-<<<<<<< HEAD
-=======
-        grid-area: section__caravanadeayudas__22122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__caravanadeayudas__div__22122021 {
             font-size: 30px;
@@ -105,10 +75,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__caravanadeayudas__proximamenteMasCaravanas;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__caravanadeayudas__proximamenteMasCaravanas__h2 {
             font-size: 30px;
@@ -122,34 +88,12 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-
-    .body__caravanadeayudas {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__caravanadeayudas__h1"
-            "main__section__caravanadeayudas__h2p"
-            "section__caravanadeayudas__22122021"
-            "section__caravanadeayudas__proximamenteMasCaravanas"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__caravanadeayudas__h1 {
         background-image: url(../images/caravanadeayudas/caravanadeayudas.png);
         background-size: cover;
         height: 300px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__caravanadeayudas__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__caravanadeayudas__div__h1 {
             background-color: #2c2a309f;
@@ -172,10 +116,6 @@
         gap: 20px;
         display: flex;
         flex-direction: column;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__caravanadeayudas__h2p;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__caravanadeayudas__h2p p {
             font-size: 20px;
@@ -190,10 +130,6 @@
         color: #ffffff;
         font-size: 20px;
         padding: 20px;
-<<<<<<< HEAD
-=======
-        grid-area: section__caravanadeayudas__22122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__caravanadeayudas__div__22122021 {
             font-size: 30px;
@@ -227,10 +163,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__caravanadeayudas__proximamenteMasCaravanas;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__caravanadeayudas__proximamenteMasCaravanas__h2 {
             font-size: 30px;
@@ -244,35 +176,12 @@
 
 
 @media only screen and (min-width: 769px) {
-<<<<<<< HEAD
-=======
-
-    .body__caravanadeayudas {
-        display: grid;
-        grid-template-areas:
-            "soy__un__nav header header"
-            "soy__un__nav main__section__caravanadeayudas__h1 aside"
-            "soy__un__nav main__section__caravanadeayudas__h2p aside"
-            "soy__un__nav section__caravanadeayudas__22122021 aside"
-            "soy__un__nav section__caravanadeayudas__proximamenteMasCaravanas aside"
-            "soy__un__nav footer footer";
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-columns: 0.3fr 4fr 1.3fr;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__caravanadeayudas__h1 {
         background-image: url(../images/caravanadeayudas/caravanadeayudas.png);
         background-size: cover;
-<<<<<<< HEAD
         height: 350px;
-=======
-        height: 300px;
-        grid-area: main__section__caravanadeayudas__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__caravanadeayudas__div__h1 {
             background-color: #2c2a309f;
@@ -297,10 +206,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__caravanadeayudas__h2p;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__caravanadeayudas__h2p p {
             font-size: 20px;
@@ -315,10 +220,6 @@
         color: #ffffff;
         font-size: 25px;
         padding: 20px;
-<<<<<<< HEAD
-=======
-        grid-area: section__caravanadeayudas__22122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__caravanadeayudas__div__22122021 {
             font-size: 30px;
@@ -352,10 +253,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__caravanadeayudas__proximamenteMasCaravanas;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__caravanadeayudas__proximamenteMasCaravanas__h2h4 {
             margin-left: 7em;

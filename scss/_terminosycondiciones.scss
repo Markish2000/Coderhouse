@@ -1,30 +1,10 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-<<<<<<< HEAD
-=======
-
-    .body__terminosycondiciones {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "section__terminosycondiciones__h1"
-            "section__terminosycondiciones__h3yp"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen + h1*/
 
     .section__terminosycondiciones__h1 {
         background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
         background-size: cover;
         height: 200px;
-<<<<<<< HEAD
-=======
-        grid-area: section__terminosycondiciones__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__terminosycondiciones__h1--bi {
             background-color: #2c2a309f;
@@ -41,10 +21,6 @@
     /*Términos y condiciones*/
 
     .section__terminosycondiciones__h3yp {
-<<<<<<< HEAD
-=======
-        grid-area: section__terminosycondiciones__h3yp;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__terminosycondiciones__h3 {
             font-size: 26px;
@@ -64,32 +40,12 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-
-    .body__terminosycondiciones {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "section__terminosycondiciones__h1"
-            "section__terminosycondiciones__h3yp"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen + h1*/
 
     .section__terminosycondiciones__h1 {
         background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
         background-size: cover;
         height: 300px;
-<<<<<<< HEAD
-=======
-        grid-area: section__terminosycondiciones__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .section__terminosycondiciones__h1--bi {
@@ -106,10 +62,6 @@
     /*Términos y condiciones*/
 
     .section__terminosycondiciones__h3yp {
-<<<<<<< HEAD
-=======
-        grid-area: section__terminosycondiciones__h3yp;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__terminosycondiciones__h3 {
             font-size: 40px;
@@ -129,33 +81,12 @@
 
 
 @media only screen and (min-width: 769px) {
-<<<<<<< HEAD
-=======
-
-    .body__terminosycondiciones {
-        display: grid;
-        grid-template-areas:
-            "soy__un__nav header header"
-            "soy__un__nav section__terminosycondiciones__h1 aside"
-            "soy__un__nav section__terminosycondiciones__h3yp aside"
-            "soy__un__nav footer aside";
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 0.3fr 4fr 1.3fr;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen + h1*/
 
     .section__terminosycondiciones__h1 {
         background-image: url(../images/terminosycondiciones/terminosycondiciones.png);
         background-size: cover;
-<<<<<<< HEAD
         height: 350px;
-=======
-        height: 300px;
-        grid-area: section__terminosycondiciones__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .section__terminosycondiciones__h1--bi {
@@ -172,10 +103,6 @@
     /*Términos y condiciones*/
 
     .section__terminosycondiciones__h3yp {
-<<<<<<< HEAD
-=======
-        grid-area: section__terminosycondiciones__h3yp;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__terminosycondiciones__h3 {
             font-size: 40px;

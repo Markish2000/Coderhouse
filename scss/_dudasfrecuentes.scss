@@ -1,528 +1,334 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-<<<<<<< HEAD
-=======
+        /*Sección: Imagen de fondo + h1*/
 
-    .body__dudasFrecuentes {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__dudasFrecuentes__h1"
-            "main__section__dudasFrecuentes__h3"
-            "section__dudasFrecuentes__usarCuentaBotEncendido"
-            "section__dudasFrecuentes__costoExtraReportes"
-            "section__dudasFrecuentes__vivoEnOtroPais"
-            "section__dudasFrecuentes__elBotDebeSerPropia"
-            "section__dudasFrecuentes__controlarElBot"
-            "section__dudasFrecuentes__personasUsarBot"
-            "section__dudasFrecuentes__ponerBotR4R5"
-            "section__dudasFrecuentes__noPuedoPagar"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    }
+        .main__section__dudasFrecuentes__h1 {
+                background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
+                background-size: cover;
+                height: 200px;
+                display: flex;
 
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    /*Sección: Imagen de fondo + h1*/
-
-    .main__section__dudasFrecuentes__h1 {
-        background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
-        background-size: cover;
-        height: 200px;
-        display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__dudasFrecuentes__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-
-        .main__section__dudasFrecuentes__div__h1 {
-            background-color: #2c2a309f;
-            color: #ffffff;
-            font-size: 2em;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                .main__section__dudasFrecuentes__div__h1 {
+                        background-color: #2c2a309f;
+                        color: #ffffff;
+                        font-size: 2em;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                }
         }
-    }
 
 
-    /*Sección: Lo que encontrarán en la página*/
+        /*Sección: Lo que encontrarán en la página*/
 
-    .main__section__dudasFrecuentes__h3 {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__dudasFrecuentes__h3;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
-
-
-    /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
-
-    .section__dudasFrecuentes__usarCuentaBotEncendido {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-
-        .section__dudasFrecuentes__li {
-            margin-bottom: 20px;
+        .main__section__dudasFrecuentes__h3 {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
         }
-    }
 
 
-    /*Sección: ¿Tiene algún costo extra los reportes de cacería?*/
+        /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
 
-    .section__dudasFrecuentes__costoExtraReportes {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__costoExtraReportes;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__usarCuentaBotEncendido {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 30px;
 
-
-    /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
-
-    .section__dudasFrecuentes__vivoEnOtroPais {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__vivoEnOtroPais;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+                .section__dudasFrecuentes__li {
+                        margin-bottom: 20px;
+                }
+        }
 
 
-    /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
+        /*Sección: ¿Tiene algún costo extra los reportes de cacería?*/
 
-    .section__dudasFrecuentes__elBotDebeSerPropia {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__costoExtraReportes {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Cómo puedo controlar el bot?*/
+        /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
 
-    .section__dudasFrecuentes__controlarElBot {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__controlarElBot;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__vivoEnOtroPais {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Cuántas personas pueden usar mi bot?*/
+        /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
 
-    .section__dudasFrecuentes__personasUsarBot {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__personasUsarBot;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__elBotDebeSerPropia {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
+        /*Sección: ¿Cómo puedo controlar el bot?*/
 
-    .section__dudasFrecuentes__ponerBotR4R5 {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__ponerBotR4R5;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__controlarElBot {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 30px;
+        }
 
 
-    /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
+        /*Sección: ¿Cuántas personas pueden usar mi bot?*/
 
-    .section__dudasFrecuentes__noPuedoPagar {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__noPuedoPagar;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__personasUsarBot {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
+        }
+
+
+        /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
+
+        .section__dudasFrecuentes__ponerBotR4R5 {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 30px;
+        }
+
+
+        /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
+
+        .section__dudasFrecuentes__noPuedoPagar {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
+        }
 }
 
 
 
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-<<<<<<< HEAD
-=======
+        /*Sección: Imagen de fondo + h1*/
 
-    .body__dudasFrecuentes {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__dudasFrecuentes__h1"
-            "main__section__dudasFrecuentes__h3"
-            "section__dudasFrecuentes__usarCuentaBotEncendido"
-            "section__dudasFrecuentes__costoExtraReportes"
-            "section__dudasFrecuentes__vivoEnOtroPais"
-            "section__dudasFrecuentes__elBotDebeSerPropia"
-            "section__dudasFrecuentes__controlarElBot"
-            "section__dudasFrecuentes__personasUsarBot"
-            "section__dudasFrecuentes__ponerBotR4R5"
-            "section__dudasFrecuentes__noPuedoPagar"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    }
+        .main__section__dudasFrecuentes__h1 {
+                background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
+                background-size: cover;
+                height: 300px;
+                display: flex;
 
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    /*Sección: Imagen de fondo + h1*/
-
-    .main__section__dudasFrecuentes__h1 {
-        background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
-        background-size: cover;
-        height: 300px;
-        display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__dudasFrecuentes__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-
-        .main__section__dudasFrecuentes__div__h1 {
-            background-color: #2c2a309f;
-            color: #ffffff;
-            font-size: 2em;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                .main__section__dudasFrecuentes__div__h1 {
+                        background-color: #2c2a309f;
+                        color: #ffffff;
+                        font-size: 2em;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                }
         }
-    }
 
-    /*Sección: Lo que encontrarán en la página*/
+        /*Sección: Lo que encontrarán en la página*/
 
-    .main__section__dudasFrecuentes__h3 {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__dudasFrecuentes__h3;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
-
-
-    /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
-
-    .section__dudasFrecuentes__usarCuentaBotEncendido {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-
-        .section__dudasFrecuentes__li {
-            margin-bottom: 20px;
+        .main__section__dudasFrecuentes__h3 {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
         }
-    }
 
 
-    /*Sección: ¿Tiene algún costo extra los reportes de cacería?*/
+        /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
 
-    .section__dudasFrecuentes__costoExtraReportes {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__costoExtraReportes;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__usarCuentaBotEncendido {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 30px;
 
-
-    /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
-
-    .section__dudasFrecuentes__vivoEnOtroPais {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__vivoEnOtroPais;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+                .section__dudasFrecuentes__li {
+                        margin-bottom: 20px;
+                }
+        }
 
 
-    /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
+        /*Sección: ¿Tiene algún costo extra los reportes de cacería?*/
 
-    .section__dudasFrecuentes__elBotDebeSerPropia {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__costoExtraReportes {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Cómo puedo controlar el bot?*/
+        /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
 
-    .section__dudasFrecuentes__controlarElBot {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__controlarElBot;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__vivoEnOtroPais {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Cuántas personas pueden usar mi bot?*/
+        /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
 
-    .section__dudasFrecuentes__personasUsarBot {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__personasUsarBot;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__elBotDebeSerPropia {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
+        /*Sección: ¿Cómo puedo controlar el bot?*/
 
-    .section__dudasFrecuentes__ponerBotR4R5 {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__ponerBotR4R5;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__controlarElBot {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 30px;
+        }
 
 
-    /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
+        /*Sección: ¿Cuántas personas pueden usar mi bot?*/
 
-    .section__dudasFrecuentes__noPuedoPagar {
-        background-color: #2e0968bb;
-        font-size: 20px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__noPuedoPagar;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__personasUsarBot {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
+        }
+
+
+        /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
+
+        .section__dudasFrecuentes__ponerBotR4R5 {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 30px;
+        }
+
+
+        /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
+
+        .section__dudasFrecuentes__noPuedoPagar {
+                background-color: #2e0968bb;
+                font-size: 20px;
+                padding: 30px;
+        }
 }
 
 
 
 
 @media only screen and (min-width: 769px) {
-<<<<<<< HEAD
-=======
+        /*Sección: Imagen de fondo + h1*/
 
-    .body__dudasFrecuentes {
-        display: grid;
-        grid-template-areas:
-            "soy__un__nav header header"
-            "soy__un__nav main__section__dudasFrecuentes__h1 aside"
-            "soy__un__nav main__section__dudasFrecuentes__h3 aside"
-            "soy__un__nav section__dudasFrecuentes__usarCuentaBotEncendido aside"
-            "soy__un__nav section__dudasFrecuentes__costoExtraReportes aside"
-            "soy__un__nav section__dudasFrecuentes__vivoEnOtroPais aside"
-            "soy__un__nav section__dudasFrecuentes__elBotDebeSerPropia aside"
-            "soy__un__nav section__dudasFrecuentes__controlarElBot aside"
-            "soy__un__nav section__dudasFrecuentes__personasUsarBot aside"
-            "soy__un__nav section__dudasFrecuentes__ponerBotR4R5 aside"
-            "soy__un__nav section__dudasFrecuentes__noPuedoPagar aside"
-            "soy__un__nav footer footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-        grid-template-columns: 0.3fr 4fr 1.3fr;
-    }
+        .main__section__dudasFrecuentes__h1 {
+                background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
+                background-size: cover;
+                height: 350px;
+                display: flex;
 
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    /*Sección: Imagen de fondo + h1*/
-
-    .main__section__dudasFrecuentes__h1 {
-        background-image: url(../images/dudasfrecuentes/dudasfrecuentes.jpg);
-        background-size: cover;
-<<<<<<< HEAD
-        height: 350px;
-        display: flex;
-=======
-        height: 300px;
-        display: flex;
-        grid-area: main__section__dudasFrecuentes__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-
-        .main__section__dudasFrecuentes__div__h1 {
-            background-color: #2c2a309f;
-            color: #ffffff;
-            font-size: 3em;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                .main__section__dudasFrecuentes__div__h1 {
+                        background-color: #2c2a309f;
+                        color: #ffffff;
+                        font-size: 3em;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                }
         }
-    }
 
 
-    /*Sección: Lo que encontrarán en la página*/
+        /*Sección: Lo que encontrarán en la página*/
 
-    .main__section__dudasFrecuentes__h3 {
-        background-color: #2e0968bb;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__dudasFrecuentes__h3;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
-
-
-    /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
-
-    .section__dudasFrecuentes__usarCuentaBotEncendido {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__usarCuentaBotEncendido;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-
-        .section__dudasFrecuentes__li {
-            margin-bottom: 20px;
+        .main__section__dudasFrecuentes__h3 {
+                background-color: #2e0968bb;
+                font-size: 25px;
+                padding: 30px;
         }
-    }
 
 
-    /*Sección: ¿Tiene algún costo extra los reportes de cacería?*/
+        /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
 
-    .section__dudasFrecuentes__costoExtraReportes {
-        background-color: #2e0968bb;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__costoExtraReportes;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__usarCuentaBotEncendido {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 25px;
+                padding: 30px;
 
-
-    /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
-
-    .section__dudasFrecuentes__vivoEnOtroPais {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__vivoEnOtroPais;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+                .section__dudasFrecuentes__li {
+                        margin-bottom: 20px;
+                }
+        }
 
 
-    /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
+        /*Sección: ¿Tiene algún costo extra los reportes de cacería?*/
 
-    .section__dudasFrecuentes__elBotDebeSerPropia {
-        background-color: #2e0968bb;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__elBotDebeSerPropia;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__costoExtraReportes {
+                background-color: #2e0968bb;
+                font-size: 25px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Cómo puedo controlar el bot?*/
+        /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
 
-    .section__dudasFrecuentes__controlarElBot {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__controlarElBot;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__vivoEnOtroPais {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 25px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Cuántas personas pueden usar mi bot?*/
+        /*Sección: ¿El bot debe ser una cuenta propia o es una cuenta de MerezBots?*/
 
-    .section__dudasFrecuentes__personasUsarBot {
-        background-color: #2e0968bb;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__personasUsarBot;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__elBotDebeSerPropia {
+                background-color: #2e0968bb;
+                font-size: 25px;
+                padding: 30px;
+        }
 
 
-    /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
+        /*Sección: ¿Cómo puedo controlar el bot?*/
 
-    .section__dudasFrecuentes__ponerBotR4R5 {
-        background-color: #2c2a30;
-        color: #ffffff;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__ponerBotR4R5;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__controlarElBot {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 25px;
+                padding: 30px;
+        }
 
 
-    /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
+        /*Sección: ¿Cuántas personas pueden usar mi bot?*/
 
-    .section__dudasFrecuentes__noPuedoPagar {
-        background-color: #2e0968bb;
-        font-size: 25px;
-        padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__dudasFrecuentes__noPuedoPagar;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
-    }
+        .section__dudasFrecuentes__personasUsarBot {
+                background-color: #2e0968bb;
+                font-size: 25px;
+                padding: 30px;
+        }
+
+
+        /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
+
+        .section__dudasFrecuentes__ponerBotR4R5 {
+                background-color: #2c2a30;
+                color: #ffffff;
+                font-size: 25px;
+                padding: 30px;
+        }
+
+
+        /*Sección: Ya no puedo pagar el bot pero quiero transferirlo a otra persona ¿Puedo hacer eso?*/
+
+        .section__dudasFrecuentes__noPuedoPagar {
+                background-color: #2e0968bb;
+                font-size: 25px;
+                padding: 30px;
+        }
 }

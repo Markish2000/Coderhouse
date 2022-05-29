@@ -1,23 +1,4 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-<<<<<<< HEAD
-=======
-
-    .body__anuncios {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "section__anuncios__h1"
-            "section__anuncios__h2"
-            "section__anuncios__23122021"
-            "section__anuncios__19122021"
-            "section__anuncios__10122021"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen + h1*/
 
     .section__anuncios__h1 {
@@ -25,10 +6,6 @@
         width: 100%;
         height: 200px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__h1--bc {
             background-color: #2c2a309f;
@@ -47,10 +24,6 @@
     .section__anuncios__h2 {
         background-color: #2e0968bb;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__h2;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -60,10 +33,6 @@
         background-color: #2c2a30;
         color: #ffffff;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__23122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__23122021__h3 {
             color: #d1b410;
@@ -98,10 +67,6 @@
     .section__anuncios__19122021 {
         background-color: #2e0968bb;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__19122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__19122021__h3 {
             color: #00ccff;
@@ -141,10 +106,6 @@
         background-color: #2c2a30;
         color: #ffffff;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__10122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__10122021__h3 {
             color: #00ccff;
@@ -182,24 +143,6 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-
-    .body__anuncios {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "section__anuncios__h1"
-            "section__anuncios__h2"
-            "section__anuncios__23122021"
-            "section__anuncios__19122021"
-            "section__anuncios__10122021"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto;
-    }
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen + h1*/
 
     .section__anuncios__h1 {
@@ -207,10 +150,6 @@
         width: 100%;
         height: 300px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__h1--bc {
             background-color: #2c2a309f;
@@ -229,10 +168,6 @@
     .section__anuncios__h2 {
         background-color: #2e0968bb;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__h2;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -242,10 +177,6 @@
         background-color: #2c2a30;
         color: #ffffff;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__23122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__23122021__h3 {
             color: #d1b410;
@@ -280,10 +211,6 @@
     .section__anuncios__19122021 {
         background-color: #2e0968bb;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__19122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__19122021__h3 {
             color: #00ccff;
@@ -323,10 +250,6 @@
         background-color: #2c2a30;
         color: #ffffff;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__10122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__10122021__h3 {
             color: #00ccff;
@@ -364,24 +287,6 @@
 
 
 @media only screen and (min-width: 769px) {
-<<<<<<< HEAD
-=======
-
-    .body__anuncios {
-        display: grid;
-        grid-template-areas:
-            "soy__un__nav header header"
-            "soy__un__nav section__anuncios__h1 aside"
-            "soy__un__nav section__anuncios__h2 aside"
-            "soy__un__nav section__anuncios__23122021 aside"
-            "soy__un__nav section__anuncios__19122021 aside"
-            "soy__un__nav section__anuncios__10122021 aside"
-            "soy__un__nav footer footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto;
-        grid-template-columns: 0.3fr 4fr 1.3fr;
-    }
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen + h1*/
 
     .section__anuncios__h1 {
@@ -389,10 +294,6 @@
         width: 100%;
         height: 300px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__h1--bc {
             background-color: #2c2a309f;
@@ -412,10 +313,6 @@
         background-color: #2e0968bb;
         font-size: 20px;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__h2;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -425,10 +322,6 @@
         background-color: #2c2a30;
         color: #ffffff;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__23122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__23122021__h3 {
             color: #d1b410;
@@ -465,10 +358,6 @@
     .section__anuncios__19122021 {
         background-color: #2e0968bb;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__19122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__19122021__h3 {
             color: #00ccff;
@@ -510,10 +399,6 @@
         background-color: #2c2a30;
         color: #ffffff;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__anuncios__10122021;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__anuncios__10122021__h3 {
             color: #00ccff;

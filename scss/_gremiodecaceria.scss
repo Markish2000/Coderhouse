@@ -1,34 +1,10 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-<<<<<<< HEAD
-=======
-
-    .body__gremioDeCaceria {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__gremioDeCaceria__h1"
-            "main__section__gremioDeCaceria__h3yh4"
-            "section__gremioDeCaceria__OD"
-            "section__gremioDeCaceria__OD__info"
-            "section__gremioDeCaceria__ITS"
-            "section__gremioDeCaceria__ITS__info"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__gremioDeCaceria__h1 {
         background-image: url(../images/gremiosdecaceria/gremiosdecaceria.jpg);
         background-size: cover;
         height: 200px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__gremioDeCaceria__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__gremioDeCaceria__div__h1 {
             background-color: #2c2a309f;
@@ -50,10 +26,6 @@
         gap: 20px;
         display: flex;
         flex-direction: column;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__gremioDeCaceria__h3yh4;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .main__section__gremioDeCaceria__h3 {
@@ -72,10 +44,6 @@
         background-size: cover;
         color: #ffffff;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__OD;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .gremiodecaceria__img {
@@ -103,10 +71,6 @@
         color: #ffffff;
         font-size: 25px;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__OD__info;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .section__gremioDeCaceria__OD__info__ul {
@@ -139,10 +103,6 @@
         background-size: cover;
         color: #ffffff;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__ITS;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -153,10 +113,6 @@
         color: #ffffff;
         font-size: 25px;
         padding: 30px;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__ITS__info;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 }
 
@@ -164,36 +120,12 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-
-    .body__gremioDeCaceria {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__gremioDeCaceria__h1"
-            "main__section__gremioDeCaceria__h3yh4"
-            "section__gremioDeCaceria__OD"
-            "section__gremioDeCaceria__OD__info"
-            "section__gremioDeCaceria__ITS"
-            "section__gremioDeCaceria__ITS__info"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__gremioDeCaceria__h1 {
         background-image: url(../images/gremiosdecaceria/gremiosdecaceria.jpg);
         background-size: cover;
         height: 250px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__gremioDeCaceria__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__gremioDeCaceria__div__h1 {
             background-color: #2c2a309f;
@@ -217,10 +149,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__gremioDeCaceria__h3yh4;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .main__section__gremioDeCaceria__h3 {
@@ -238,10 +166,6 @@
         background-image: url(../images/gremiosdecaceria/OD--bc.png);
         background-size: cover;
         color: #ffffff;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__OD;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .section__gremioDeCaceria__div__OD--bc {
@@ -274,10 +198,6 @@
         font-size: 25px;
         padding: 30px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__OD__info;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .section__gremioDeCaceria__OD__info__ul {
@@ -309,10 +229,6 @@
         background-image: url(../images/gremiosdecaceria/ITS--bc.png);
         background-size: cover;
         color: #ffffff;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__ITS;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -324,10 +240,6 @@
         font-size: 25px;
         padding: 30px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__ITS__info;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 }
 
@@ -335,37 +247,12 @@
 
 
 @media only screen and (min-width: 769px) {
-<<<<<<< HEAD
-=======
-
-    .body__gremioDeCaceria {
-        display: grid;
-        grid-template-areas:
-            "soy__un__nav header header"
-            "soy__un__nav main__section__gremioDeCaceria__h1 aside"
-            "soy__un__nav main__section__gremioDeCaceria__h3yh4 aside"
-            "soy__un__nav section__gremioDeCaceria__OD aside"
-            "soy__un__nav section__gremioDeCaceria__OD__info aside"
-            "soy__un__nav section__gremioDeCaceria__ITS aside"
-            "soy__un__nav section__gremioDeCaceria__ITS__info aside"
-            "soy__un__nav footer footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto;
-        grid-template-columns: 0.3fr 4fr 1.3fr;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Imagen de fondo + h1*/
 
     .main__section__gremioDeCaceria__h1 {
         background-image: url(../images/gremiosdecaceria/gremiosdecaceria.jpg);
         background-size: cover;
-<<<<<<< HEAD
         height: 300px;
-=======
-        height: 250px;
-        grid-area: main__section__gremioDeCaceria__h1;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
 
         .main__section__gremioDeCaceria__div__h1 {
@@ -390,10 +277,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__gremioDeCaceria__h3yh4;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .main__section__gremioDeCaceria__h3 {
@@ -411,10 +294,6 @@
         background-image: url(../images/gremiosdecaceria/OD--bc.png);
         background-size: cover;
         color: #ffffff;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__OD;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .section__gremioDeCaceria__div__OD--bc {
@@ -447,10 +326,6 @@
         font-size: 25px;
         padding: 30px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__OD__info;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
     .section__gremioDeCaceria__OD__info__ul {
@@ -481,10 +356,6 @@
         background-image: url(../images/gremiosdecaceria/ITS--bc.png);
         background-size: cover;
         color: #ffffff;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__ITS;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 
 
@@ -496,9 +367,5 @@
         font-size: 25px;
         padding: 30px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__gremioDeCaceria__ITS__info;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     }
 }

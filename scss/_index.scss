@@ -1,55 +1,10 @@
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-<<<<<<< HEAD
-=======
-
-    .body__index {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__inicio"
-            "main__section__funciones"
-            "main__section__hacerbots"
-            "main__section__porqueelegirnos"
-            "section__seguridadYConfiabilidad"
-            "section__garantiaDeSastifaccion"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    }
-
-
-    /*Sección: NAV*/
-
-    .soy__un__nav {
-        display: none;
-    }
-
-
-    /*Sección: Aside*/
-
-    aside {
-        grid-area: aside;
-    }
-
-
-    /*Sección: INICIO*/
-
-    .main__section__inicio {
-        grid-area: main__section__inicio;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Explicación de las funciones del bot*/
 
     .main__section__funciones {
         background-color: #2c2a30;
         padding-bottom: 25px;
         display: grid;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__funciones;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__div__img {
             margin-top: 20px;
@@ -87,10 +42,6 @@
     .main__section__hacerbots {
         background-color: #2e0968bb;
         padding: 10px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__hacerbots;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__hacerbots__div__h2 {
             margin-top: 10px;
@@ -110,10 +61,6 @@
         background-color: #2c2a30;
         padding-top: 30px;
         display: grid;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__porqueelegirnos;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__porqueelegirnos--center {
             display: grid;
@@ -150,10 +97,6 @@
         background-color: #2e0968bb;
         padding-top: 30px;
         display: grid;
-<<<<<<< HEAD
-=======
-        grid-area: section__seguridadYConfiabilidad;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__seguridadYConfiabilidad__img--center {
             display: grid;
@@ -188,10 +131,6 @@
         background-color: #2c2a30;
         padding-top: 30px;
         display: grid;
-<<<<<<< HEAD
-=======
-        grid-area: section__garantiaDeSastifaccion;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__garantiaDeSastifaccion__img {
             width: 350px;
@@ -228,50 +167,12 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 1001px) {
-<<<<<<< HEAD
-=======
-
-    .body__index {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "main__section__inicio"
-            "main__section__funciones"
-            "main__section__hacerbots"
-            "main__section__porqueelegirnos"
-            "section__seguridadYConfiabilidad"
-            "section__garantiaDeSastifaccion"
-            "aside"
-            "footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    }
-
-
-    /*Sección: NAV*/
-
-    .soy__un__nav {
-        display: none;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Eliminar contenido*/
 
     .display--none {
         display: none;
     }
 
-<<<<<<< HEAD
-=======
-
-    /*Sección: INICIO*/
-
-    .main__section__inicio {
-        grid-area: main__section__inicio;
-    }
-
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Explicación de las funciones del bot*/
 
     .main__section__funciones {
@@ -281,19 +182,12 @@
         grid-template-areas:
             "main__section__div__img main__section__div__h2__p";
         grid-template-columns: auto auto;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__funciones;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__div__img {
             margin-right: 10px;
             display: grid;
             align-items: center;
-<<<<<<< HEAD
             grid-area: main__section__div__img;
-=======
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
             .main__section__funciones__img {
                 width: 350px;
@@ -302,10 +196,7 @@
 
         .main__section__div__h2__p {
             margin-top: 10px;
-<<<<<<< HEAD
             grid-area: main__section__div__h2__p;
-=======
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
             .main__section__funciones__h2 {
                 color: #ffffff;
@@ -328,10 +219,6 @@
     .main__section__hacerbots {
         background-color: #2e0968bb;
         padding: 10px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__hacerbots;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__hacerbots__div__h2 {
             font-size: 30px;
@@ -353,10 +240,6 @@
         background-color: #2c2a30;
         display: flex;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__porqueelegirnos;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__porqueelegirnos__img {
             width: 350px;
@@ -387,10 +270,6 @@
         background-color: #2e0968bb;
         padding-top: 30px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__seguridadYConfiabilidad;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__seguridadYConfiabilidad__img--center {
             display: flex;
@@ -423,10 +302,6 @@
         background-color: #2c2a30;
         padding-top: 30px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__garantiaDeSastifaccion;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__garantiaDeSastifaccion__div__img {
             display: flex;
@@ -457,64 +332,12 @@
             }
         }
     }
-<<<<<<< HEAD
-=======
-
-
-    /*Sección: Aside*/
-
-    aside {
-        grid-area: aside;
-    }
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 }
 
 
 
 
 @media only screen and (min-width: 1002px) {
-<<<<<<< HEAD
-=======
-
-    .body__index {
-        display: grid;
-        grid-template-areas:
-            "soy__un__nav header header"
-            "soy__un__nav main__section__inicio aside"
-            "soy__un__nav main__section__funciones aside"
-            "soy__un__nav main__section__hacerbots aside"
-            "soy__un__nav main__section__porqueelegirnos aside"
-            "soy__un__nav section__seguridadYConfiabilidad aside"
-            "soy__un__nav section__garantiaDeSastifaccion aside"
-            "soy__un__nav footer footer";
-        grid-template-rows: auto auto auto auto auto auto auto auto;
-        grid-template-columns: 0.3fr 4fr 1.3fr;
-    }
-
-
-    /*Sección: NAV*/
-
-    .soy__un__nav {
-        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
-        grid-area: soy__un__nav;
-    }
-
-
-    /*Sección: Aside*/
-
-    aside {
-        background-image: linear-gradient(to bottom, #2e0968, #2e0968, #073082, #073082, #004b93, #004b93, #004b93, #004b93, #073082, #073082, #2e0968, #2e0968);
-        grid-area: aside;
-    }
-
-
-    /*Sección: INICIO*/
-
-    .main__section__inicio {
-        grid-area: main__section__inicio;
-    }
-
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
     /*Sección: Explicación de las funciones del bot*/
 
     .main__section__funciones {
@@ -530,10 +353,7 @@
             margin-right: 15px;
             display: grid;
             align-items: center;
-<<<<<<< HEAD
             grid-area: main__section__div__img;
-=======
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
             .main__section__funciones__img {
                 width: 350px;
@@ -541,10 +361,7 @@
         }
 
         .main__section__div__h2__p {
-<<<<<<< HEAD
             grid-area: main__section__div__h2__p;
-=======
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
             .main__section__funciones__h2 {
                 color: #ffffff;
@@ -567,10 +384,6 @@
     .main__section__hacerbots {
         background-color: #2e0968bb;
         padding: 10px;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__hacerbots;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__hacerbots__div__h2 {
             font-size: 30px;
@@ -591,10 +404,6 @@
     .main__section__porqueelegirnos {
         background-color: #2c2a30;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: main__section__porqueelegirnos;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .main__section__porqueelegirnos__img {
             margin: 20px;
@@ -625,10 +434,6 @@
         background-color: #2e0968bb;
         padding-top: 30px;
         display: flex;
-<<<<<<< HEAD
-=======
-        grid-area: section__seguridadYConfiabilidad;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__seguridadYConfiabilidad__img--center {
             display: flex;
@@ -664,10 +469,6 @@
         padding-top: 30px;
         display: flex;
         align-items: center;
-<<<<<<< HEAD
-=======
-        grid-area: section__garantiaDeSastifaccion;
->>>>>>> 4c783cef65ca45698e38d90c4da248abc9d5dc31
 
         .section__garantiaDeSastifaccion__img {
             width: 350px;
