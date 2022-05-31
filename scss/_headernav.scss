@@ -39,8 +39,8 @@ header {
 }
 
 .menu__side {
-    background: #2e0968;
     color: #ffffff;
+    background: #2e0968;
     font-size: 18px;
     width: 80px;
     height: 100%;
@@ -52,7 +52,6 @@ header {
     overflow-y: scroll;
     border-right: 20px solid #2e0968;
     transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    grid-area: menu__side;
 }
 
 .menu__side::-webkit-scrollbar {
@@ -73,6 +72,7 @@ header {
 
 .name__page img {
     width: 20px;
+    height: 100%;
     margin-right: 20px;
 }
 
@@ -103,11 +103,12 @@ header {
 
 .options__menu .option img {
     width: 20px;
+    height: 100%;
     margin-right: 20px;
     cursor: pointer;
 }
 
-.options__menu .option h4 {
+.header__nav__h2 {
     font-weight: 300;
     cursor: pointer;
 }
@@ -151,13 +152,12 @@ a.selected {
 }
 
 .Bg__menu {
-    background-color: #2e0968;
+    @extend.nav__acordeon__color;
     margin-right: 10px;
     border: none;
 }
 
 .accordion-button {
-    background-color: #2e0968;
     padding: 0;
 }
 
@@ -166,7 +166,7 @@ a.selected {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #2e0968;
+    @extend.nav__acordeon__color;
 }
 
 a {
@@ -189,12 +189,39 @@ a {
     color: #ffffff;
 }
 
-.options__menu h4 {
+.header__nav__h2 {
     color: #ffffffb2;
 }
 
-.options__menu h4:hover {
+.header__nav__h2:hover {
     color: #ffffff;
+}
+
+.header__promociones__movimiento {
+    margin-left: 18em;
+    display: flex;
+    overflow: hidden;
+
+    .header__promociones__movimiento__a {
+        @include anclablancadelnav (#ffffff , $font30);
+        animation-name: mover;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+        @keyframes mover {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 420px) {
@@ -208,6 +235,34 @@ a {
 
     .icon__menu {
         margin-left: 30px;
+    }
+
+    .header__promociones__movimiento {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+    
+        .header__promociones__movimiento__a {
+            height: 100px;
+            animation-name: mover;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+    
+            @keyframes mover {
+                0% {
+                    transform: translateX(-100%);
+                }
+    
+                50% {
+                    transform: translateX(0);
+                }
+    
+                100% {
+                    transform: translateX(100%);
+                }
+            }
+        }
     }
 }
 

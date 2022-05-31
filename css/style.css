@@ -4,16 +4,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #ffffff;
+}
+* a {
+  color: #FFB54C;
+}
+* a:hover {
+  color: #d1b410;
+  cursor: pointer;
 }
 
 /*Anclas blancas*/
 .anclas__blancas {
-  color: white;
+  color: #ffffff;
 }
 
 /*Anclas negras*/
 .anclas__negras {
-  color: #000000;
+  color: #ffffff;
 }
 
 * {
@@ -57,8 +65,8 @@ header {
 }
 
 .menu__side {
-  background: #2e0968;
   color: #ffffff;
+  background: #2e0968;
   font-size: 18px;
   width: 80px;
   height: 100%;
@@ -70,7 +78,6 @@ header {
   overflow-y: scroll;
   border-right: 20px solid #2e0968;
   transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  grid-area: menu__side;
 }
 
 .menu__side::-webkit-scrollbar {
@@ -91,6 +98,7 @@ header {
 
 .name__page img {
   width: 20px;
+  height: 100%;
   margin-right: 20px;
 }
 
@@ -121,11 +129,12 @@ header {
 
 .options__menu .option img {
   width: 20px;
+  height: 100%;
   margin-right: 20px;
   cursor: pointer;
 }
 
-.options__menu .option h4 {
+.header__nav__h2 {
   font-weight: 300;
   cursor: pointer;
 }
@@ -163,27 +172,21 @@ a.selected {
   margin-left: 100px;
 }
 
-.nav__acordeon__color {
+.nav__acordeon__color, .accordion-button:not(.collapsed), .Bg__menu {
   background-color: #2e0968;
 }
 
 .Bg__menu {
-  background-color: #2e0968;
   margin-right: 10px;
   border: none;
 }
 
 .accordion-button {
-  background-color: #2e0968;
   padding: 0;
 }
 
 .accordion-button::after {
   background-image: url(../images/headeryfooter/flecha-hacia-abajo-para-navegar.png);
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #2e0968;
 }
 
 a {
@@ -206,12 +209,36 @@ a {
   color: #ffffff;
 }
 
-.options__menu h4 {
+.header__nav__h2 {
   color: rgba(255, 255, 255, 0.6980392157);
 }
 
-.options__menu h4:hover {
+.header__nav__h2:hover {
   color: #ffffff;
+}
+
+.header__promociones__movimiento {
+  margin-left: 18em;
+  display: flex;
+  overflow: hidden;
+}
+.header__promociones__movimiento .header__promociones__movimiento__a {
+  color: #ffffff;
+  font-size: 30px;
+  animation-name: mover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes mover {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 420px) {
@@ -225,6 +252,30 @@ a {
 
   .icon__menu {
     margin-left: 30px;
+  }
+
+  .header__promociones__movimiento {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  .header__promociones__movimiento .header__promociones__movimiento__a {
+    height: 100px;
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes mover {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
@@ -258,6 +309,7 @@ a {
   }
   footer .footer__img {
     width: 35px;
+    height: 100%;
   }
   footer .footer__ancla {
     color: #ffffff;
@@ -281,6 +333,7 @@ a {
   }
   footer .footer__img {
     width: 40px;
+    height: 100%;
   }
   footer .footer__ancla {
     color: #ffffff;
@@ -308,6 +361,7 @@ a {
   }
   footer .footer__img {
     width: 40px;
+    height: 100%;
   }
   footer .footer__ancla {
     color: #ffffff;
@@ -328,19 +382,18 @@ a {
     justify-items: center;
   }
   .main__section__funciones .main__section__div__img .main__section__funciones__img {
-    width: 350px;
+    width: 80%;
+    height: 100%;
   }
   .main__section__funciones .main__section__div__h2__p {
     margin-top: 40px;
     margin-left: 20px;
   }
   .main__section__funciones .main__section__div__h2__p .main__section__funciones__h2 {
-    color: #ffffff;
     font-size: 32px;
     margin-left: 5px;
   }
   .main__section__funciones .main__section__div__h2__p .main__section__funciones__p {
-    color: #ffffff;
     font-size: 18px;
     margin-top: 30px;
     padding: 5px;
@@ -371,18 +424,17 @@ a {
     justify-content: center;
   }
   .main__section__porqueelegirnos .main__section__porqueelegirnos--center .main__section__porqueelegirnos__img {
-    width: 350px;
+    width: 100%;
+    height: 100%;
   }
   .main__section__porqueelegirnos .main__section__porqueelegirnos--center .main__section__porqueelegirnos__img--dn {
     display: none;
   }
   .main__section__porqueelegirnos div .main__section__div__h2 {
-    color: #ffffff;
     font-size: 30px;
     margin-top: 30px;
   }
   .main__section__porqueelegirnos div .main__section__div__ul {
-    color: #ffffff;
     font-size: 20px;
     margin: 40px;
   }
@@ -398,7 +450,8 @@ a {
     justify-content: center;
   }
   .section__seguridadYConfiabilidad .section__seguridadYConfiabilidad__img--center .section__seguridadYConfiabilidad__img {
-    width: 350px;
+    width: 100%;
+    height: 100%;
   }
   .section__seguridadYConfiabilidad div .section__seguridadYConfiabilidad__h2--center {
     display: grid;
@@ -419,24 +472,22 @@ a {
     display: grid;
   }
   .section__garantiaDeSastifaccion .section__garantiaDeSastifaccion__img {
-    width: 350px;
+    width: 100%;
+    height: 100%;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion--center {
     display: grid;
     justify-content: center;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion--center .section__garantiaDeSastifaccion__div__h2 {
-    color: white;
     font-size: 30px;
     margin-top: 30px;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion__ul {
-    color: #ffffff;
     font-size: 23px;
     margin: 40px;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion__p {
-    color: #ffffff;
     font-size: 20px;
     margin: 30px;
   }
@@ -469,12 +520,10 @@ a {
     grid-area: main__section__div__h2__p;
   }
   .main__section__funciones .main__section__div__h2__p .main__section__funciones__h2 {
-    color: #ffffff;
     font-size: 32px;
     margin-left: 5px;
   }
   .main__section__funciones .main__section__div__h2__p .main__section__funciones__p {
-    color: #ffffff;
     font-size: 25px;
     margin-top: 30px;
     padding: 5px;
@@ -507,14 +556,12 @@ a {
     margin-bottom: 70px;
   }
   .main__section__porqueelegirnos div .main__section__div__h2 {
-    color: #ffffff;
     font-size: 30px;
     margin-top: 30px;
     display: flex;
     justify-content: center;
   }
   .main__section__porqueelegirnos div .main__section__div__ul {
-    color: #ffffff;
     font-size: 20px;
     margin: 40px;
   }
@@ -557,17 +604,14 @@ a {
     width: 350px;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion__div__h2 {
-    color: white;
     font-size: 35px;
     margin-top: 30px;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion__ul {
-    color: #ffffff;
     font-size: 25px;
     margin: 40px;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion__p {
-    color: #ffffff;
     font-size: 20px;
     margin: 30px;
   }
@@ -595,12 +639,10 @@ a {
     grid-area: main__section__div__h2__p;
   }
   .main__section__funciones .main__section__div__h2__p .main__section__funciones__h2 {
-    color: #ffffff;
     font-size: 32px;
     margin-left: 5px;
   }
   .main__section__funciones .main__section__div__h2__p .main__section__funciones__p {
-    color: #ffffff;
     font-size: 25px;
     margin-top: 30px;
     padding: 5px;
@@ -632,14 +674,12 @@ a {
     width: 350px;
   }
   .main__section__porqueelegirnos div .main__section__div__h2 {
-    color: #ffffff;
     font-size: 30px;
     margin-top: 30px;
     display: flex;
     justify-content: center;
   }
   .main__section__porqueelegirnos div .main__section__div__ul {
-    color: #ffffff;
     font-size: 20px;
     margin: 40px;
   }
@@ -681,17 +721,14 @@ a {
     width: 350px;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion__div__h2 {
-    color: white;
     font-size: 35px;
     margin-top: 30px;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion__ul {
-    color: #ffffff;
     font-size: 25px;
     margin: 40px;
   }
   .section__garantiaDeSastifaccion div .section__garantiaDeSastifaccion__p {
-    color: #ffffff;
     font-size: 20px;
     margin: 30px;
   }
@@ -727,7 +764,6 @@ a {
   }
   .main__precios__section__h1 .main__precios__section__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 3em;
     height: 100%;
     display: flex;
@@ -744,17 +780,10 @@ a {
   .main__precios__section__pyr .main__precios__section__p--margin {
     margin-top: 20px;
   }
-  .main__precios__section__pyr .main__precios__section__p--td {
-    color: #000000;
-  }
-  .main__precios__section__pyr .main__precios__section__p--td:hover {
-    color: #d1b410;
-  }
 
   /*Sección: Pagar un nuevo bot*/
   .main__precios__section__pagarNuevoBot {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 40px;
   }
   .main__precios__section__pagarNuevoBot .main__precios__section__div__pagarNuevoBot__h2 {
@@ -778,7 +807,6 @@ a {
   /*Sección: Pagar renta mensual*/
   .main__precios__section__pagarRentaMensual {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 40px;
   }
   .main__precios__section__pagarRentaMensual .main__precios__section__div__pagarRentaMensual__h2 {
@@ -823,25 +851,14 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h2--td {
-    color: #000000;
-    text-decoration: none;
-  }
   .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4 {
     font-size: 20px;
     margin-top: 25px;
-  }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4--td {
-    color: #000000;
-  }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4--td:hover {
-    color: #d1b410;
   }
 
   /*Sección Promociones*/
   .main__precios__section__promociones__p__imput {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
   }
   .main__precios__section__promociones__p__imput .main__precios__section__promociones__div__p__imput {
@@ -857,6 +874,7 @@ a {
     margin-bottom: 10px;
   }
   .main__precios__section__promociones__p__imput .main__precios__section__promociones__div__p__imput .main__precios__section__promociones__div__imput {
+    color: #000000;
     width: 300px;
     height: 30px;
     margin-top: 15px;
@@ -886,12 +904,6 @@ a {
     font-size: 25px;
     margin-bottom: 20px;
   }
-  .main__precios__section__masPromociones .main__precios__section__masPromociones__a--td {
-    color: #000000;
-  }
-  .main__precios__section__masPromociones .main__precios__section__masPromociones__a--td:hover {
-    color: #d1b410;
-  }
   .main__precios__section__masPromociones .main__precios__section__masPromociones__img {
     width: 300px;
     height: auto;
@@ -901,7 +913,6 @@ a {
   /*Sección: Otros métodos de pago*/
   .main__precios__section__otrosMetodosDePago {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -925,12 +936,6 @@ a {
   .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago__h3 {
     margin-top: 4em;
   }
-  .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago__h3--td {
-    color: #ffffff;
-  }
-  .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
-    color: #d1b410;
-  }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
   /*Sección: img + h1*/
@@ -941,7 +946,6 @@ a {
   }
   .main__precios__section__h1 .main__precios__section__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 5em;
     height: 100%;
     display: flex;
@@ -958,17 +962,10 @@ a {
   .main__precios__section__pyr .main__precios__section__p--margin {
     margin-top: 20px;
   }
-  .main__precios__section__pyr .main__precios__section__p--td {
-    color: #000000;
-  }
-  .main__precios__section__pyr .main__precios__section__p--td:hover {
-    color: #d1b410;
-  }
 
   /*Sección: Pagar un nuevo bot*/
   .main__precios__section__pagarNuevoBot {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 40px;
   }
   .main__precios__section__pagarNuevoBot .main__precios__section__div__pagarNuevoBot__h2 {
@@ -993,7 +990,6 @@ a {
   /*Sección: Pagar renta mensual*/
   .main__precios__section__pagarRentaMensual {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 40px;
   }
   .main__precios__section__pagarRentaMensual .main__precios__section__div__pagarRentaMensual__h2 {
@@ -1040,25 +1036,14 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h2--td {
-    color: #000000;
-    text-decoration: none;
-  }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4 {
+  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h3 {
     font-size: 25px;
     margin-top: 25px;
-  }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4--td {
-    color: #000000;
-  }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4--td:hover {
-    color: #d1b410;
   }
 
   /*Sección: Promociones*/
   .main__precios__section__promociones__p__imput {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
   }
   .main__precios__section__promociones__p__imput .main__precios__section__promociones__div__p__imput {
@@ -1074,6 +1059,7 @@ a {
     margin-bottom: 10px;
   }
   .main__precios__section__promociones__p__imput .main__precios__section__promociones__div__p__imput .main__precios__section__promociones__div__imput {
+    color: #000000;
     width: 400px;
     height: 40px;
     margin-top: 15px;
@@ -1106,12 +1092,6 @@ a {
   .main__precios__section__masPromociones .main__precios__section__masPromociones__h3 {
     font-size: 30px;
   }
-  .main__precios__section__masPromociones .main__precios__section__masPromociones__a--td {
-    color: #000000;
-  }
-  .main__precios__section__masPromociones .main__precios__section__masPromociones__a--td:hover {
-    color: #d1b410;
-  }
   .main__precios__section__masPromociones .main__precios__section__masPromociones__img {
     width: 400px;
     height: auto;
@@ -1121,7 +1101,6 @@ a {
   /*Sección: Otros métodos de pago*/
   .main__precios__section__otrosMetodosDePago {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -1146,12 +1125,6 @@ a {
     font-size: 30px;
     margin-top: 4em;
   }
-  .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago__h3--td {
-    color: #ffffff;
-  }
-  .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
-    color: #d1b410;
-  }
 }
 @media only screen and (min-width: 769px) {
   /*Sección: img + h1*/
@@ -1162,8 +1135,6 @@ a {
   }
   .main__precios__section__h1 .main__precios__section__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
-    font-size: 5em;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -1179,17 +1150,10 @@ a {
   .main__precios__section__pyr .main__precios__section__p--margin {
     margin-top: 20px;
   }
-  .main__precios__section__pyr .main__precios__section__p--td {
-    color: #000000;
-  }
-  .main__precios__section__pyr .main__precios__section__p--td:hover {
-    color: #d1b410;
-  }
 
   /*Sección: Pagar un nuevo bot*/
   .main__precios__section__pagarNuevoBot {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 40px;
   }
   .main__precios__section__pagarNuevoBot .main__precios__section__div__pagarNuevoBot__h2 {
@@ -1222,7 +1186,6 @@ a {
   /*Sección: Pagar renta mensual*/
   .main__precios__section__pagarRentaMensual {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 40px;
   }
 
@@ -1258,24 +1221,13 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h2--td {
-    color: #000000;
-    text-decoration: none;
-  }
   .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4 {
     font-size: 25px;
     margin-top: 25px;
   }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4--td {
-    color: #000000;
-  }
-  .main__precios__section__promociones__h2h4 .main__precios__section__promociones__h4--td:hover {
-    color: #d1b410;
-  }
 
   /*Sección: Promociones*/
   .main__precios__section__promociones__p__imput {
-    color: #ffffff;
     background-color: #2c2a30;
     padding: 30px;
   }
@@ -1301,6 +1253,7 @@ a {
     margin-bottom: 20px;
   }
   .main__precios__section__promociones__p__imput .main__precios__section__promociones__div__imput {
+    color: #000000;
     width: 300px;
     height: 30px;
     margin-top: 15px;
@@ -1328,12 +1281,6 @@ a {
   .main__precios__section__masPromociones .main__precios__section__masPromociones__h3 {
     font-size: 30px;
   }
-  .main__precios__section__masPromociones .main__precios__section__masPromociones__a--td {
-    color: #000000;
-  }
-  .main__precios__section__masPromociones .main__precios__section__masPromociones__a--td:hover {
-    color: #d1b410;
-  }
   .main__precios__section__masPromociones .main__precios__section__masPromociones__img {
     width: 400px;
     height: auto;
@@ -1343,7 +1290,6 @@ a {
   /*Sección: Otros métodos de pago*/
   .main__precios__section__otrosMetodosDePago {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -1373,12 +1319,6 @@ a {
   .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago__h3 {
     font-size: 30px;
     margin-top: 3em;
-  }
-  .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago__h3--td {
-    color: #ffffff;
-  }
-  .main__precios__section__otrosMetodosDePago .main__precios__section__div__otrosMetodosDePago__h3--td:hover {
-    color: #d1b410;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
@@ -1425,6 +1365,7 @@ a {
 
   .gremiodecaceria__img {
     width: 100%;
+    height: 100%;
   }
 
   .section__gremioDeCaceria__h2 {
@@ -1468,6 +1409,7 @@ a {
 
   .section__gremioDeCaceria__ingreso__img {
     width: 200px;
+    height: 100%;
   }
 
   /*Sección: [ITS] XVII Inmortales*/
@@ -1536,6 +1478,7 @@ a {
 
   .gremiodecaceria__img {
     width: 400px;
+    height: 100%;
     margin: 30px;
   }
 
@@ -1579,6 +1522,7 @@ a {
 
   .section__gremioDeCaceria__ingreso__img {
     width: 200px;
+    height: 100%;
     margin-right: 20px;
   }
 
@@ -1609,7 +1553,6 @@ a {
     background-color: rgba(44, 42, 48, 0.6235294118);
     height: 100%;
     font-size: 40px;
-    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1648,6 +1591,7 @@ a {
 
   .gremiodecaceria__img {
     width: 400px;
+    height: 100%;
     margin: 30px;
   }
 
@@ -1665,7 +1609,6 @@ a {
   /*Sección: [O"D] Orden d3l Dragon, información*/
   .section__gremioDeCaceria__OD__info {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 25px;
     padding: 30px;
     display: flex;
@@ -1690,6 +1633,7 @@ a {
 
   .section__gremioDeCaceria__ingreso__img {
     width: 200px;
+    height: 100%;
     margin-right: 20px;
   }
 
@@ -1697,13 +1641,11 @@ a {
   .section__gremioDeCaceria__ITS {
     background-image: url(../images/gremiosdecaceria/ITS--bc.png);
     background-size: cover;
-    color: #ffffff;
   }
 
   /*Sección: [ITS] XVII Inmortales, información*/
   .section__gremioDeCaceria__ITS__info {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 25px;
     padding: 30px;
     display: flex;
@@ -1745,7 +1687,6 @@ a {
   .section__gremiodeguerra__rdc {
     background-image: url(../images/gremiosdeguerra/RdC--bc.jpg);
     background-size: cover;
-    height: 380px;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1758,6 +1699,7 @@ a {
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc .section__gremiodeguerra__div__img .section__gremiodeguerra__img {
     width: 300px;
+    height: 100%;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc .section__gremiosdeguerra__rdc__div__h2ul {
     margin-top: 30px;
@@ -1833,7 +1775,6 @@ a {
   .section__gremiodeguerra__rdc {
     background-image: url(../images/gremiosdeguerra/RdC--bc.jpg);
     background-size: cover;
-    height: 660px;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1847,6 +1788,7 @@ a {
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc .section__gremiodeguerra__div__img .section__gremiodeguerra__img {
     width: 500px;
+    height: 100%;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc .section__gremiosdeguerra__rdc__div__h2ul {
     margin-top: 30px;
@@ -1886,6 +1828,7 @@ a {
   }
   .section__gremiosdeguerra__rdc__h3ul div .section__gremiosdeguerra__rdc__div__a--img {
     width: 300px;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -1926,7 +1869,6 @@ a {
   .section__gremiodeguerra__rdc {
     background-image: url(../images/gremiosdeguerra/RdC--bc.jpg);
     background-size: cover;
-    height: 300px;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
@@ -1941,6 +1883,7 @@ a {
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc .section__gremiodeguerra__div__img .section__gremiodeguerra__img {
     height: 200px;
+    width: 100%;
   }
   .section__gremiodeguerra__rdc .section__gremiodeguerra__rdc--bc .section__gremiosdeguerra__rdc__div__h2ul {
     margin-left: 40px;
@@ -1982,6 +1925,7 @@ a {
   }
   .section__gremiosdeguerra__rdc__h3ul .section__gremiosdeguerra__rdc__div__a .section__gremiosdeguerra__rdc__div__a--img {
     width: 200px;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
@@ -1993,7 +1937,6 @@ a {
   }
   .main__section__caravanadeayudas__h1 .main__section__caravanadeayudas__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 25px;
     height: 100%;
     display: flex;
@@ -2017,7 +1960,6 @@ a {
   /*Sección: Caravana Dorlem*/
   .section__caravanadeayudas__22122021 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 20px;
   }
@@ -2064,7 +2006,6 @@ a {
   }
   .main__section__caravanadeayudas__h1 .main__section__caravanadeayudas__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 30px;
     height: 100%;
     display: flex;
@@ -2088,7 +2029,6 @@ a {
   /*Sección: Caravana Dorlem*/
   .section__caravanadeayudas__22122021 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 20px;
   }
@@ -2134,7 +2074,6 @@ a {
   }
   .main__section__caravanadeayudas__h1 .main__section__caravanadeayudas__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 40px;
     height: 100%;
     display: flex;
@@ -2160,7 +2099,6 @@ a {
   /*Sección: Caravana Dorlem*/
   .section__caravanadeayudas__22122021 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 25px;
     padding: 20px;
   }
@@ -2244,7 +2182,7 @@ a {
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__h3--color {
     font-size: 30px;
-    color: green;
+    color: #00ff22;
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__div {
     margin-left: 1em;
@@ -2308,7 +2246,7 @@ a {
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__h3--color {
     font-size: 3em;
-    color: green;
+    color: #00ff22;
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__div {
     margin-left: 3em;
@@ -2375,7 +2313,7 @@ a {
     font-size: 2em;
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__h3--color {
-    color: green;
+    color: #00ff22;
     font-size: 3em;
   }
   .section__cuentasrallylead__info__makoto .section__cuentasrallylead__info__makoto__div {
@@ -2409,7 +2347,6 @@ a {
   }
   .main__section__h1 .main__section__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 50px;
     width: 100%;
     display: flex;
@@ -2432,13 +2369,8 @@ a {
   }
   .main__section__comandos .main__section__comandos__input {
     background-color: rgba(0, 0, 0, 0.5490196078);
-    color: #ffffff;
     font-size: 20px;
     padding: 10px;
-  }
-  .main__section__comandos .main__section__comandos__input:hover {
-    color: #d1b410;
-    cursor: pointer;
   }
 
   /*Sección: Video tutorial de reporte de cacería y sistema de puntos*/
@@ -2451,7 +2383,6 @@ a {
     align-items: center;
   }
   .section__video__tutorial__reporteDeCaceria .section__video__tutorial__reporteDeCaceria__h3 {
-    color: #ffffff;
     font-size: 19px;
     margin-bottom: 50px;
   }
@@ -2482,7 +2413,6 @@ a {
   }
   .main__section__h1 .main__section__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 80px;
     width: 100%;
     height: 100%;
@@ -2506,13 +2436,8 @@ a {
   }
   .main__section__comandos .main__section__comandos__input {
     background-color: rgba(0, 0, 0, 0.5490196078);
-    color: #ffffff;
     font-size: 30px;
     padding: 10px;
-  }
-  .main__section__comandos .main__section__comandos__input:hover {
-    color: #d1b410;
-    cursor: pointer;
   }
 
   /*Sección: Video tutorial de reporte de cacería y sistema de puntos*/
@@ -2525,7 +2450,6 @@ a {
     align-items: center;
   }
   .section__video__tutorial__reporteDeCaceria .section__video__tutorial__reporteDeCaceria__h3 {
-    color: #ffffff;
     font-size: 30px;
     margin-bottom: 50px;
   }
@@ -2555,7 +2479,6 @@ a {
   }
   .main__section__h1 .main__section__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 80px;
     width: 100%;
     display: flex;
@@ -2578,13 +2501,8 @@ a {
   }
   .main__section__comandos .main__section__comandos__input {
     background-color: rgba(0, 0, 0, 0.5490196078);
-    color: #ffffff;
     font-size: 30px;
     padding: 10px;
-  }
-  .main__section__comandos .main__section__comandos__input:hover {
-    color: #d1b410;
-    cursor: pointer;
   }
 
   /*Sección: Video tutorial de reporte de cacería y sistema de puntos*/
@@ -2597,7 +2515,6 @@ a {
     align-items: center;
   }
   .section__video__tutorial__reporteDeCaceria .section__video__tutorial__reporteDeCaceria__h3 {
-    color: #ffffff;
     font-size: 30px;
     margin-bottom: 50px;
   }
@@ -2625,7 +2542,6 @@ a {
   }
   .main__section__consejosparatubot__h1 .main__section__consejosparatubot__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 22px;
     height: 100%;
     display: flex;
@@ -2645,7 +2561,6 @@ a {
   /*Sección: Consejos*/
   .main__section__consejosparatubot__olimgh4 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 2em;
   }
@@ -2665,7 +2580,6 @@ a {
   }
   .main__section__consejosparatubot__h1 .main__section__consejosparatubot__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 22px;
     height: 100%;
     display: flex;
@@ -2687,7 +2601,6 @@ a {
   /*Sección: Consejos*/
   .main__section__consejosparatubot__olimgh4 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 2em;
   }
@@ -2707,7 +2620,6 @@ a {
   }
   .main__section__consejosparatubot__h1 .main__section__consejosparatubot__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 40px;
     height: 100%;
     display: flex;
@@ -2729,7 +2641,6 @@ a {
   /*Sección: Consejos*/
   .main__section__consejosparatubot__olimgh4 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 2em;
   }
@@ -2750,7 +2661,6 @@ a {
   }
   .section__anuncios__h1 .section__anuncios__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 3em;
     width: 100%;
     display: flex;
@@ -2767,7 +2677,7 @@ a {
   /*Sección: 23/12/2021*/
   .section__anuncios__23122021 {
     background-color: #2c2a30;
-    color: #ffffff;
+    color: #00C9C8;
     padding: 30px;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h3 {
@@ -2780,7 +2690,6 @@ a {
     margin-left: 10px;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h4 {
-    color: #ff0000;
     font-size: 18px;
     margin-top: 20px;
     display: flex;
@@ -2799,7 +2708,7 @@ a {
     padding: 30px;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h3 {
-    color: #00ccff;
+    color: #00C9C8;
     font-size: 26px;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__ul {
@@ -2811,7 +2720,6 @@ a {
     margin-bottom: 10px;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h4 {
-    color: #ff0000;
     font-size: 18px;
     margin-top: 20px;
     display: flex;
@@ -2827,11 +2735,10 @@ a {
   /*Sección: 10/12/2021*/
   .section__anuncios__10122021 {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h3 {
-    color: #00ccff;
+    color: #00C9C8;
     font-size: 32px;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__ul {
@@ -2843,7 +2750,6 @@ a {
     margin-bottom: 10px;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h4 {
-    color: #ff0000;
     font-size: 18px;
     margin-top: 20px;
     display: flex;
@@ -2866,7 +2772,6 @@ a {
   }
   .section__anuncios__h1 .section__anuncios__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 3em;
     width: 100%;
     display: flex;
@@ -2883,7 +2788,6 @@ a {
   /*Sección: 23/12/2021*/
   .section__anuncios__23122021 {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h3 {
@@ -2896,7 +2800,6 @@ a {
     margin-left: 10px;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h4 {
-    color: #ff0000;
     font-size: 18px;
     margin-top: 20px;
     display: flex;
@@ -2915,7 +2818,7 @@ a {
     padding: 30px;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h3 {
-    color: #00ccff;
+    color: #00C9C8;
     font-size: 26px;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__ul {
@@ -2927,7 +2830,6 @@ a {
     margin-bottom: 10px;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h4 {
-    color: #ff0000;
     font-size: 18px;
     margin-top: 20px;
     display: flex;
@@ -2947,7 +2849,7 @@ a {
     padding: 30px;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h3 {
-    color: #00ccff;
+    color: #00C9C8;
     font-size: 32px;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__ul {
@@ -2959,7 +2861,6 @@ a {
     margin-bottom: 10px;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h4 {
-    color: #ff0000;
     font-size: 18px;
     margin-top: 20px;
     display: flex;
@@ -2982,7 +2883,6 @@ a {
   }
   .section__anuncios__h1 .section__anuncios__h1--bc {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 6em;
     width: 100%;
     display: flex;
@@ -3000,7 +2900,6 @@ a {
   /*Sección: 23/12/2021*/
   .section__anuncios__23122021 {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h3 {
@@ -3015,7 +2914,6 @@ a {
     margin-left: 10px;
   }
   .section__anuncios__23122021 .section__anuncios__23122021__h4 {
-    color: #ff0000;
     font-size: 20px;
     margin-top: 20px;
     display: flex;
@@ -3034,7 +2932,7 @@ a {
     padding: 30px;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h3 {
-    color: #00ccff;
+    color: #00C9C8;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -3048,7 +2946,6 @@ a {
     margin-bottom: 10px;
   }
   .section__anuncios__19122021 .section__anuncios__19122021__h4 {
-    color: #ff0000;
     font-size: 20px;
     margin-top: 20px;
     display: flex;
@@ -3064,11 +2961,10 @@ a {
   /*Sección: 10/12/2021*/
   .section__anuncios__10122021 {
     background-color: #2c2a30;
-    color: #ffffff;
     padding: 30px;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h3 {
-    color: #00ccff;
+    color: #00C9C8;
     font-size: 35px;
     display: flex;
     justify-content: center;
@@ -3082,7 +2978,6 @@ a {
     margin-bottom: 10px;
   }
   .section__anuncios__10122021 .section__anuncios__10122021__h4 {
-    color: #ff0000;
     font-size: 20px;
     margin-top: 20px;
     display: flex;
@@ -3105,7 +3000,6 @@ a {
   }
   .main__section__dudasFrecuentes__h1 .main__section__dudasFrecuentes__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 2em;
     width: 100%;
     display: flex;
@@ -3123,7 +3017,6 @@ a {
   /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
   .section__dudasFrecuentes__usarCuentaBotEncendido {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 30px;
   }
@@ -3141,7 +3034,6 @@ a {
   /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
   .section__dudasFrecuentes__vivoEnOtroPais {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 30px;
   }
@@ -3156,7 +3048,6 @@ a {
   /*Sección: ¿Cómo puedo controlar el bot?*/
   .section__dudasFrecuentes__controlarElBot {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 30px;
   }
@@ -3171,7 +3062,6 @@ a {
   /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
   .section__dudasFrecuentes__ponerBotR4R5 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 30px;
   }
@@ -3193,7 +3083,6 @@ a {
   }
   .main__section__dudasFrecuentes__h1 .main__section__dudasFrecuentes__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 2em;
     width: 100%;
     display: flex;
@@ -3211,7 +3100,6 @@ a {
   /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
   .section__dudasFrecuentes__usarCuentaBotEncendido {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 30px;
   }
@@ -3229,7 +3117,6 @@ a {
   /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
   .section__dudasFrecuentes__vivoEnOtroPais {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 30px;
   }
@@ -3244,7 +3131,6 @@ a {
   /*Sección: ¿Cómo puedo controlar el bot?*/
   .section__dudasFrecuentes__controlarElBot {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 30px;
   }
@@ -3259,7 +3145,6 @@ a {
   /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
   .section__dudasFrecuentes__ponerBotR4R5 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 20px;
     padding: 30px;
   }
@@ -3281,7 +3166,6 @@ a {
   }
   .main__section__dudasFrecuentes__h1 .main__section__dudasFrecuentes__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 3em;
     width: 100%;
     display: flex;
@@ -3299,7 +3183,6 @@ a {
   /*Sección: ¿Puedo acceder a mi cuenta o seguir utilizándola con el bot encendido?*/
   .section__dudasFrecuentes__usarCuentaBotEncendido {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 25px;
     padding: 30px;
   }
@@ -3317,7 +3200,6 @@ a {
   /*Sección: Vivo en otro país y sólo puedo pagar con mi moneda ¿Qué puedo hacer?*/
   .section__dudasFrecuentes__vivoEnOtroPais {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 25px;
     padding: 30px;
   }
@@ -3332,7 +3214,6 @@ a {
   /*Sección: ¿Cómo puedo controlar el bot?*/
   .section__dudasFrecuentes__controlarElBot {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 25px;
     padding: 30px;
   }
@@ -3347,7 +3228,6 @@ a {
   /*Sección: ¿Puedo poner mi bot como "Rango 4" o "Rango 5"?*/
   .section__dudasFrecuentes__ponerBotR4R5 {
     background-color: #2c2a30;
-    color: #ffffff;
     font-size: 25px;
     padding: 30px;
   }
@@ -3385,6 +3265,7 @@ a {
   }
   .section__promociones__abrilDePascua .section__promociones__abrilDePascua__img {
     width: 350px;
+    height: 100%;
     margin-left: 15px;
     grid-area: section__promociones__abrilDePascua__img;
   }
@@ -3437,6 +3318,7 @@ a {
   }
   .section__promociones__abrilDePascua .section__promociones__abrilDePascua__img {
     width: 500px;
+    height: 500px;
     margin-left: 100px;
     grid-area: section__promociones__abrilDePascua__img;
     display: grid;
@@ -3471,7 +3353,6 @@ a {
   }
   .main__promociones .main__section__promociones {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: white;
     font-size: 30px;
     height: 100%;
     display: grid;
@@ -3490,6 +3371,7 @@ a {
   }
   .section__promociones__abrilDePascua .section__promociones__abrilDePascua__img {
     width: 360px;
+    height: 360px;
     margin-left: 10px;
     grid-area: section__promociones__abrilDePascua__img;
     display: grid;
@@ -3525,7 +3407,6 @@ a {
   }
   .section__terminosycondiciones__h1 .section__terminosycondiciones__h1--bi {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 22px;
     height: 100%;
     display: flex;
@@ -3535,12 +3416,14 @@ a {
 
   /*Términos y condiciones*/
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__h3 {
+    color: #000000;
     font-size: 26px;
     margin: 20px;
   }
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__p {
+    color: #000000;
     font-size: 20px;
-    width: 350px;
+    height: 350px;
     margin-left: 46px;
     padding: 15px;
   }
@@ -3555,7 +3438,6 @@ a {
 
   .section__terminosycondiciones__h1--bi {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 35px;
     height: 100%;
     display: flex;
@@ -3565,10 +3447,12 @@ a {
 
   /*Términos y condiciones*/
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__h3 {
+    color: #000000;
     font-size: 40px;
     margin: 40px;
   }
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__p {
+    color: #000000;
     font-size: 25px;
     width: 690px;
     margin-left: 46px;
@@ -3585,7 +3469,6 @@ a {
 
   .section__terminosycondiciones__h1--bi {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 35px;
     height: 100%;
     display: flex;
@@ -3595,10 +3478,12 @@ a {
 
   /*Términos y condiciones*/
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__h3 {
+    color: #000000;
     font-size: 40px;
     margin: 40px;
   }
   .section__terminosycondiciones__h3yp .section__terminosycondiciones__p {
+    color: #000000;
     font-size: 25px;
     margin-left: 46px;
     padding: 15px;
@@ -3615,7 +3500,6 @@ a {
   }
   .main__section__ayuda__h1 .main__section__ayuda__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 2em;
     width: 100%;
     display: flex;
@@ -3653,7 +3537,6 @@ a {
   }
   .main__section__ayuda__h1 .main__section__ayuda__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 4em;
     width: 100%;
     display: flex;
@@ -3691,7 +3574,6 @@ a {
   }
   .main__section__ayuda__h1 .main__section__ayuda__div__h1 {
     background-color: rgba(44, 42, 48, 0.6235294118);
-    color: #ffffff;
     font-size: 4em;
     width: 100%;
     display: flex;

@@ -3,18 +3,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #ffffff;
+
+    a {
+        color: #FFB54C;
+
+        &:hover {
+            color: #d1b410;
+            cursor: pointer;
+        }
+    }
 }
+
 
 /*Anclas blancas*/
 .anclas__blancas {
-    color: white;
+    color: #ffffff;
 }
 
 /*Anclas negras*/
 .anclas__negras {
-    color: #000000;
+    color: #ffffff;
 }
 
+@import "variables";
+@import "mixins.scss";
 @import "headernav";
 @import "footer";
 @import "index";
