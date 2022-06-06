@@ -9,11 +9,14 @@
 
         .section__anuncios__h1--bc {
             background-color: #2c2a309f;
-            font-size: 3em;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .section__anuncios__h1--fs{
+                font-size: 3em;
+            }
         }
     }
 
@@ -148,11 +151,14 @@
 
         .section__anuncios__h1--bc {
             background-color: #2c2a309f;
-            font-size: 3em;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .section__anuncios__h1--fs{
+                font-size: 4em;
+            }
         }
     }
 
@@ -239,7 +245,6 @@
 
     .section__anuncios__10122021 {
         background-color: #2c2a30;
-        color: #ffffff;
         padding: 30px;
 
         .section__anuncios__10122021__h3 {
@@ -287,11 +292,14 @@
 
         .section__anuncios__h1--bc {
             background-color: #2c2a309f;
-            font-size: 6em;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .section__anuncios__h1--fs{
+                font-size: 5em;
+            }
         }
     }
 

@@ -110,7 +110,6 @@ header {
 
 .header__nav__h2 {
     font-weight: 300;
-    cursor: pointer;
 }
 
 a.selected {
@@ -137,14 +136,9 @@ a.selected {
 
 .header__h2 {
     color: #d1b410;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
 
-}
-
-.header__gif {
-    width: 600px;
-    margin-left: 100px;
 }
 
 .nav__acordeon__color {
@@ -203,7 +197,7 @@ a {
     overflow: hidden;
 
     .header__promociones__movimiento__a {
-        @include anclablancadelnav (#ffffff , $font30);
+        @include anclablancadelnav (#ffffff, $font30);
         animation-name: mover;
         animation-duration: 5s;
         animation-iteration-count: infinite;
@@ -229,47 +223,19 @@ a {
         display: none;
     }
 
-    .header__gif {
-        width: 300px;
-    }
-
     .icon__menu {
         margin-left: 30px;
     }
 
     .header__promociones__movimiento {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        overflow: hidden;
-    
-        .header__promociones__movimiento__a {
-            height: 100px;
-            animation-name: mover;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-    
-            @keyframes mover {
-                0% {
-                    transform: translateX(-100%);
-                }
-    
-                50% {
-                    transform: translateX(0);
-                }
-    
-                100% {
-                    transform: translateX(100%);
-                }
-            }
-        }
+        display: none;
     }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 768px) {
 
-    .header__gif {
-        width: 300px;
+    .header__promociones__movimiento {
+        display: none;
     }
 }
 

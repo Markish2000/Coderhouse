@@ -20,19 +20,20 @@
     /*Términos y condiciones*/
 
     .section__terminosycondiciones__h3yp {
+        padding: 30px;
+
+        .section__terminosycondiciones__h3--margin {
+            margin-top: 50px;
+        }
 
         .section__terminosycondiciones__h3 {
             color: #000000;
-            font-size: 26px;
-            margin: 20px;
         }
 
         .section__terminosycondiciones__p {
             color: #000000;
             font-size: 20px;
-            height: map-get($height, height350);
-            margin-left: 46px;
-            padding: 15px;
+            margin-top: 20px;
         }
     }
 }
@@ -51,7 +52,6 @@
 
     .section__terminosycondiciones__h1--bi {
         background-color: #2c2a309f;
-        font-size: 35px;
         height: map-get($height, height100x);
         display: flex;
         align-items: center;
@@ -62,19 +62,20 @@
     /*Términos y condiciones*/
 
     .section__terminosycondiciones__h3yp {
+        padding: 30px;
+
+        .section__terminosycondiciones__h3--margin {
+            margin-top: 50px;
+        }
 
         .section__terminosycondiciones__h3 {
             color: #000000;
-            font-size: 40px;
-            margin: 40px;
         }
 
         .section__terminosycondiciones__p {
             color: #000000;
             font-size: 25px;
-            width: 690px;
-            margin-left: 46px;
-            padding: 15px;
+            margin-top: 20px;
         }
     }
 }
@@ -93,29 +94,34 @@
 
     .section__terminosycondiciones__h1--bi {
         background-color: #2c2a309f;
-        font-size: 35px;
         height: map-get($height, height100x);
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .section__terminosycondiciones__h1--fs {
+            font-size: 3em;
+        }
     }
 
 
     /*Términos y condiciones*/
 
     .section__terminosycondiciones__h3yp {
+        padding: 30px;
+
+        .section__terminosycondiciones__h3--margin {
+            margin-top: 50px;
+        }
 
         .section__terminosycondiciones__h3 {
             color: #000000;
-            font-size: 40px;
-            margin: 40px;
         }
 
         .section__terminosycondiciones__p {
             color: #000000;
             font-size: 25px;
-            margin-left: 46px;
-            padding: 15px;
+            margin-top: 20px;
         }
     }
 }

@@ -16,7 +16,6 @@ function open_close_menu() {
 //Si elancho de la página es menor a 760px, ocultará el menú al recargar la página
 
 if (window.innerWidth < 768) {
-
     body.classList.add("body_move");
     side_menu.classList.add("menu__side_move");
 }

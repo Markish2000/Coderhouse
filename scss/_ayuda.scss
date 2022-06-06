@@ -10,11 +10,14 @@
 
         .main__section__ayuda__div__h1 {
             background-color: #2c2a309f;
-            font-size: 2em;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .main__section__ayuda__div__h1--fs{
+                font-size: 3em;
+            }
         }
     }
 
@@ -57,11 +60,14 @@
 
         .main__section__ayuda__div__h1 {
             background-color: #2c2a309f;
-            font-size: 4em;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .main__section__ayuda__div__h1--fs{
+                font-size: 4em;
+            }
         }
     }
 
@@ -104,11 +110,14 @@
 
         .main__section__ayuda__div__h1 {
             background-color: #2c2a309f;
-            font-size: 4em;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .main__section__ayuda__div__h1--fs{
+                font-size: 5em;
+            }
         }
     }
 

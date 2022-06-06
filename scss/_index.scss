@@ -43,13 +43,12 @@
         padding: 10px;
 
         .main__section__hacerbots__div__h2 {
-            margin-top: 10px;
-            display: grid;
-            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
 
-        main section ul {
-            padding: 30px;
+        .main__section__hacerbots__ul {
+            margin-bottom: 20px;
         }
     }
 
@@ -84,6 +83,10 @@
             .main__section__div__ul {
                 font-size: 20px;
                 margin: 40px;
+            }
+
+            .section__elergirnos__div__ul {
+                margin-bottom: 20px;
             }
         }
     }
@@ -120,6 +123,10 @@
             .section__seguridadYConfiabilidad__ul {
                 margin: 40px;
             }
+
+            .seguridadYConfiabilidad__div__ul--fs {
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -147,6 +154,10 @@
                 }
             }
 
+            .section__garantiaDeSastifaccion__ul--margin {
+                margin-bottom: 20px;
+            }
+
             .section__garantiaDeSastifaccion__ul {
                 font-size: 23px;
                 margin: 40px;
@@ -164,12 +175,6 @@
 
 
 @media only screen and (min-width: 421px) and (max-width: 1001px) {
-    /*Sección: Eliminar contenido*/
-
-    .display--none {
-        display: none;
-    }
-
     /*Sección: Explicación de las funciones del bot*/
 
     .main__section__funciones {
@@ -216,15 +221,22 @@
         padding: 10px;
 
         .main__section__hacerbots__div__h2 {
-            font-size: 30px;
             margin-top: 10px;
+            margin-bottom: 20px;
             display: grid;
             justify-content: center;
+
+            .main__section__hacerbots__h2 {
+                font-size: 40px;
+            }
         }
 
         main section ul {
-            font-size: 20px;
             padding: 20px;
+        }
+
+        .main__section__hacerbots__ul {
+            margin-bottom: 20px;
         }
     }
 
@@ -243,7 +255,7 @@
 
         div {
             .main__section__div__h2 {
-                font-size: 30px;
+                font-size: 40px;
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
@@ -252,6 +264,10 @@
             .main__section__div__ul {
                 font-size: 20px;
                 margin: 40px;
+
+                .section__elergirnos__div__ul{
+                    margin-bottom: 20px;
+                }
             }
         }
     }
@@ -284,6 +300,10 @@
             .section__seguridadYConfiabilidad__ul {
                 font-size: 20px;
                 margin: 40px;
+
+                .seguridadYConfiabilidad__div__ul--fs{
+                    margin-bottom: 20px;
+                }
             }
         }
     }
@@ -314,6 +334,10 @@
             .section__garantiaDeSastifaccion__ul {
                 font-size: 25px;
                 margin: 40px;
+
+                .section__garantiaDeSastifaccion__ul--margin{
+                    margin-bottom: 20px;
+                }
             }
 
             .section__garantiaDeSastifaccion__p {
@@ -346,7 +370,7 @@
             grid-area: main__section__div__img;
 
             .main__section__funciones__img {
-                width: 350px;
+                width: 500px;
             }
         }
 
@@ -354,7 +378,7 @@
             grid-area: main__section__div__h2__p;
 
             .main__section__funciones__h2 {
-                font-size: 32px;
+                font-size: 40px;
                 margin-left: 5px;
             }
 
@@ -374,15 +398,24 @@
         padding: 10px;
 
         .main__section__hacerbots__div__h2 {
-            font-size: 30px;
-            margin-top: 10px;
+            margin: 15px 0;
             display: grid;
             justify-content: center;
         }
 
-        main section ul {
-            padding: 20px;
-            font-size: 20px;
+        .main__section__hacerbots__h2 {
+            font-size: 40px;
+        }
+
+        .main__section__hacerbots__ul {
+            margin-bottom: 10px;
+        }
+
+        .main__section__hacerbots__div__h3h4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -400,7 +433,7 @@
 
         div {
             .main__section__div__h2 {
-                font-size: 30px;
+                font-size: 40px;
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
@@ -409,6 +442,10 @@
             .main__section__div__ul {
                 font-size: 20px;
                 margin: 40px;
+            }
+
+            .section__elergirnos__div__ul {
+                margin-bottom: 15px;
             }
         }
     }
@@ -428,13 +465,13 @@
             .section__seguridadYConfiabilidad__img {
                 margin-left: 30px;
                 margin-right: 10px;
-                width: 350px;
+                width: 500px;
             }
         }
 
         div {
             .section__seguridadYConfiabilidad__div__h2 {
-                font-size: 35px;
+                font-size: 40px;
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
@@ -443,6 +480,10 @@
             .section__seguridadYConfiabilidad__ul {
                 font-size: 20px;
                 margin: 40px;
+            }
+
+            .seguridadYConfiabilidad__div__ul--fs {
+                margin-bottom: 20px;
             }
         }
     }
@@ -462,8 +503,7 @@
 
         div {
             .section__garantiaDeSastifaccion__div__h2 {
-                font-size: 35px;
-                margin-top: 30px;
+                font-size: 40px;
             }
 
             .section__garantiaDeSastifaccion__ul {
@@ -474,6 +514,10 @@
             .section__garantiaDeSastifaccion__p {
                 font-size: 20px;
                 margin: 30px;
+            }
+
+            .section__garantiaDeSastifaccion__ul--margin {
+                margin-bottom: 20px;
             }
         }
     }

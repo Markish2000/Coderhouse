@@ -8,12 +8,14 @@
 
         .main__section__gremioDeCaceria__div__h1 {
             background-color: #2c2a309f;
-            color: #ffffff;
-            font-size: 25px;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .main__section__gremioDeCaceria__div__h1--fs {
+                font-size: 35px;
+            }
         }
     }
 
@@ -42,7 +44,6 @@
     .section__gremioDeCaceria__OD {
         background-image: url(../images/gremiosdecaceria/OD--bc.png);
         background-size: cover;
-        color: #ffffff;
         padding: 30px;
     }
 
@@ -69,7 +70,6 @@
 
     .section__gremioDeCaceria__OD__info {
         background-color: #2c2a30;
-        color: #ffffff;
         font-size: 25px;
         padding: 30px;
     }
@@ -103,7 +103,6 @@
     .section__gremioDeCaceria__ITS {
         background-image: url(../images/gremiosdecaceria/ITS--bc.png);
         background-size: cover;
-        color: #ffffff;
         padding: 30px;
     }
 
@@ -112,7 +111,6 @@
 
     .section__gremioDeCaceria__ITS__info {
         background-color: #2c2a30;
-        color: #ffffff;
         font-size: 25px;
         padding: 30px;
     }
@@ -132,11 +130,13 @@
         .main__section__gremioDeCaceria__div__h1 {
             background-color: #2c2a309f;
             height: 100%;
-            font-size: 40px;
-            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .main__section__gremioDeCaceria__div__h1--fs {
+                font-size: 40px;
+            }
         }
     }
 
@@ -167,7 +167,6 @@
     .section__gremioDeCaceria__OD {
         background-image: url(../images/gremiosdecaceria/OD--bc.png);
         background-size: cover;
-        color: #ffffff;
     }
 
     .section__gremioDeCaceria__div__OD--bc {
@@ -197,7 +196,6 @@
 
     .section__gremioDeCaceria__OD__info {
         background-color: #2c2a30;
-        color: #ffffff;
         font-size: 25px;
         padding: 30px;
         display: flex;
@@ -232,7 +230,6 @@
     .section__gremioDeCaceria__ITS {
         background-image: url(../images/gremiosdecaceria/ITS--bc.png);
         background-size: cover;
-        color: #ffffff;
     }
 
 
@@ -240,7 +237,6 @@
 
     .section__gremioDeCaceria__ITS__info {
         background-color: #2c2a30;
-        color: #ffffff;
         font-size: 25px;
         padding: 30px;
         display: flex;
@@ -262,10 +258,13 @@
         .main__section__gremioDeCaceria__div__h1 {
             background-color: #2c2a309f;
             height: 100%;
-            font-size: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .main__section__gremioDeCaceria__div__h1--fs {
+                font-size: 45px;
+            }
         }
     }
 
@@ -296,7 +295,6 @@
     .section__gremioDeCaceria__OD {
         background-image: url(../images/gremiosdecaceria/OD--bc.png);
         background-size: cover;
-        color: #ffffff;
     }
 
     .section__gremioDeCaceria__div__OD--bc {

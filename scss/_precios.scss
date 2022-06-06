@@ -33,11 +33,14 @@
 
         .main__precios__section__h1--bc {
             background-color: #2c2a309f;
-            font-size: 3em;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .main__precios__section__h1--fs {
+                font-size: 3em;
+            }
         }
     }
 
@@ -62,10 +65,13 @@
         padding: 40px;
 
         .main__precios__section__div__pagarNuevoBot__h2 {
-            font-size: 23px;
             margin-bottom: 30px;
             display: flex;
             justify-content: center;
+
+            .main__precios__section__div__pagarNuevoBot__h2--fs {
+                font-size: 30px;
+            }
         }
 
         .main__precios__section__div__pagarNuevoBot__h3 {
@@ -90,10 +96,13 @@
         padding: 40px;
 
         .main__precios__section__div__pagarRentaMensual__h2 {
-            font-size: 23px;
             margin-bottom: 30px;
             display: flex;
             justify-content: center;
+
+            .main__precios__section__div__pagarRentaMensual__h2--fs {
+                font-size: 30px;
+            }
         }
 
         .main__precios__section__div__pagarRentaMensual__h3 {
@@ -200,7 +209,7 @@
         align-items: center;
 
         .main__precios__section__masPromociones__h2 {
-            font-size: 25px;
+            width: 370px;
             margin-bottom: 20px;
         }
 
@@ -261,11 +270,14 @@
 
         .main__precios__section__h1--bc {
             background-color: #2c2a309f;
-            font-size: 5em;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .main__precios__section__h1--fs {
+                font-size: 5em;
+            }
         }
     }
 
@@ -290,10 +302,13 @@
         padding: 40px;
 
         .main__precios__section__div__pagarNuevoBot__h2 {
-            font-size: 35px;
             margin-bottom: 40px;
             display: flex;
             justify-content: center;
+
+            .main__precios__section__div__pagarNuevoBot__h2--fs {
+                font-size: 40px;
+            }
         }
 
         .main__precios__section__div__pagarNuevoBot__h3 {
@@ -319,10 +334,13 @@
         padding: 40px;
 
         .main__precios__section__div__pagarRentaMensual__h2 {
-            font-size: 30px;
             margin-bottom: 30px;
             display: flex;
             justify-content: center;
+
+            .main__precios__section__div__pagarRentaMensual__h2--fs {
+                font-size: 40px;
+            }
         }
 
         .main__precios__section__div__pagarRentaMensual__h3 {
@@ -457,6 +475,10 @@
         justify-content: center;
         align-items: center;
 
+        .main__precios__section__otrosMetodosDePago__h2 {
+            font-size: 3em;
+        }
+
         .main__precios__section__div__otrosMetodosDePago {
             margin-top: 30px;
             display: flex;
@@ -501,6 +523,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .main__precios__section__h1--fs {
+                font-size: 6em;
+            }
         }
     }
 
@@ -525,10 +551,13 @@
         padding: 40px;
 
         .main__precios__section__div__pagarNuevoBot__h2 {
-            font-size: 40px;
             margin-bottom: 40px;
             display: flex;
             justify-content: center;
+
+            .main__precios__section__div__pagarNuevoBot__h2--fs {
+                font-size: 50px;
+            }
         }
 
 
@@ -567,10 +596,13 @@
     }
 
     .main__precios__section__div__pagarRentaMensual__h2 {
-        font-size: 40px;
         margin-bottom: 40px;
         display: flex;
         justify-content: center;
+
+        .main__precios__section__div__pagarRentaMensual__h2--fs {
+            font-size: 50px;
+        }
     }
 
     .main__precios__section__div__pagarRentaMensual__h3 {

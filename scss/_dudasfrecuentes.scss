@@ -9,7 +9,6 @@
 
                 .main__section__dudasFrecuentes__div__h1 {
                         background-color: #2c2a309f;
-                        font-size: 2em;
                         width: 100%;
                         display: flex;
                         align-items: center;
@@ -33,10 +32,10 @@
                 background-color: #2c2a30;
                 font-size: 20px;
                 padding: 30px;
+        }
 
-                .section__dudasFrecuentes__li {
-                        margin-bottom: 20px;
-                }
+        .section__dudasFrecuentes__li {
+                margin-bottom: 20px;
         }
 
 
@@ -117,11 +116,14 @@
 
                 .main__section__dudasFrecuentes__div__h1 {
                         background-color: #2c2a309f;
-                        font-size: 2em;
                         width: 100%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+
+                        .main__section__dudasFrecuentes__div__h1--fs {
+                                font-size: 3em;
+                        }
                 }
         }
 
@@ -140,10 +142,10 @@
                 background-color: #2c2a30;
                 font-size: 20px;
                 padding: 30px;
+        }
 
-                .section__dudasFrecuentes__li {
-                        margin-bottom: 20px;
-                }
+        .section__dudasFrecuentes__li {
+                margin-bottom: 20px;
         }
 
 
@@ -224,11 +226,14 @@
 
                 .main__section__dudasFrecuentes__div__h1 {
                         background-color: #2c2a309f;
-                        font-size: 3em;
                         width: 100%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+
+                        .main__section__dudasFrecuentes__div__h1--fs {
+                                font-size: 4em;
+                        }
                 }
         }
 
@@ -248,10 +253,10 @@
                 background-color: #2c2a30;
                 font-size: 25px;
                 padding: 30px;
+        }
 
-                .section__dudasFrecuentes__li {
-                        margin-bottom: 20px;
-                }
+        .section__dudasFrecuentes__li {
+                margin-bottom: 20px;
         }
 
 

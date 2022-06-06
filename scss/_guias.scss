@@ -9,11 +9,14 @@
 
         .main__section__div__h1 {
             background-color: #2c2a309f;
-            font-size: 50px;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .main__section__div__h1--fs {
+                font-size: 4em;
+            }
         }
     }
 
@@ -29,6 +32,10 @@
         justify-content: center;
         align-items: center;
 
+        .main__section__comandos__a--hover:hover {
+            color: #d1b410;
+        }
+
         .main__section__comandos__h3 {
             font-size: 25px;
         }
@@ -38,6 +45,13 @@
             font-size: 20px;
             padding: 10px;
         }
+    }
+
+
+    /*Iframe*/
+
+    .section__guias__iframe {
+        width: 100%;
     }
 
 
@@ -90,12 +104,15 @@
 
         .main__section__div__h1 {
             background-color: #2c2a309f;
-            font-size: 80px;
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .main__section__div__h1--fs {
+                font-size: 5em;
+            }
         }
     }
 
@@ -110,6 +127,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        .main__section__comandos__a--hover:hover {
+            color: #d1b410;
+        }
 
         .main__section__comandos__h3 {
             font-size: 40px;
@@ -171,11 +192,14 @@
 
         .main__section__div__h1 {
             background-color: #2c2a309f;
-            font-size: 80px;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .main__section__div__h1--fs {
+                font-size: 5em;
+            }
         }
     }
 
@@ -190,6 +214,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        .main__section__comandos__a--hover:hover {
+            color: #d1b410;
+        }
 
         .main__section__comandos__h3 {
             font-size: 40px;
