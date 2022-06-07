@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 /*Reseteo de valores*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 
     a {
         color: #FFB54C;
@@ -13,17 +17,6 @@
             cursor: pointer;
         }
     }
-}
-
-
-/*Anclas blancas*/
-.anclas__blancas {
-    color: #ffffff;
-}
-
-/*Anclas negras*/
-.anclas__negras {
-    color: #ffffff;
 }
 
 @import "variables";
@@ -43,3 +36,4 @@
 @import "promociones";
 @import "terminosycondiciones";
 @import "ayuda";
+@import "formulario";

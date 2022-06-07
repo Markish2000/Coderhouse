@@ -26,12 +26,12 @@ window.addEventListener("resize", function () {
 
     if (window.innerWidth > 768) {
         body.classList.remove("body_move");
-        wide_menu.classList.remove("menu__side_move");
+        menu_side.classList.remove("menu__side_move");
     }
 
     if (window.innerWidth < 768) {
         body.classList.add("body_move");
-        wide_menu.classList.add("menu__side_move");
+        menu_side.classList.add("menu__side_move");
     }
 
 });
