@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="MerezBots posee una sección especifica para el reclutamiento de jugadores para gremios de guerra.">
-    <meta name="keywords"
-        content="Lord Mobile, Lord Mobile bot, Bot, Merezbots, gremio de guerra, gremios, reclutación">
-    <title>Gremio de guerra</title>
+    <meta name="description" content="Página dedicada a la venta de recursos.">
+    <meta name="keywords" content="Lord Mobile, Lord Mobile bot, Bot, Merezbots, Venta de recursos">
+    <title>Venta de recursos</title>
     <link rel="icon" href="../images/headeryfooter/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -62,8 +60,8 @@
                 </div>
             </a>
 
-            <a href="ventaderecursos.html">
-                <div class="option">
+            <a href="#">
+                <div class="option selected">
                     <img loading="lazy" src="../images/headeryfooter/ventaderecursos.png" alt="Precios" title="Precios">
                     <h2 class="header__nav__h2">Venta de recursos</h2>
                 </div>
@@ -82,7 +80,7 @@
                         data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         <div id="gremio_open" class="option">
                             <img loading="lazy" src="../images/headeryfooter/gremios.png" alt="Gremios" title="Gremios">
-                            <h2 class="header__nav__h2 selected">Gremios</h2>
+                            <h2 class="header__nav__h2">Gremios</h2>
                         </div>
                     </button>
                 </h2>
@@ -90,7 +88,7 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <a href="gremiodecaceria.html">Gremios de cacería</a> <br>
-                        <a href="#" class="selected">Gremios de guerra</a> <br>
+                        <a href="gremiodeguerra.html">Gremios de guerra</a> <br>
                         <a href="caravanadeayudas.html">Caravana de ayudas</a> <br>
                     </div>
                 </div>
@@ -107,7 +105,7 @@
                 <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <a href="cuentasrallylead.html">Cuentas Rally Lead</a> <br>
+                        <a href="pages/cuentasrallylead.html">Cuentas Rally Lead</a> <br>
                     </div>
                 </div>
                 <h2 class="accordion-header" id="headingThree">
@@ -157,76 +155,50 @@
 
     <main>
 
-        <!--Comienza página de "Gremio de guerra"-->
-        <section class="main__section__gremiodeguerra__h1">
-            <div class="main__section__gremiodeguerra__h1--bc">
-                <h1 class="main__section__gremiodeguerra__h1--fs">Gremios de guerra</h1>
+        <!--Sección: h1 + imagen-->
+        <section class="section__ventaderecursos__h1">
+            <div class="section__ventaderecursos__h1--bc">
+                <h1 class="section__ventaderecursos__h1--fs">Venta de recursos</h1>
             </div>
         </section>
 
-        <!--Breve texto para indicar que en la página pueden buscar gremios de cacería-->
-        <section class="main__section__gremiodeguerra_h3yh4">
-            <h2 class="main__section__gremiodeguerra_h3">¿Estás en busqueda de un gremio guerrero?</h2>
-            <h3 class="main__section__gremiodeguerra_h4">Estás en el lugar correcto, aquí podrás encontrar gremios
-                de guerra.</h3>
+        <!--Sección: Explicación de lo que hay en la página-->
+        <section class="section__ventaderecursos__h2yp">
+            <h2 class="section__ventaderecursos__h2yp--h2fs">¿Quieres comprar gemas, recursos y/o diamantes?</h2>
+            <p class="section__ventaderecursos__h2yp--pfs">¡Estás en el lugar correcto! Aquí podrás comprar <a
+                    href="#ventaderecursos_gemas">gemas</a>, recursos y diamantes</p>
         </section>
+
     </main>
 
-    <!--Gremio: [RdC] Reino D Los Cielosx-->
-    <section class="section__gremiodeguerra__rdc">
-        <div class="section__gremiodeguerra__rdc--bc">
-            <div class="section__gremiodeguerra__div__img">
-                <img loading="lazy" src="../images/gremiosdeguerra/RdC.png" alt="Inmortales"
-                    class="section__gremiodeguerra__img">
-            </div>
-            <div class="section__gremiosdeguerra__rdc__div__h2ul">
-                <h2 class="section__gremiosdeguerra__rdc__h2">[RdC] Reino D Los Cielosx</h2>
-                <ul class="section__gremiosdeguerra__rdc__h2ul">
-                    <li class="section__gremiosdeguerra__rdc__h2li">Reino: 429</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Activo en guerra: Sí</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Activo en eventos: Sí</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Activo cacería: No</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Miembros: 81</li>
-                </ul>
-            </div>
+    <!--Sección: Gemas-->
+    <section id="ventaderecursos_gemas" class="section__ventaderecursos__gemas__h2">
+        <div class="section__ventaderecursos__gemas__h2--bc">
+            <h2 class="section__ventaderecursos__gemas__h2--fs">Gemas</h2>
         </div>
     </section>
 
-    <!--Sección: [RdC] Reino D Los Cielosx, información-->
-    <section class="section__gremiosdeguerra__rdc__h3ul">
-        <div>
-            <h3 class="section__gremiosdeguerra__rdc__h3">Ofrece:</h3>
-            <ul class="section__gremiosdeguerra__rdc__h2ul">
-                <li class="section__div__gremiosdeguerra__rdc__h2li">Cantidad de cofres diarios promedio: 170</li>
-                <li class="section__div__gremiosdeguerra__rdc__h2li">Fiesta de gremio: Liga experta</li>
-                <li class="section__div__gremiosdeguerra__rdc__h2li">Desafío gremial: Liga maestra</li>
-                <li class="section__div__gremiosdeguerra__rdc__h2li">Eventos opcionales: Balón</li>
-                <li class="section__div__gremiosdeguerra__rdc__h2li">Idioma: Español</li>
-                <li class="section__div__gremiosdeguerra__rdc__h2li">Guerra activa</li>
-            </ul>
+    <!--Sección: ¡Venta de gemas para todos!-->
+    <section class="section__ventaderecursos__ventaDeGemasParaTodos">
+        <div class="section__ventaderecursos__ventaDeGemasParaTodos__div__img">
+            <img class="section__ventaderecursos__ventaDeGemasParaTodos__img" src="../images/index/PorQueElegirnos.jpg" alt="Venta de gemas" width="100%" height="100%">
         </div>
-        <div>
-            <div class="section__gremiosdeguerra__rdc__div__h2ul">
-                <h3 class="section__gremiosdeguerra__rdc__h3">Solicita:</h3>
-                <ul class="section__gremiosdeguerra__rdc__h2ul">
-                    <li class="section__gremiosdeguerra__rdc__h2li">Cacería: Mínimo 4 lvl 2 por día</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Fiesta de gremio: 1.300 puntos</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Desafío gremial: Participación activa</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Poder mínimo: 300M</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Arena del dragón: Partipación activa</li>
-                    <li class="section__gremiosdeguerra__rdc__h2li">Compañerismo y respeto</li>
-                </ul>
-            </div>
-            <div class="section__gremiosdeguerra__rdc__div__a">
-                <a href="https://api.whatsapp.com/send?phone=59896826763&app=facebook&entry_point=page_cta"
-                    target="_blank">
-                    <img loading="lazy" src="../images/gremiosdecaceria/solicitaringreso.png" alt="Solicitar ingreso"
-                        width="159px" class="section__gremiosdeguerra__rdc__div__a--img">
-                </a>
-                <h4">Actualizado 20/04/2022</h4>
-            </div>
+        <div class="section__ventaderecursos__ventaDeGemasParaTodos__div__info">
+            <h2 class="section__ventaderecursos__ventaDeGemasParaTodos__h2">¡Venta de gemas para todos!</h2>
+            <h3 class="section__ventaderecursos__ventaDeGemasParaTodos__h3">Precio 6 USD por cada 100k</h3>
+            <h4 class="section__ventaderecursos__ventaDeGemasParaTodos__h4">¡El precio es el mismo para todos sin
+                importar el poder!</h4>
+            <h5>Cuenta 1</h5>
+            <p>Bolsa Disponible: 100k</p>
+            <p>Poder máximo: 840M</p>
+            <h5 class="section__ventaderecursos__ventaDeGemasParaTodos__h5">Cuenta 2</h5>
+            <p>Bolsa disponible: 1M</p>
+            <p>Poder máximo: 315M</p>
+            <h6 class="section__ventaderecursos__ventaDeGemasParaTodos__h6"><a href="#footer">Contactanos</a> para mayor información respecto a la restricciones de reino</h6>
+            <p>Actualizado: 30/04/2022</p>
         </div>
     </section>
+
 
     <!--ID de ancla para "Contacto" del menú-->
     <footer id="footer">
@@ -282,7 +254,6 @@
             <a href="https://api.whatsapp.com/send?phone=523324962976&app=facebook&entry_point=page_cta" target="_blank"
                 class="footer__ancla">+5213324962976(Mereszkha)</a>
         </div>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
