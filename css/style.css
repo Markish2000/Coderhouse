@@ -100,7 +100,6 @@ header {
   position: relative;
   transition: color 300ms;
 }
-
 .options__menu a:hover {
   color: #ffffff;
 }
@@ -187,7 +186,6 @@ a {
 .header__nav__h2 {
   color: rgba(255, 255, 255, 0.6980392157);
 }
-
 .header__nav__h2:hover {
   color: #ffffff;
   cursor: pointer;

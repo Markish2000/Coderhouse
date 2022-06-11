@@ -80,10 +80,10 @@ header {
     display: block;
     position: relative;
     transition: color 300ms;
-}
 
-.options__menu a:hover {
-    color: #ffffff;
+    &:hover{
+        color: #ffffff;
+    }
 }
 
 .options__menu .option {
@@ -173,11 +173,11 @@ a {
 
 .header__nav__h2 {
     color: #ffffffb2;
-}
 
-.header__nav__h2:hover {
-    color: #ffffff;
-    cursor: pointer;
+    &:hover{
+        color: #ffffff;
+        cursor: pointer;
+    }
 }
 
 .header__promociones__movimiento {

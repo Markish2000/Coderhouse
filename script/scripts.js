@@ -1,9 +1,15 @@
 //Ejecutar función en el evento click
 document.getElementById("btn_open").addEventListener("click", open_close_menu);
+document.getElementById("gremio_open").addEventListener("click", open_close_menu);
+document.getElementById("cuenta_open").addEventListener("click", open_close_menu);
+document.getElementById("extra_open").addEventListener("click", open_close_menu);
 
 //Declaramos variables
 var side_menu = document.getElementById("menu_side");
 var btn_open = document.getElementById("btn_open");
+var prueba = document.getElementById("gremio_open")
+var prueba = document.getElementById("cuenta_open")
+var prueba = document.getElementById("extra_open")
 var body = document.getElementById("body");
 
 //Evento para mostrar y ocultar menú
