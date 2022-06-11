@@ -7,9 +7,9 @@ document.getElementById("extra_open").addEventListener("click", open_close_menu)
 //Declaramos variables
 var side_menu = document.getElementById("menu_side");
 var btn_open = document.getElementById("btn_open");
-var prueba = document.getElementById("gremio_open")
-var prueba = document.getElementById("cuenta_open")
-var prueba = document.getElementById("extra_open")
+var gremio_open = document.getElementById("gremio_open")
+var cuenta_open = document.getElementById("cuenta_open")
+var extra_open = document.getElementById("extra_open")
 var body = document.getElementById("body");
 
 //Evento para mostrar y ocultar menú
