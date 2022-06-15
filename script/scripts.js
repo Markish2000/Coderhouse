@@ -39,5 +39,4 @@ window.addEventListener("resize", function () {
         body.classList.add("body_move");
         menu_side.classList.add("menu__side_move");
     }
-
 });

@@ -16,6 +16,58 @@
     }
 
 
+
+    /*Sección: Promoción de Abril*/
+
+    .section__promociones__marzoprimaveral {
+        background-color: #2c2a30;
+        padding: 20px;
+        display: grid;
+        grid-template-areas:
+            "section__promociones__abrilDePascua__img"
+            "section__promociones__abrilDePascua__h2"
+            "section__promociones__abrilDePascua__ul"
+            "section__promociones__abrilDePascua__h3"
+            "section__promociones__abrilDePascua__h5";
+        grid-template-rows: auto auto auto auto auto;
+
+        .section__promociones__abrilDePascua__img {
+            width: 350px;
+            height: 100%;
+            margin-left: 15px;
+            grid-area: section__promociones__abrilDePascua__img;
+        }
+
+        .section__promociones__abrilDePascua__h2 {
+            font-size: 30px;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            grid-area: section__promociones__abrilDePascua__h2;
+        }
+
+        .section__promociones__abrilDePascua__ul {
+            font-size: 18px;
+            padding: 15px;
+            grid-area: section__promociones__abrilDePascua__ul;
+
+            .section__promociones__abrilDePascua__li {
+                margin-bottom: 20px;
+            }
+        }
+
+        .section__promociones__abrilDePascua__h3 {
+            font-size: 20px;
+            margin-top: 1em;
+            grid-area: section__promociones__abrilDePascua__h3;
+        }
+
+        .section__promociones__abrilDePascua__h5 {
+            font-size: 16px;
+            grid-area: section__promociones__abrilDePascua__h5;
+        }
+    }
+
+
     /*Sección: Promoción de Abril*/
 
     .section__promociones__abrilDePascua {
@@ -49,7 +101,7 @@
             padding: 15px;
             grid-area: section__promociones__abrilDePascua__ul;
 
-            .section__promociones__abrilDePascua__li{
+            .section__promociones__abrilDePascua__li {
                 margin-bottom: 20px;
             }
         }
@@ -86,8 +138,60 @@
         justify-content: center;
         align-items: center;
 
-        .main__section__promociones__h1--fs{
+        .main__section__promociones__h1--fs {
             font-size: 3em;
+        }
+    }
+
+
+    /*Sección: Promoción de Abril*/
+
+    .section__promociones__marzoprimaveral {
+        background-color: #2c2a30;
+        padding: 40px;
+        display: grid;
+        grid-template-areas:
+            "section__promociones__abrilDePascua__img"
+            "section__promociones__abrilDePascua__h2"
+            "section__promociones__abrilDePascua__ul"
+            "section__promociones__abrilDePascua__h3"
+            "section__promociones__abrilDePascua__h5";
+        grid-template-rows: auto auto auto auto auto;
+
+        .section__promociones__abrilDePascua__img {
+            width: 500px;
+            height: 500px;
+            margin-left: 100px;
+            grid-area: section__promociones__abrilDePascua__img;
+            display: grid;
+        }
+
+        .section__promociones__abrilDePascua__h2 {
+            font-size: 40px;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            grid-area: section__promociones__abrilDePascua__h2;
+        }
+
+        .section__promociones__abrilDePascua__ul {
+            font-size: 28px;
+            padding: 15px;
+            grid-area: section__promociones__abrilDePascua__ul;
+
+            .section__promociones__abrilDePascua__li {
+                margin-bottom: 20px;
+            }
+        }
+
+        .section__promociones__abrilDePascua__h3 {
+            font-size: 30px;
+            margin-top: 1em;
+            grid-area: section__promociones__abrilDePascua__h3;
+        }
+
+        .section__promociones__abrilDePascua__h5 {
+            font-size: 26px;
+            grid-area: section__promociones__abrilDePascua__h5;
         }
     }
 
@@ -126,7 +230,7 @@
             padding: 15px;
             grid-area: section__promociones__abrilDePascua__ul;
 
-            .section__promociones__abrilDePascua__li{
+            .section__promociones__abrilDePascua__li {
                 margin-bottom: 20px;
             }
         }
@@ -162,13 +266,72 @@
             justify-content: center;
             align-items: center;
 
-            .main__section__promociones__h1--fs{
+            .main__section__promociones__h1--fs {
                 font-size: 3em;
             }
         }
     }
 
-    /*Sección: Promoción de Abril*/
+
+    /*Sección: Color negrito de fondo*/
+    .section__promociones__marzoprimaveral {
+        background-color: #2c2a30;
+        padding: 40px;
+        display: grid;
+        grid-template-areas:
+            "section__promociones__abrilDePascua__img section__promociones__abrilDePascua__h2"
+            "section__promociones__abrilDePascua__img section__promociones__abrilDePascua__ul"
+            "section__promociones__abrilDePascua__img section__promociones__abrilDePascua__h3"
+            "section__promociones__abrilDePascua__img section__promociones__abrilDePascua__h5";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto auto;
+
+        .section__promociones__abrilDePascua__img {
+            width: 360px;
+            height: 360px;
+            margin-left: 10px;
+            grid-area: section__promociones__abrilDePascua__img;
+            display: grid;
+        }
+
+        .section__promociones__abrilDePascua__h2 {
+            font-size: 40px;
+            margin-left: 1em;
+            margin-bottom: 1em;
+            grid-area: section__promociones__abrilDePascua__h2;
+        }
+
+        .section__promociones__abrilDePascua__ul {
+            font-size: 22px;
+            margin-left: 30px;
+            padding: 15px;
+            grid-area: section__promociones__abrilDePascua__ul;
+
+            .section__promociones__abrilDePascua__li {
+                margin-bottom: 20px;
+            }
+        }
+
+        .section__promociones__div-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            .section__promociones__abrilDePascua__h3 {
+                font-size: 25px;
+                margin-top: 1em;
+                grid-area: section__promociones__abrilDePascua__h3;
+            }
+
+            .section__promociones__abrilDePascua__h5 {
+                font-size: 20px;
+                grid-area: section__promociones__abrilDePascua__h5;
+            }
+        }
+    }
+
+    /*Sección: Color violetita de fondo*/
 
     .section__promociones__abrilDePascua {
         background-color: #2e0968bb;
@@ -203,20 +366,27 @@
             padding: 15px;
             grid-area: section__promociones__abrilDePascua__ul;
 
-            .section__promociones__abrilDePascua__li{
+            .section__promociones__abrilDePascua__li {
                 margin-bottom: 20px;
             }
         }
 
-        .section__promociones__abrilDePascua__h3 {
-            font-size: 25px;
-            margin-top: 1em;
-            grid-area: section__promociones__abrilDePascua__h3;
-        }
+        .section__promociones__div-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
 
-        .section__promociones__abrilDePascua__h5 {
-            font-size: 20px;
-            grid-area: section__promociones__abrilDePascua__h5;
+            .section__promociones__abrilDePascua__h3 {
+                font-size: 25px;
+                margin-top: 1em;
+                grid-area: section__promociones__abrilDePascua__h3;
+            }
+
+            .section__promociones__abrilDePascua__h5 {
+                font-size: 20px;
+                grid-area: section__promociones__abrilDePascua__h5;
+            }
         }
     }
 }
