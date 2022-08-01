@@ -5,12 +5,12 @@ document.getElementById("cuenta_open").addEventListener("click", open_close_menu
 document.getElementById("extra_open").addEventListener("click", open_close_menu);
 
 //Declaramos variables
-var side_menu = document.getElementById("menu_side");
-var btn_open = document.getElementById("btn_open");
-var gremio_open = document.getElementById("gremio_open")
-var cuenta_open = document.getElementById("cuenta_open")
-var extra_open = document.getElementById("extra_open")
-var body = document.getElementById("body");
+let side_menu = document.getElementById("menu_side");
+let btn_open = document.getElementById("btn_open");
+let gremio_open = document.getElementById("gremio_open")
+let cuenta_open = document.getElementById("cuenta_open")
+let extra_open = document.getElementById("extra_open")
+let body = document.getElementById("body");
 
 //Evento para mostrar y ocultar menú
 function open_close_menu() {

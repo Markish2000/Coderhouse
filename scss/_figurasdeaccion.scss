@@ -1,0 +1,121 @@
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    /*Sección: Imagen + h1*/
+
+    .main__carritodecompras {
+        background-image: url(../images/carritodecompras/carritodecompras.jpg);
+        background-size: cover;
+        height: 200px;
+
+        .main__section__carritodecompras {
+            background-color: #2c2a309f;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .card-title {
+        color: #000000;
+        font-size: 30px;
+    }
+
+    .card-text {
+        color: #000000;
+        font-size: 20px;
+    }
+
+    .section__carritodecompras--fcpk {
+        background-color: #2e0968bb;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section__carritodecompras--fcbk {
+        background-color: #2c2a30;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carritodecompras__button-submit {
+        font-size: 20px;
+        width: 250px;
+        height: 50px;
+        background-color: #2e0968;
+        color: #ffffff;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /*Sección: Imagen + h1*/
+
+    .main__carritodecompras {
+        background-image: url(../images/carritodecompras/carritodecompras.jpg);
+        background-size: cover;
+        height: 250px;
+
+        .main__section__carritodecompras {
+            background-color: #2c2a309f;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+    .card-title {
+        color: #000000;
+        font-size: 30px;
+    }
+
+    
+    .card-text {
+        color: #000000;
+        font-size: 20px;
+    }
+
+    .section__carritodecompras--fcpk {
+        background-color: #2e0968bb;
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .section__carritodecompras--fcbk {
+        background-color: #2c2a30;
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .carritodecompras__button-submit {
+        font-size: 20px;
+        width: 250px;
+        height: 50px;
+        background-color: #2e0968;
+        color: #ffffff;
+    }
+
+
+    .shopping-cart-image{
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    .black{
+        color: #000000;
+    }
+}

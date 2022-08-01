@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guías</title>
-    <meta name="description" content="MerezBots posee guías, estás guías explican como utilizar los bots.">
-    <meta name="keywords" content="Lord Mobile, Lord Mobile bot, Bot, Merezbots, guías">
+    <meta name="description" content="Aquí podrás encontrar figuras de acción de Lords Mobile">
+    <meta name="keywords" content="Lord Mobile, Lord Mobile bot, Bot, Merezbots, figuras de acción">
+    <title>Figuras de acción</title>
     <link rel="icon" href="../images/headeryfooter/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -67,10 +67,10 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="guias.html">
                 <div class="option">
                     <img loading="lazy" src="../images/headeryfooter/Guias.png" alt="Guías" title="Guías">
-                    <h2 class="header__nav__h2 selected">Guías</h2>
+                    <h2 class="header__nav__h2">Guías</h2>
                 </div>
             </a>
 
@@ -145,13 +145,14 @@
 
             <a href="formulario.html">
                 <div class="option">
-                    <img loading="lazy" src="../images/headeryfooter/formulario.png" alt="Formulario" title="Formulario">
+                    <img loading="lazy" src="../images/headeryfooter/formulario.png" alt="Formulario"
+                        title="Formulario">
                     <h2 class="header__nav__h2">Formulario</h2>
                 </div>
             </a>
 
-            <a href="figurasdeaccion.html">
-                <div class="option">
+            <a href="#">
+                <div class="option selected">
                     <img loading="lazy" src="../images/headeryfooter/figura-de-accion.png" alt="Figuras de acción"
                         title="Figuras de acción">
                     <h2 class="header__nav__h2">Figuras de acción</h2>
@@ -161,46 +162,124 @@
 
     </div>
 
-    <main>
-
-        <!--h1 con un background con imagen-->
-        <section class="main__section__h1">
-            <div class="main__section__div__h1">
-                <h1 class="main__section__div__h1--fs">Guías</h1>
-            </div>
-        </section>
-
-        <!--Comandos de los bots en Español y en Portugues-->
-        <section id="comandos" class="main__section__comandos">
-            <h2 id="Comandos" class="main__section__comandos__h3">Comandos en español</h2>
-            <a href="https://drive.google.com/file/d/1-lLcs-jOuhuTlRI1fG0_qVd3gNzhE5Aj/view"
-                class="main__section__comandos__a--hover" target="_blank">
-                <input type="submit" value="Descargar"
-                    class="main__section__comandos__input main__section__comandos__a--hover"></a>
-            <h3 class="main__section__comandos__h3">Comandos em Portugues</h3>
-            <a href="https://drive.google.com/file/d/1-bmAtJf-rnW2oLVxlSEJW9w8RQyG7Yvl/view"
-                class="main__section__comandos__a--hover" target="_blank">
-                <input type="submit" value="Baixar"
-                    class="main__section__comandos__input main__section__comandos__a--hover"></a>
+    <!--Sección: imagen de fondo + h1-->
+    <main class="main__carritodecompras">
+        <section class="main__section__carritodecompras">
+            <h1 class="main__section__carritodecompras__h1--fs">FIGURAS DE ACCIÓN</h1>
         </section>
     </main>
 
-    <!--Video explicando la cacería y sistema de puntos-->
-    <section class="section__video__tutorial__reporteDeCaceria">
-        <h3 class="section__video__tutorial__reporteDeCaceria__h3">Reporte de cacería y sistema de puntos</h3>
-        <iframe class="section__guias__iframe" width="560" height="315" src="https://www.youtube.com/embed/yvUcS5dDDso"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+    <!-- Carrito de compra -->
+    <section class="section__carritodecompras--fcpk">
+        <div class="card" style="width: 18rem;">
+            <img src="../images/carritodecompras/lordsmobileguardian.jpg" class="card-img-top"
+                alt="Figura de acción de El guardían">
+            <div class="card-body">
+                <h5><b class="card-title">Guardían</b></h5>
+                <p><b class="card-text">Material de alta calidad utilizado para detalles y durabilidad inigualables.</b>
+                </p>
+                <button type="submit" id="boton_carrito_de_compras" class="carritodecompras__button-submit">US$
+                    35.00</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../images/carritodecompras/lordsmobileobservador.jpg" class="card-img-top"
+                alt="Figura de acción del Observador">
+            <div class="card-body">
+                <h5><b class="card-title">Observador</b></h5>
+                <p><b class="card-text">PVC de alta calidad que se siente más sólido en tus manos.</b></p>
+                <button type="submit" id="boton_carrito_de_compras" class="carritodecompras__button-submit">US$
+                    52.00</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../images/carritodecompras/lordsmobilecaballerarosa.jpg" class="card-img-top"
+                alt="Figura de acción de caballera rosa">
+            <div class="card-body">
+                <h5><b class="card-title">Caballera de Rosa</b></h5>
+                <p><b class="card-text">PVC finamente detallado que muestra su expresión victoriosa.</b></p>
+                <button type="submit" id="boton_carrito_de_compras" class="carritodecompras__button-submit">US$
+                    30.00</button>
+            </div>
+        </div>
     </section>
+    <section class="section__carritodecompras--fcbk">
+        <div class="card" style="width: 18rem;">
+            <img src="../images/carritodecompras/lordsmobilehijodelaluz.jpg" class="card-img-top"
+                alt="Figura de acción del hijo de la luz">
+            <div class="card-body">
+                <h5><b class="card-title">Hijo de la Luz</b></h5>
+                <p><b class="card-text">Detalles intrincados dignos de un guerrero. Los diseños pintados resaltan la
+                        victoria.</b></p>
+                <button type="submit" id="boton_carrito_de_compras" class="carritodecompras__button-submit">US$
+                    32.00</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../images/carritodecompras/lordsmobileelgrandulon.jpg" class="card-img-top"
+                alt="Figura de acción del grandulón">
+            <div class="card-body">
+                <h5><b class="card-title">El grandulón</b></h5>
+                <p><b class="card-text">Trabajo de pintura de calidad y trabajo de escultura detallado.</b></p>
+                <button type="submit" id="boton_carrito_de_compras" class="carritodecompras__button-submit">US$
+                    38.00</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../images/carritodecompras/lordsmobilediablilla.jpg" class="card-img-top"
+                alt="Figura de acción de Diablilla">
+            <div class="card-body">
+                <h5><b class="card-title">Diablilla</b></h5>
+                <p><b class="card-text">Lindo y pequeño, no hay nada de qué preocuparse por esta belleza.</b></p>
+                <button type="submit" id="boton_carrito_de_compras" class="carritodecompras__button-submit">US$
+                    30.00</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1 class="text-center black">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div>
+                        <h6 class="black">Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <h6 class="black">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div>
+                        <h6 class="black">Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_de_carrito">
 
-    <!--Video explicando como hacer KvK con los bots-->
-    <section class="section__video__tutorial__kvk">
-        <h3 class="section__video__tutorial__kvk__h3">Hacer KvK</h3>
-        <iframe class="section__guias__iframe" width="560" height="315" src="https://www.youtube.com/embed/vNhmJz5OO_o"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            </div>
+            <div id="mostrarPokemon">
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0 black">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal black">0€</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-body text-white">
+                                <p class="black">Se aumentó correctamente la cantidad</p>
+                            </div>
+                        </div>
+                        <button id="boton_comprar" class="btn btn-success ml-auto comprarButton" type="button"
+                            data-toggle="modal" data-target="#comprarModal black">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--ID de ancla para "Contacto" del menú-->
@@ -262,7 +341,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../script/scripts.js"></script>
+    <script src="../script/carritodecompras.js"></script>
 </body>
 
 </html>
