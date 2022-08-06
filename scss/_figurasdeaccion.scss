@@ -118,4 +118,17 @@
     .black{
         color: #000000;
     }
+
+    .mostrar__pokemon{
+        background-color: #2e0968bb;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mostrar__pokemon-h1{
+        text-align: center;
+        padding: 20px;
+        font-size: 50px;
+    }
 }
