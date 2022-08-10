@@ -4324,6 +4324,27 @@ a {
     align-items: center;
   }
 
+  .toast {
+    display: none;
+  }
+
+  #div__total {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .black {
+    color: #000000;
+  }
+
+  .shoppingCartItemQuantity {
+    width: 25px;
+  }
+
+  .shopping-cart-image {
+    height: 50px;
+  }
+
   .card {
     margin-bottom: 50px;
   }

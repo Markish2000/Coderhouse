@@ -15,6 +15,27 @@
         }
     }
 
+    .toast {
+        display: none;
+    }
+
+    #div__total {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .black {
+        color: #000000;
+    }
+
+    .shoppingCartItemQuantity {
+        width: 25px;
+    }
+
+    .shopping-cart-image {
+        height: 50px;
+    }
+
     .card {
         margin-bottom: 50px;
     }
@@ -79,7 +100,7 @@
         font-size: 30px;
     }
 
-    
+
     .card-text {
         color: #000000;
         font-size: 20px;
@@ -108,25 +129,25 @@
     }
 
 
-    .shopping-cart-image{
+    .shopping-cart-image {
         width: 100px;
         height: auto;
         border-radius: 10px;
         margin-right: 20px;
     }
 
-    .black{
+    .black {
         color: #000000;
     }
 
-    .mostrar__pokemon{
+    .mostrar__pokemon {
         background-color: #2e0968bb;
         padding: 20px;
         display: flex;
         justify-content: center;
     }
 
-    .mostrar__pokemon-h1{
+    .mostrar__pokemon-h1 {
         text-align: center;
         padding: 20px;
         font-size: 50px;
