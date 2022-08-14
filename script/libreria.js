@@ -1,4 +1,4 @@
-const completar_compra = document.getElementById(boton_comprar);
+const completar_compra = document.getElementById("boton_comprar");
 
 //**Cartel de alerta al botón comprar. */
 boton_comprar.addEventListener('click', () => {

@@ -13,11 +13,9 @@ agregar_al_carrito.forEach((boton_agregar_al_carrito) => {
 
 //**FUNCIONALIDAD DE ACTUALIZAR PRECIO */
 function actualizarPrecioTotal(numero) {
-    let total = numero;
-    const mostrarP = `<p id="total" class="ml-4 mb-0 shoppingCartTotal black">${total} US$</p>`;
-    parrafo.innerHTML = mostrarP;
+    parrafo.innerHTML = `<p id="total" class="ml-4 mb-0 shoppingCartTotal black">${numero} US$</p>`;
     totalP.append(parrafo);
-}
+};
 actualizarPrecioTotal(0);
 
 function addTotal(precio, cantidad) {
@@ -40,13 +38,12 @@ function showSavedInLocalStorage() {
 showSavedInLocalStorage();
 
 function createProductData(producto_cantidad, producto_nombre, producto_imagen, producto_precio) {
-    const saveProduct = {
+    return {
         amount: producto_cantidad,
         name: producto_nombre,
         image: producto_imagen,
         price: producto_precio
     };
-    return saveProduct;
 };
 
 //Esta función crea la etiqueta div, a su vez crea etiquetas de HTML para introducir en el nuevo div, lo mete en el nuevo div y lo muestra en el div del HTML con el id="contenedor_de_carrito".
@@ -76,7 +73,7 @@ function createNewDivForShoppingCart(producto_nombre, producto_precio, producto_
         </div>`;
     divForShoppingCart.innerHTML = htmlForShoppingCart;
     contenedor_de_carrito.append(divForShoppingCart);
-}
+};
 
 // En esta función llamamos a la función de mostrar el producto mediante HTML, declaramos una variable con la función de los objetos, pusheamos todo al array, llamamos a la función de sumar y hacemos que se vaya actualizando el precio.
 function agregar_al_carrito_automatico(producto_nombre, producto_precio, producto_imagen, producto_cantidad) {
@@ -87,16 +84,17 @@ function agregar_al_carrito_automatico(producto_nombre, producto_precio, product
     const pNuevo = `<p id="total" class="ml-4 mb-0 shoppingCartTotal black">${total} US$</p>`;
     parrafo.innerHTML = pNuevo;
     totalP.append(parrafo);
-}
+};
 
 function agregar_al_carro_con_click(event) {
     const boton_idenf_carrito = event.target;
+    console.log("Hola")
     const producto = boton_idenf_carrito.closest('.card');
     const producto_nombre = producto.querySelector('.card-title').textContent;
     const producto_precio = producto.querySelector('.carritodecompras__button-submit').textContent;
     const producto_imagen = producto.querySelector('.card-img-top').src;
     agregar_todo_al_carrito(producto_nombre, producto_precio, producto_imagen);
-}
+};
 
 function agregar_todo_al_carrito(producto_nombre, producto_precio, producto_imagen) {
     let num = 1;
@@ -107,7 +105,7 @@ function agregar_todo_al_carrito(producto_nombre, producto_precio, producto_imag
 
     if (mostrarLocalStorage !== null) {
         mostrarLocalStorage.forEach((producto) => {
-            if (producto.name == producto_nombre) {
+            if (producto.name === producto_nombre) {
                 product.amount = producto.amount + 1;
                 productoRepetido = producto;
             };
@@ -136,7 +134,7 @@ function agregar_todo_al_carrito(producto_nombre, producto_precio, producto_imag
 function traeProducto(nombreDelProducto, carrito) {
     const product = [];
     carrito.forEach((producto) => {
-        if (producto.name == nombreDelProducto) {
+        if (producto.name === nombreDelProducto) {
             product.push(producto);
         };
     });
