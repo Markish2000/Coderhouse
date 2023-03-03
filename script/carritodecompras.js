@@ -88,7 +88,6 @@ function agregar_al_carrito_automatico(producto_nombre, producto_precio, product
 
 function agregar_al_carro_con_click(event) {
     const boton_idenf_carrito = event.target;
-    console.log("Hola")
     const producto = boton_idenf_carrito.closest('.card');
     const producto_nombre = producto.querySelector('.card-title').textContent;
     const producto_precio = producto.querySelector('.carritodecompras__button-submit').textContent;
